@@ -10,7 +10,7 @@
 
 ## Public contract
 
-Preview 0.1.2 selects one introduction, V64-START-01. Its three chat quizzes use
+Preview 0.1.3 selects one introduction, V64-START-01. Its three chat quizzes use
 new IDs: help-or-change, preview-purpose and next-step. Earlier networking quiz
 results cannot pass these changed meanings. The three practical contracts remain
 workspace-navigation, try-the-application and return-to-colleague, with the same
@@ -21,6 +21,11 @@ using the existing declared SVG commands and acknowledgements. The brief provide
 short questions, plausible misconceptions, hints, fresh follow-ups, actual-result
 reporting and recovery. It permits asking for changes directly or through
 Colleague's delegation. A quiz answer does not authorize the imagined change.
+
+One issued navigation challenge retains its identity across the three native moves. Diagram Continue
+plays the illustration without starting a teacher turn; the learner returns to
+Colleague afterwards. Quiz follow-ups end with one compact complete independent
+reply, preserving the original single-message grading boundary.
 
 Public Vibe64 validates and bundles this whole one-lesson topic. The published
 lesson selection in a preview does not establish human acceptance, native player

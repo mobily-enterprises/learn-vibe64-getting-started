@@ -24,7 +24,9 @@ Show the current project and point out the actual controls. On desktop, point ou
 
 For Colleague itself, its visible avatar launcher opens the conversation. Type in the shared message box, or use **Talk** to speak in that same chat. Opening the conversation does not start the microphone. The separate speaker control chooses spoken replies independently: you can speak and read silently, or type and hear replies. **Minimize conversation** hides the conversation; the visible Colleague launcher restores it. This is different from minimising the avatar alone, which does not leave the conversation. Use the actual visible controls for this device and host. Browser permissions and sign-in still require the person’s interaction.
 
-After a brief demonstration, let the learner find each location themselves, one at a time. Say why each move helps: the coding conversation is where changes happen; Preview is where they will press the button. Avoid making every navigation decision for them. On a phone, leave one short task to do in the workspace, then wait for them to return; do not ask several questions while the conversation is hidden.
+After a brief demonstration, let the learner find each location themselves, one at a time. Say why each move helps: the coding conversation is where changes happen; Preview is where they will press the button. Avoid making every navigation decision for them.
+
+Keep one issued `workspace-navigation` question for the whole project → coding conversation → Preview challenge. Coach one move at a time without preparing a replacement question between moves; all three observations must belong to that same challenge. Selecting the practice project that is already current is enough for the first move. On a phone, give the task before minimising Colleague, let the learner use the workspace, and wait for their return; do not ask several questions while the conversation is hidden.
 
 ## Who can help?
 
@@ -50,6 +52,8 @@ Keep the illustration to three short beats linked to their action: “You presse
 
 Wait for each command's completed acknowledgement before describing its result. Acceptance alone does not prove completion; report a failure honestly. Reduced motion uses the same labelled states without travelling animation. Text equivalent: “You pressed the button. The page asked the running application for a greeting. The application replied, and you read that reply in Preview.” If the SVG fails, use this text and retry the player; conceptual questions can continue, but controlled-animation pilot acceptance remains unproved.
 
+Before issuing a diagram cue, explain the next step in the conversation: with sound off, press **Continue**, watch the short transition finish, then return to Colleague and say “ready” or ask a question. Finish the diagram before hiding it to return to chat on a phone. The **Continue** button plays the illustration; it does not send a chat message or start another teacher reply. Keep the cue's final explanation separate from this instruction and from the next assessment question. After the learner returns, read the actual completion before continuing; their “ready” alone is not proof of playback.
+
 When the learner wants to try the button again, return to the actual application using the host's supported controls. Pause visual-dependent explanation while the illustration is hidden, especially on a phone; keep the pending question for their return. The illustration is not the running application and never counts as a practical interaction. It cannot operate editor controls or report assessment success. Ask the `preview-purpose` and `next-step` questions separately after this explanation.
 
 ## Questions, practical rubrics and hints
@@ -72,6 +76,8 @@ Plausible incomplete answers: “I'll type it into Preview” mistakes the appli
 
 First hint: “You can ask Colleague to pass on a change request. Which agent then changes the application?” Fresh variation after help: “You don't know where to try the app. Who could explain that?” Then, if needed, “Who would implement a new button?” Keep these as separate questions. Do not pass a teacher-supplied answer.
 
+After a partial answer or supported follow-up, prepare one fresh independent question for this same assessment: “In one short reply, who could help you find Preview, and who would implement a new button?” Wait for the learner's complete reply in their own words before evaluation; do not combine earlier answers or your own explanation into their evidence. Record the assistance actually provided.
+
 <a id="try-the-application"></a>
 ### Use the real request button
 
@@ -88,6 +94,8 @@ Plausible incomplete answers: “The animated picture proves it works” confuse
 
 First hint: “Where did you press the real button and see the result?” Fresh variation after help: “A new button was added. How would you check what it does?” Pass on trying it in Preview and observing the outcome, without requiring a particular phrase.
 
+If their answer is split across follow-ups, prepare a fresh independent question asking where they would try the button and what they would look for, then wait for one compact complete learner reply.
+
 <a id="next-step"></a>
 ### Give a useful next request
 
@@ -98,6 +106,8 @@ If the real press failed, ask instead: “You pressed the button and saw [their 
 Plausible incomplete answers: “Change it” or “It's broken” leaves out the action and result; “The agent says it's fine, so I'll ignore it” skips the observation; “I must have ruined it” wrongly assumes a setup failure is the learner's fault. Ask for only the missing detail and reassure them that reporting a problem is useful.
 
 First hint: “What did you try, what did you see, and what would you like instead?” Fresh variation after help: “Suppose a different button showed the wrong message. What would help the agent understand the problem?” Clearly label this as a hypothetical independent question. Pass on the tried action, actual message and expected message or desired change. Asking Colleague to delegate is valid; a quiz answer is not an instruction to execute its imagined change.
+
+After separate follow-ups, prepare one fresh independent question: “In one short reply, tell me your request or problem report and how you would check the result.” Ask them to include what they tried, what they saw and what they expected or want changed, using their actual observation. Evaluate that complete reply, not a reconstruction from earlier messages or a teacher paraphrase. Record the assistance actually provided; short everyday language remains enough.
 
 <a id="return-to-colleague"></a>
 ### Leave the teaching view and return
