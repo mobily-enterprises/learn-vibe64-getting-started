@@ -13,13 +13,13 @@ export function mountVisual(svg, port, init) {
     reset: { state: 'overview', parameters: {} }
   };
   const descriptions = {
-    overview: 'Your browser asks the project server. The server handles the request and replies to the browser.',
-    'client-highlighted': 'The client is the page in your browser. It sends a request and displays the reply.',
-    'server-highlighted': 'The server runs in the project environment. It receives a request, does work and returns information.',
-    'port-highlighted': 'The request reaches a listening service in the project environment.',
-    'request-arrived': 'The request travelled from the browser to the server.',
-    'server-working': 'The server is doing work before it replies.',
-    'response-arrived': 'The response travelled from the server back to the browser.'
+    overview: 'You pressed a button in Preview. The practice app prepares a greeting and the page displays its reply.',
+    'client-highlighted': 'This is the page you tried in Preview. Its button asks the practice app for a greeting.',
+    'server-highlighted': 'The practice app runs in the project environment. It prepares the greeting requested by the page.',
+    'port-highlighted': 'The page reaches the running practice app in the project environment.',
+    'request-arrived': 'The page asked the practice app for a greeting after your button press.',
+    'server-working': 'The practice app is preparing its reply to the page.',
+    'response-arrived': 'The greeting came back to the page, where you read it in Preview.'
   };
   const identity = value => typeof value === 'string' && /^[a-zA-Z0-9-]{1,64}$/u.test(value);
   if (
@@ -55,7 +55,7 @@ export function mountVisual(svg, port, init) {
   const nodes = Object.fromEntries(['client', 'server', 'port', 'packet', 'description', 'request-label', 'response-label', 'work-label', 'port-label'].map(id => [id, svg.querySelector(`#${id}`)]));
   if (Object.values(nodes).some(node => !node)) throw new Error('Missing declared SVG node.');
   let state = init.initialState, paused = snapshot?.paused ?? false, animation, active;
-  let labels = snapshot ? { ...snapshot.labels } : { port: 'Listening service', request: 'Browser asks', work: 'Receives and handles requests', response: 'Server replies' };
+  let labels = snapshot ? { ...snapshot.labels } : { port: 'Running app', request: 'Page asks for a greeting', work: 'Prepares a greeting', response: 'Greeting returns' };
   const history = new Map();
   const description = () => `${paused ? 'Motion paused. ' : ''}${descriptions[state]}`;
   function send(type, fields = {}) { port.postMessage({ protocolVersion: 1, playerInstanceId: init.playerInstanceId, type, state, ...fields }); }
@@ -104,10 +104,10 @@ export function mountVisual(svg, port, init) {
     send('accepted', { commandId: message.commandId });
     if (message.name === 'pause') { paused = true; interrupt(); render(); record(message.commandId, input, 'completed', { description: description() }); return; }
     if (message.name === 'reset') {
-      interrupt(); labels = { port: 'Listening service', request: 'Browser asks', work: 'Receives and handles requests', response: 'Server replies' };
+      interrupt(); labels = { port: 'Running app', request: 'Page asks for a greeting', work: 'Prepares a greeting', response: 'Greeting returns' };
     }
     paused = false;
-    if (message.name === 'highlightPort') labels.port = message.parameters.label || 'Listening service';
+    if (message.name === 'highlightPort') labels.port = message.parameters.label || 'Running app';
     if (message.name === 'sendRequest') labels.request = `${message.parameters.method} ${message.parameters.path}`;
     if (message.name === 'showServerWork') labels.work = message.parameters.label;
     if (message.name === 'sendResponse') labels.response = message.parameters.label;

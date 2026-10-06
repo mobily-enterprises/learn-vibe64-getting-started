@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "client-server",
-  "title": "How this web application asks and replies",
+  "title": "What happened when you pressed the button",
   "svg": "diagram.svg",
   "controller": "controller.js",
   "initialState": "overview",
@@ -14,25 +14,25 @@
     "server-working",
     "response-arrived"
   ],
-  "description": "Your browser sends a request to the server in the project's environment. The server works, replies, and the browser displays the result. This illustrates a common web application, not all programs. It is an explanation, not an application interaction or assessment result.",
+  "description": "You pressed the real button in Preview. The page asked the practice app in the project environment for a greeting; the app prepared it and the page displayed its reply. This picture explains that observed action; it is not the running application or an assessment result.",
   "commands": [
     {
       "name": "showOverview",
       "parameters": [],
       "completionState": "overview",
-      "description": "Introduce the browser and project server."
+      "description": "Connect the page in Preview with the running practice app."
     },
     {
       "name": "highlightClient",
       "parameters": [],
       "completionState": "client-highlighted",
-      "description": "The browser presents the page, asks and displays the result."
+      "description": "Point to the page where the learner pressed the real button and read the reply."
     },
     {
       "name": "highlightServer",
       "parameters": [],
       "completionState": "server-highlighted",
-      "description": "The server receives the request and returns information."
+      "description": "Point to the practice app that prepares the greeting."
     },
     {
       "name": "highlightPort",
@@ -44,7 +44,7 @@
         }
       ],
       "completionState": "port-highlighted",
-      "description": "Use only verified runtime information for an optional concrete label."
+      "description": "Optional running-app highlight; only verified runtime information may supply a concrete service label."
     },
     {
       "name": "sendRequest",
@@ -61,7 +61,7 @@
         }
       ],
       "completionState": "request-arrived",
-      "description": "Follow a display-only request from browser to server."
+      "description": "Illustrate the page asking for a greeting; method and path are display details, not quiz vocabulary."
     },
     {
       "name": "showServerWork",
@@ -73,7 +73,7 @@
         }
       ],
       "completionState": "server-working",
-      "description": "Describe work before the reply."
+      "description": "Explain that the app prepares its greeting before replying."
     },
     {
       "name": "sendResponse",
@@ -85,7 +85,7 @@
         }
       ],
       "completionState": "response-arrived",
-      "description": "Follow the reply back to the browser."
+      "description": "Illustrate the greeting returning to the page the learner tried."
     },
     {
       "name": "pause",

@@ -100,7 +100,7 @@ assert.deepEqual(replay, clientReceipt, 'Retry must return original state and de
 port.onmessage({ data: { protocolVersion: 1, playerInstanceId, type: 'snapshot', requestId: 'current-display' } });
 assert.equal(receipts.at(-1).state, 'server-highlighted', 'Cached result must not alter current display.');
 assert.equal(receipts.at(-1).paused, false);
-assert.deepEqual(receipts.at(-1).labels, { port: 'Listening service', request: 'Browser asks', work: 'Receives and handles requests', response: 'Server replies' }, 'Fresh initialization keeps declared defaults.');
+assert.deepEqual(receipts.at(-1).labels, { port: 'Running app', request: 'Page asks for a greeting', work: 'Prepares a greeting', response: 'Greeting returns' }, 'Fresh initialization keeps declared defaults.');
 assert.equal(nodes.get('description').textContent, serverReceipt.description);
 console.log('PASS: cached visual result preserves original completion state; snapshot and drawing retain current state.');
 await command('port-label', 'highlightPort', { label: 'Service on port 8080' });

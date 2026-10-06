@@ -8,7 +8,17 @@
 
 ## Public contract
 
-Declared commands highlight roles and move a packet between a browser and project server. Reduced motion displays the same semantic states immediately. The host sandbox transfers a private channel; the controller reports acknowledgement, completion/failure and small snapshots without accessing editor actions, credentials or grading. Pause cancels motion at the last completed semantic state; repeating the transition continues from that known state.
+Declared commands illustrate the learner's real Preview button press: the page
+asks, the practice app prepares a greeting, and the reply returns. Beginner-facing
+labels describe this observable action; command/state IDs retain their original
+browser/server vocabulary. No networking terminology is assessed.
+
+Commands highlight roles and move the original packet between the page and project
+server. Reduced motion displays the same semantic states immediately. The host
+sandbox transfers a private channel; the controller reports acknowledgement,
+completion/failure and small snapshots without accessing editor actions,
+credentials or grading. Pause cancels motion at the last completed semantic state;
+repeating the transition continues from that known state.
 
 Retried known command IDs return the originally recorded result state and description without replaying or changing the current drawing. A fresh snapshot reports the current displayed state.
 
