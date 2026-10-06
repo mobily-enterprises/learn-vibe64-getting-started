@@ -1,111 +1,122 @@
-# V64-START-01: Find your way around the workspace
+# V64-START-01: Your first steps in Vibe64
 
-## Learner and assumed knowledge
+## Welcome and outcome
 
-For a person with no computing experience. Short everyday answers are enough. Assume the person is signed in, can open Colleague and is permitted to use approved training projects. No GitHub account, project-owner privilege or coding knowledge is needed. Offer text, voice or both; choosing audio is not assessed.
+Suggested welcome: “Let's try Vibe64 together. In about 10–15 minutes, you'll find your way around, try a small application and learn how to ask for help or a change. We'll use a disposable practice project. You don't need to know how to code.”
 
-## Outcomes and what counts as success
+Offer text, voice or both. Choosing audio is not assessed. Ask one short question at a time, wait for the learner's answer, and make room for their questions. Everyday language is enough; do not require technical vocabulary. Silence, unsent speech and a teacher's paraphrase are not answers.
 
-Find the actual project, coding conversation, Colleague and Preview. Explain how this browser page asks a server for information. Press the real application's button, read its response and return to the same teaching conversation. Completion requires all six declared assessments; a teacher demonstration or opening a diagram cannot pass them.
+Success means the learner can find the project, coding conversation and Preview; distinguish help from an application change; press the real application's button and describe the result; make a useful follow-up request; and return to the same Colleague task. All six declared assessments are required. Watching a demonstration does not complete a practical task.
 
-## Required starting environment
+## Prepare the practice project
 
-An installed, pinned preview topic and its orientation-app exercise. Colleague uses the approved lesson-start operation to prepare a disposable project and initial session, then opens that real project. Wait for native setup/output readiness. This lesson's setup and launch are the exercise's Genesis contracts; there is no separate lesson launcher.
+Assume the learner is signed in, can use Colleague and has permission for approved training projects. No GitHub account, project-owner privilege or previous coding knowledge is required. Use the installed, pinned preview topic and its bundled orientation application.
 
-Explain that this is practice and that learning progress belongs to the person outside the exercise project. Questions about course coverage do not authorise project creation. An accepted lesson request authorises this bounded prepared exercise; unrelated edits, publication and other projects remain outside it. Do not offer lesson 02 while it is draft.
+Colleague uses the approved lesson-start operation to prepare the disposable project and session, then opens that actual project. Wait for genuine native setup and Preview readiness. Setup and launch use the exercise's Genesis contracts, with no separate lesson launcher. Explain failures and retry through supported operations; a drawing cannot replace a failed application.
 
-## Key explanations and vocabulary
+Explain that learning progress is retained outside the practice project. A request to begin this introduction authorises its bounded practice setup. A question about course coverage alone does not authorise project creation. Unrelated edits and publication require their own request.
 
-A **project** holds the application's work. A **session** is the current working place and coding conversation for that project. **Colleague** helps you learn and use Vibe64. The **coding assistant** changes application code when you ask in its coding conversation. The **application** is what you are making; **Preview** lets you try it. These are distinct roles, even when they appear in one workspace.
+## Find your way around
 
-In **this web application**, the **client** is the page in your browser. It shows a button and displays information. Its button sends a **request**, a small message asking the server to do something. The **server** is a real running program in the project's environment. It receives that request, prepares a greeting and returns a **response**. The browser displays the returned greeting. Many web applications use this arrangement; not all programs require these two parts.
+Introduce only the locations needed now. “The **project** holds our application's work. Its **coding conversation** is where a coding agent works on changes. **Colleague** helps you use Vibe64, explains things and can coordinate a coding agent for you. **Preview** is where you try the running application.” A session keeps the project's current working conversation; the learner need not memorise this term.
 
-A server **listens** for requests. A port helps route a request to the listening service. The server does not move into your phone when you open Preview. Preview may forward traffic through Vibe64. Use only verified runtime metadata for a concrete port; otherwise say “listening service.” The drawing is an explanation, not the application and not proof that a request happened.
+Show the current project and point out the actual controls. On desktop, use the project switcher, **Show chat** / **Show project** and the **Preview** tab where present. On mobile, **Show project** returns from chat; **Show preview controls** expands the Preview toolbar. If output settings are needed, use **Preview options** and **Run**. Colleague inspects current state and waits for readiness before claiming the app is running.
 
-## Suggested teaching stages
+For Colleague itself, its visible avatar launcher opens the conversation. Type in the shared message box, or use **Talk** to speak in that same chat. Opening the conversation does not start the microphone. The separate speaker control chooses spoken replies independently: you can speak and read silently, or type and hear replies. **Minimize conversation** hides the conversation; the visible Colleague launcher restores it. Use the actual visible controls for this device and host. Browser permissions and sign-in still require the person’s interaction.
 
-1. **Welcome:** explain the short outcome, disposable practice project and audio choice. Ask the learner to begin when ready.
-2. **Prepare:** use approved provisioning and actual readiness. Explain failures and supported retry without inventing a running application.
-3. **Orient:** name the actual project and session. Demonstrate once if helpful, then ask the learner to find the project, coding conversation and Preview themselves.
-4. **Client:** show the diagram overview, highlight the browser and ask where this application's page appears. Preserve their own answer.
-5. **Server:** highlight the server; explain its work. Ask who receives the button's request after it leaves the browser.
-6. **Request:** send the display request `POST /api/greeting`, then pause. Ask the learner to predict what the server does before replying.
-7. **Response:** show server work “Prepare a greeting,” then the reply “Hello from the server!” Ask which direction the reply travels.
-8. **Real application:** return to the real Preview. The learner presses **Ask the server** and reads the output. Ask how this maps to the two sides and arrows in the diagram.
-9. **Return:** ask the learner to minimise Colleague, use the workspace, then restore the same Colleague conversation. Resume the pending question.
-10. **Finish:** explain what their evidence demonstrates, revisit missed checks and persist results through the assessment owner. Say the rest of this topic is being prepared; do not claim the twelve-lesson course is complete.
+After a brief demonstration, let the learner find each location themselves, one at a time. Avoid making every navigation decision for them.
 
-Allow interruptions, different wording and repeated explanations. Ask one small question at a time. Never interpret silence, a model paraphrase or speech that has not been sent as the learner's answer.
+## Who can help?
 
-## Visual instructions
+“If you're unsure what to do, ask Colleague. If you want the application changed, you can ask Colleague to pass on the request or ask the coding agent directly. The coding agent implements the change. Then you try the result in Preview.”
 
-Use the declared `client-server` visual. `showOverview` and `reset` show the two sides; `highlightClient`, `highlightServer` and `highlightPort` focus one part. `highlightPort` accepts an optional verified `label`, otherwise uses the conceptual label. `sendRequest` takes display-only `method` and `path`. `showServerWork` and `sendResponse` take a short display-only `label`. `pause` keeps the reported conceptual state while pausing motion. An accepted command is not completed; wait for completion or report failure before claiming what is displayed.
+Use a small example: “Where do I try this?” is a help question. “Please change the greeting to Welcome” is a change request. Discussing an idea does not itself change the application. This introduction does not require editing the greeting; save any proposed extra change for a separate request.
 
-Text equivalent: “Your browser sends a request down to the project's server. The server prepares information. Its response travels back up to your browser, which displays it.” Reduced motion uses the same labelled states without travel animation. On failure use this explanation and retry the diagram; conceptual answers may continue, but the controlled-player pilot has not been proved. The diagram never calls editor actions or reports assessment success.
+Ask the `help-or-change` question below before continuing. Support a partial answer, then use a fresh variation if substantial help was needed.
 
-## Real demonstrations and learner tasks
+## Try one real task
 
-On desktop, use the actual project switcher, **Show chat** / **Show project**, and **Preview** tab. On mobile, use the same project/workspace choices and the **Preview** action. When Colleague fills the screen, its visible minimise control returns to the workspace; the compact Colleague launcher restores the same conversation. Use current available control names and actual focus receipts. Do not guess a label from a diagram or teach keyboard shortcuts that were not verified.
+Suggested invitation: “Open Preview and press **Ask the server**. What message appears?” Wait for the learner's actual press. The page briefly shows “Asking the server…” and then **Hello from the server!**, with a request reference. Ask them to describe what happened in their own words.
 
-The exercise's page says **Ask the server**. Pressing it disables the button briefly, shows “Asking the server…”, and makes a real HTTP request. Success displays **Hello from the server!** plus a request reference. Another press makes a fresh request. Failure displays an actionable retry message, not a pretend greeting. If the server instance changed after a restart, **Ask the server** stays disabled; use the actual **Reload preview** control, then make a fresh request. Colleague may demonstrate, but then asks the learner to make a fresh request independently.
+One useful explanation is: “The button in Preview asked the application's running program for a greeting, and the page displayed its reply.” Keep this tied to the result they saw. The greeting comes from a real server; Colleague did not type it into Preview.
 
-Practical evidence must come from the declared native producer with learner origin and the correct active attempt/project/session/browser context. Automatic navigation, route restoration and teacher-origin receipts are insufficient. An exercise frame/channel observation needs its real instance/request/interaction identity verified by the pinned check and an observed response display, plus the learner's explanation. No host integration means practical checks remain incomplete; do not substitute narration.
+A second press makes a fresh request. If Colleague demonstrates, the learner must then make a fresh independent press. If the page reports a changed server instance, **Ask the server** stays disabled: use **Reload preview**, then press again. **Restart preview** starts the application again; **Reload preview** refreshes its page. Explain actual startup errors and use **Show run output** when needed. Infrastructure failures are not learner failures.
 
-## Questions, rubrics, misconceptions and hints
+## Show what just happened
+
+After the learner's successful real Preview action, open the declared `client-server` SVG. Suggested explanation: “This picture shows the action you just tried. Your page asked for the greeting, the application prepared it, and the reply came back to the page.” If the real action failed, explain its observed failure and recover before illustrating a successful reply.
+
+Colleague controls the illustration as part of the conversation. Use `showOverview`, optionally `highlightClient`, then `sendRequest` with `method: POST` and `path: /api/greeting`. Use `highlightServer` or `showServerWork` with `label: Prepare a greeting`, then `sendResponse` with `label: Hello from the server!`. Pause to answer a question; reset and replay when the learner asks. Keep labels short and display-only. The learner need not memorise the diagram's technical labels.
+
+Wait for each command's completed acknowledgement before describing its result. Acceptance alone does not prove completion; report a failure honestly. Reduced motion uses the same labelled states without travelling animation. Text equivalent: “You pressed the button. The page asked the running application for a greeting. The application replied, and you read that reply in Preview.” If the SVG fails, use this text and retry the player; conceptual questions can continue, but controlled-animation pilot acceptance remains unproved.
+
+The illustration is not the running application and never counts as a practical interaction. It cannot operate editor controls or report assessment success. Ask the `preview-purpose` and `next-step` questions separately after this explanation.
+
+## Questions, practical rubrics and hints
+
+Preserve the learner's admitted answer excerpts, grading reasons and assistance. Follow up on the missing meaning rather than demanding a long answer. After substantial help, use the fresh independent variation before recording a pass. Never transfer passes from the former `client-role`, `server-role` or `request-response` quizzes to these changed questions.
 
 <a id="workspace-navigation"></a>
 ### Find the workspace locations
 
-Ask: “Show me this project, the coding conversation where you would ask for a change, and where you can try the application.” Pass when learner gestures at native controls settle on the correct project, coding conversation and Preview. Record help. Teacher navigation alone, an automatically restored route or an unrelated project cannot pass. The required producer is `workspace`, operation `workspace-navigation`.
+Ask one task at a time: “Find our practice project.” Then: “Find its coding conversation.” Finally: “Open where you can try the application.” Pass when learner gestures at native controls settle on the correct project, coding conversation and Preview with limited help. Record assistance. Teacher navigation alone, automatic route restoration or an unrelated project cannot pass. Required producer: `workspace`, operation `workspace-navigation`.
 
-First hint: “Look for where you can try the application.” If needed demonstrate one transition, then ask the learner to find another location themselves. If settled learner observations are unavailable, leave this check incomplete and explain the missing evidence; no alternative producer is approved.
+First hint: “Look for where you can try the application.” If needed demonstrate one transition, then ask the learner to find another location independently. If settled learner observations are unavailable, leave the check incomplete and explain the missing evidence; no alternative producer is approved.
 
-<a id="client-role"></a>
-### Explain the client
+<a id="help-or-change"></a>
+### Ask for help or a change
 
-Ask: “Where is the page with the button shown, and what does that page do when you press it?” Pass on the meanings “in my browser” and “it sends a request and displays the answer.” “On my phone/computer, in the browser” is enough. An answer saying that the illustration is the running application, or that the browser runs on the project's server, needs a follow-up.
+Ask: “You want the greeting changed to Welcome. How could you ask for that?” Pass when the answer understands that Colleague can discuss, operate Vibe64 and delegate the request, while a coding agent implements the change. Asking the coding agent directly is also valid. “I'd ask Colleague to get the coding agent to change it” is enough. If they name just one agent, ask a short follow-up to establish the other role.
 
-Hint: highlight the browser node and ask where they see the page. After substantial help, ask “Which side shows the greeting when it comes back?” Preserve the admitted learner answer excerpt, grading reason and assistance; highlighting alone is not an answer.
+Plausible incomplete answers: “I'll type it into Preview” mistakes the application for a chat; “Talking about it changes it” misses implementation; “I must always open the coding chat myself” misses Colleague's coordination. Explain only the missing distinction.
 
-<a id="server-role"></a>
-### Explain the server
-
-Ask: “Who handles the request after it leaves the browser, and what happens there?” Pass when the learner identifies the server as receiving the request, doing work and returning information. “The program in the project prepares a greeting and sends it back” is sufficient. Do not require technical vocabulary.
-
-Do not pass an answer that assigns this job to Colleague or the coding assistant. Hint: “The page asks another running program for the greeting.” Ask a fresh follow-up after help: “Does the server display the page on your phone, or send information back to it?” Record the learner's actual answer and assistance.
-
-<a id="request-response"></a>
-### Predict the round trip
-
-Ask before the reply: “Where is this request going, and what might happen before we see a result?” Then ask: “Where does the response go?” Pass when answers together establish browser → server request, server work before the result, and server → browser response. Preparing a greeting is enough predicted work; examples such as calculation or looking up information are also acceptable if clearly described as possibilities.
-
-Repeating only “client/server,” reversing a direction, or omitting one direction is incomplete. Hint: pause at the receiving side and ask what happens next. Ask a follow-up for only the missing meaning; preserve both answer excerpts rather than grading a teacher's summary.
+First hint: “You can ask Colleague to pass on a change request. Which agent then changes the application?” Fresh variation after help: “You don't know where to try the app. Who could explain that?” Then, if needed, “Who would implement a new button?” Keep these as separate questions. Do not pass a teacher-supplied answer.
 
 <a id="try-the-application"></a>
 ### Use the real request button
 
-Ask the learner to open the real Preview, press **Ask the server**, read the greeting and explain which part asked and which part replied. Pass requires `exercise` producer operation `try-the-application`, pinned `orientation-response` check, and learner explanation. The host must correlate the expected Preview frame/channel and server instance, learner button interaction, server-recorded request and response, and actual response-display observation. The bounded check confirms the exact response identities; it does not itself grade the explanation or authenticate the learner.
+Ask the learner to open the real Preview, press **Ask the server**, read the greeting and explain what asked and what replied in everyday words. Pass requires `exercise` producer operation `try-the-application`, pinned `orientation-response` check, and learner explanation. The host correlates the expected Preview frame/channel and server instance, learner button interaction, server-recorded request and response, and actual response-display observation. The bounded check confirms exact response identities; it neither grades the explanation nor authenticates the learner.
 
-A proxy load, iframe readiness, diagram packet, teacher click or unverified browser claim cannot pass. First hint: minimise the explanation and point to the actual Preview. Repeat with a fresh button press after substantial assistance. A server restart expires in-memory evidence. If the page reports the restart, ask the learner to use **Reload preview** before making a new press; reload refreshes the server identity and host channel. The response-display observation is fenced to the exact request/render revision; its animation-frame callback alone does not prove foreground Preview visibility, which the host must separately verify. Missing host producer/check execution remains incomplete; no simulated alternative is approved.
+A proxy load, iframe readiness, diagram packet, teacher click or unverified browser claim cannot pass. First hint: minimise the explanation and point to the actual Preview. Repeat with a fresh button press after substantial assistance. A restart expires in-memory evidence; **Reload preview** refreshes server identity and the host channel before a fresh press. The response-display observation is fenced to the exact request/render revision; its animation-frame callback alone does not prove foreground visibility, which the host separately verifies. Missing host producer/check execution leaves this incomplete; no simulated alternative is approved.
+
+<a id="preview-purpose"></a>
+### Know where to try the result
+
+Ask: “The agent says the application is ready. Where would you try it?” Pass when the learner identifies Preview as where to use the running application and observe its behaviour. “Open Preview and try the button” is enough. If needed, ask “What would you look for there?” to establish that they would observe the result.
+
+Plausible incomplete answers: “The animated picture proves it works” confuses illustration with action; “The agent said it works, so we're done” skips trying it; “I'll ask Colleague to describe it” can help but is not a check of the app.
+
+First hint: “Where did you press the real button and see the result?” Fresh variation after help: “A new button was added. How would you check what it does?” Pass on trying it in Preview and observing the outcome, without requiring a particular phrase.
+
+<a id="next-step"></a>
+### Give a useful next request
+
+Use the learner's own just-observed result. After success, ask: “You just saw Hello from the server! If you wanted Welcome instead, what would you ask?” Substitute their actual observation rather than inventing success. Pass on a useful request containing what they tried, what happened and what they want changed. For example: “I pressed Ask the server in Preview and saw Hello from the server. Please change that greeting to Welcome.” Then ask separately, “How would you check the change?” The learner should try the button in Preview again and compare the result with the requested words.
+
+If the real press failed, ask instead: “You pressed the button and saw [their actual failure]. What would you tell Colleague or the coding agent?” Pass on the tried action, observed failure and expected result, such as a greeting. Keep the practical task incomplete until genuine recovery and a new successful press. Do not fabricate a failure for this variant.
+
+Plausible incomplete answers: “Change it” or “It's broken” leaves out the action and result; “The agent says it's fine, so I'll ignore it” skips the observation; “I must have ruined it” wrongly assumes a setup failure is the learner's fault. Ask for only the missing detail and reassure them that reporting a problem is useful.
+
+First hint: “Tell the agent what you did and what you expected to happen.” Fresh variation after help: “Suppose a different button showed the wrong message. What would help the agent understand the problem?” Clearly label this as a hypothetical independent question. Pass on the tried action, actual message and expected message or desired change. Asking Colleague to delegate is valid; a quiz answer is not an instruction to execute its imagined change.
 
 <a id="return-to-colleague"></a>
 ### Leave the teaching view and return
 
-Ask: “Minimise Colleague, use the workspace once, then return and tell me what we were checking.” Pass requires `colleague` producer operation `return-to-colleague`: actual learner minimise → workspace use → restore observations, with the same retained conversation, attempt and pending question. Restoring automatically or watching the teacher restore cannot pass. No alternative producer is approved.
+Keep a short pending question, such as “What message did you see?” Ask the learner to use **Minimize conversation**, use the workspace once and restore Colleague with its visible avatar launcher. Ask the retained question when they return. Pass requires `colleague` producer operation `return-to-colleague`: actual learner minimise → workspace use → restore observations, with the same retained conversation, attempt and pending question. Automatic restoration or watching a teacher cannot pass. No alternative producer is approved.
 
-First hint: explain the currently visible minimise control and compact launcher, especially on a phone. Demonstrate if needed, then ask a fresh independent leave-and-return variation. The host validates retained task identity; the learner should not have to start a new chat.
+First hint: explain the single visible minimise/restore control for this device, especially on a phone. Demonstrate if needed, then ask a fresh independent leave-and-return variation. The host validates retained task identity; the learner should not have to start another chat. Minimising can leave voice active; use the visible **Stop voice chat** control if they want audio stopped.
 
-## Recovery and alternative explanations
+## Recover and resume
 
-- **Setup/Preview failure:** describe the actual status, use supported recovery when authorised, then ask for a fresh real request. If the exercise reports a restarted server, use **Reload preview** first; repeatedly pressing cannot repair the old page identity. Infrastructure failure does not become learner failure.
-- **Voice failure:** continue in the same transcript in text. Do not create a replacement conversation or count provisional speech as sent evidence.
-- **Diagram failure:** use the text equivalent, retain conceptual progress and report missing animation proof honestly.
-- **Leaving or interruption:** retain the pinned lesson, semantic state, passed checks and last question. On return restore the declared semantic visual state, paused flag and display labels, then give a short recap and ask that pending question. Restoring a partially played animation frame is not promised.
-- **Discarded exercise:** keep conceptual passes, explain the missing project and offer a fresh prepared exercise for remaining practical checks. Recreation alone never passes practical prerequisites.
-- **Unsaved assessment:** show that the result is unsaved and retry through the existing progress owner. Do not promise durable completion before a successful write.
+- **Setup or Preview failure:** explain the actual state and use supported recovery when authorised. After a server restart, reload Preview before a new press. Ask for a fresh real action once ready; never substitute the animation or blame the learner.
+- **Voice failure:** continue in text in the same transcript and lesson. Provisional speech is not sent evidence.
+- **SVG failure:** use its text equivalent and retain understanding checks. Report missing controlled-animation proof and retry the player.
+- **Interruption:** retain the pinned lesson, passed checks and pending question. Restore the visual's semantic state, paused flag and labels, then give a short recap. Frame-perfect animation recovery is not promised.
+- **Missing exercise on return:** preserve understanding checks, explain the missing practice project and provision a new one for remaining practical tasks. Recreation alone earns no practical pass.
+- **Unsaved result:** say it is unsaved and retry through the progress owner. Do not claim durable completion until the write succeeds.
 
-If “client” is confusing, say “the page in your browser”; if “server” is confusing, say “the running program it asks.” Return to the real button to connect these words to an observed action.
+## Finish with a useful habit
 
-## Completion summary and next lesson
+Summarise only demonstrated abilities and name remaining checks. All six required assessments must pass against this pinned version to finish the introduction. Offer to repeat a missed task or pause and resume. There is no second lesson promised in this preview.
 
-Summarise only the demonstrated abilities and name remaining checks. All six required assessments must pass against this pinned version to complete lesson 01. This topic stays an incomplete preview because lessons 02–12 are draft. Offer to repeat a short task, pause or resume; offer lesson 02 only after its reviewed published version is installed.
+Suggested takeaway: “Ask Colleague when you need help. Ask Colleague to coordinate a change, or ask the coding agent directly. Try the result in Preview. Then tell them what you tried, what happened and what you expected or want changed.”

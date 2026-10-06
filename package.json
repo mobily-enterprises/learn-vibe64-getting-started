@@ -1,7 +1,7 @@
 {
   "name": "learn-vibe64-getting-started",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "repository": {
     "type": "git",
@@ -11,7 +11,7 @@
     "schemaVersion": 1,
     "topicId": "vibe64-getting-started",
     "domainId": "vibe64",
-    "title": "Getting started and creating your first application",
+    "title": "Introduction to using Vibe64",
     "status": "preview",
     "outline": "training/outline.md",
     "prerequisites": [],
@@ -20,72 +20,6 @@
         "code": "V64-START-01",
         "descriptor": "training/lessons/V64-START-01/lesson.json",
         "status": "published",
-        "required": true
-      },
-      {
-        "code": "V64-START-02",
-        "descriptor": "training/lessons/V64-START-02/lesson.json",
-        "status": "draft",
-        "required": true
-      },
-      {
-        "code": "V64-START-03",
-        "descriptor": "training/lessons/V64-START-03/lesson.json",
-        "status": "draft",
-        "required": true
-      },
-      {
-        "code": "V64-START-04",
-        "descriptor": "training/lessons/V64-START-04/lesson.json",
-        "status": "draft",
-        "required": true
-      },
-      {
-        "code": "V64-START-05",
-        "descriptor": "training/lessons/V64-START-05/lesson.json",
-        "status": "draft",
-        "required": true
-      },
-      {
-        "code": "V64-START-06",
-        "descriptor": "training/lessons/V64-START-06/lesson.json",
-        "status": "draft",
-        "required": true
-      },
-      {
-        "code": "V64-START-07",
-        "descriptor": "training/lessons/V64-START-07/lesson.json",
-        "status": "draft",
-        "required": true
-      },
-      {
-        "code": "V64-START-08",
-        "descriptor": "training/lessons/V64-START-08/lesson.json",
-        "status": "draft",
-        "required": true
-      },
-      {
-        "code": "V64-START-09",
-        "descriptor": "training/lessons/V64-START-09/lesson.json",
-        "status": "draft",
-        "required": true
-      },
-      {
-        "code": "V64-START-10",
-        "descriptor": "training/lessons/V64-START-10/lesson.json",
-        "status": "draft",
-        "required": true
-      },
-      {
-        "code": "V64-START-11",
-        "descriptor": "training/lessons/V64-START-11/lesson.json",
-        "status": "draft",
-        "required": true
-      },
-      {
-        "code": "V64-START-12",
-        "descriptor": "training/lessons/V64-START-12/lesson.json",
-        "status": "draft",
         "required": true
       }
     ]
