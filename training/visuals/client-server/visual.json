@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "id": "client-server",
+  "title": "How this web application asks and replies",
+  "svg": "diagram.svg",
+  "controller": "controller.js",
+  "initialState": "overview",
+  "states": [
+    "overview",
+    "client-highlighted",
+    "server-highlighted",
+    "port-highlighted",
+    "request-arrived",
+    "server-working",
+    "response-arrived"
+  ],
+  "description": "Your browser sends a request to the server in the project's environment. The server works, replies, and the browser displays the result. This illustrates a common web application, not all programs. It is an explanation, not an application interaction or assessment result.",
+  "commands": [
+    {
+      "name": "showOverview",
+      "parameters": [],
+      "completionState": "overview",
+      "description": "Introduce the browser and project server."
+    },
+    {
+      "name": "highlightClient",
+      "parameters": [],
+      "completionState": "client-highlighted",
+      "description": "The browser presents the page, asks and displays the result."
+    },
+    {
+      "name": "highlightServer",
+      "parameters": [],
+      "completionState": "server-highlighted",
+      "description": "The server receives the request and returns information."
+    },
+    {
+      "name": "highlightPort",
+      "parameters": [
+        {
+          "name": "label",
+          "required": false,
+          "maxLength": 28
+        }
+      ],
+      "completionState": "port-highlighted",
+      "description": "Use only verified runtime information for an optional concrete label."
+    },
+    {
+      "name": "sendRequest",
+      "parameters": [
+        {
+          "name": "method",
+          "required": true,
+          "maxLength": 8
+        },
+        {
+          "name": "path",
+          "required": true,
+          "maxLength": 24
+        }
+      ],
+      "completionState": "request-arrived",
+      "description": "Follow a display-only request from browser to server."
+    },
+    {
+      "name": "showServerWork",
+      "parameters": [
+        {
+          "name": "label",
+          "required": true,
+          "maxLength": 32
+        }
+      ],
+      "completionState": "server-working",
+      "description": "Describe work before the reply."
+    },
+    {
+      "name": "sendResponse",
+      "parameters": [
+        {
+          "name": "label",
+          "required": true,
+          "maxLength": 32
+        }
+      ],
+      "completionState": "response-arrived",
+      "description": "Follow the reply back to the browser."
+    },
+    {
+      "name": "pause",
+      "parameters": [],
+      "completionState": "unchanged",
+      "description": "Stop motion at the last declared state; repeat a transition to continue."
+    },
+    {
+      "name": "reset",
+      "parameters": [],
+      "completionState": "overview",
+      "description": "Clear labels and return to the overview."
+    }
+  ],
+  "assets": [
+    "README.md"
+  ]
+}

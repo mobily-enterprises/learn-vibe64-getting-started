@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "code": "V64-START-05",
+  "title": "Ask for a first working application",
+  "document": "lesson.md",
+  "prerequisites": [
+    {
+      "code": "V64-START-04"
+    }
+  ],
+  "estimatedMinutes": 20,
+  "visuals": [],
+  "assessments": [
+    {
+      "id": "planned-outcome",
+      "kind": "answer",
+      "required": true,
+      "rubric": "lesson.md#planned-outcome"
+    }
+  ],
+  "exercise": {
+    "kind": "bundled",
+    "source": "../../exercises/checklist-app",
+    "reuse": "sequence",
+    "sequenceId": "first-checklist",
+    "sequenceMode": "create"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "code": "V64-START-01",
+  "title": "Find your way around the workspace",
+  "document": "lesson.md",
+  "prerequisites": [],
+  "estimatedMinutes": 20,
+  "visuals": [
+    {
+      "id": "client-server",
+      "descriptor": "../../visuals/client-server/visual.json"
+    }
+  ],
+  "exercise": {
+    "kind": "bundled",
+    "source": "../../exercises/orientation-app",
+    "reuse": "attempt"
+  },
+  "checks": [
+    {
+      "id": "orientation-response",
+      "file": "../../checks/orientation-app/response.mjs",
+      "assets": [
+        "../../checks/orientation-app/README.md"
+      ]
+    }
+  ],
+  "assessments": [
+    {
+      "id": "workspace-navigation",
+      "kind": "practical",
+      "required": true,
+      "rubric": "lesson.md#workspace-navigation",
+      "evidence": {
+        "producer": "workspace",
+        "operation": "workspace-navigation"
+      }
+    },
+    {
+      "id": "client-role",
+      "kind": "answer",
+      "required": true,
+      "rubric": "lesson.md#client-role"
+    },
+    {
+      "id": "server-role",
+      "kind": "answer",
+      "required": true,
+      "rubric": "lesson.md#server-role"
+    },
+    {
+      "id": "request-response",
+      "kind": "answer",
+      "required": true,
+      "rubric": "lesson.md#request-response"
+    },
+    {
+      "id": "try-the-application",
+      "kind": "practical",
+      "required": true,
+      "rubric": "lesson.md#try-the-application",
+      "evidence": {
+        "producer": "exercise",
+        "operation": "try-the-application",
+        "check": "orientation-response",
+        "explanationRequired": true
+      }
+    },
+    {
+      "id": "return-to-colleague",
+      "kind": "practical",
+      "required": true,
+      "rubric": "lesson.md#return-to-colleague",
+      "evidence": {
+        "producer": "colleague",
+        "operation": "return-to-colleague"
+      }
+    }
+  ]
+}

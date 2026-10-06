@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "code": "V64-START-02",
+  "title": "Know who does what",
+  "document": "lesson.md",
+  "prerequisites": [
+    {
+      "code": "V64-START-01"
+    }
+  ],
+  "estimatedMinutes": 20,
+  "visuals": [],
+  "assessments": [
+    {
+      "id": "planned-outcome",
+      "kind": "answer",
+      "required": true,
+      "rubric": "lesson.md#planned-outcome"
+    }
+  ]
+}

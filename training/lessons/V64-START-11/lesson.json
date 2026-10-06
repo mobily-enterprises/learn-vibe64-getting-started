@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "code": "V64-START-11",
+  "title": "Leave and return",
+  "document": "lesson.md",
+  "prerequisites": [
+    {
+      "code": "V64-START-10"
+    }
+  ],
+  "estimatedMinutes": 20,
+  "visuals": [],
+  "assessments": [
+    {
+      "id": "planned-outcome",
+      "kind": "answer",
+      "required": true,
+      "rubric": "lesson.md#planned-outcome"
+    }
+  ],
+  "exercise": {
+    "kind": "bundled",
+    "source": "../../exercises/checklist-app",
+    "reuse": "sequence",
+    "sequenceId": "first-checklist",
+    "sequenceMode": "continue"
+  }
+}
