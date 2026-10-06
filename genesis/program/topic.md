@@ -10,7 +10,7 @@
 
 ## Public contract
 
-Preview 0.1.3 selects one introduction, V64-START-01. Its three chat quizzes use
+Preview 0.1.4 selects one introduction, V64-START-01. Its three chat quizzes use
 new IDs: help-or-change, preview-purpose and next-step. Earlier networking quiz
 results cannot pass these changed meanings. The three practical contracts remain
 workspace-navigation, try-the-application and return-to-colleague, with the same

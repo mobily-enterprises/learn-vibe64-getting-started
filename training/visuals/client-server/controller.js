@@ -66,7 +66,7 @@ export function mountVisual(svg, port, init) {
     }
     nodes['port-label'].textContent = labels.port; nodes['request-label'].textContent = labels.request;
     nodes['work-label'].textContent = labels.work; nodes['response-label'].textContent = labels.response;
-    nodes.packet.style.transform = state === 'request-arrived' || state === 'server-working' ? 'translate(0px,172px)' : state === 'response-arrived' ? 'translate(156px,0px)' : 'translate(0px,0px)';
+    nodes.packet.style.transform = state === 'request-arrived' || state === 'server-working' ? 'translate(0px,172px)' : state === 'response-arrived' ? 'translate(400px,0px)' : 'translate(0px,0px)';
     nodes.packet.style.opacity = ['request-arrived', 'server-working', 'response-arrived'].includes(state) ? '1' : '0';
     nodes.description.textContent = description();
   }
@@ -114,7 +114,7 @@ export function mountVisual(svg, port, init) {
     const operation = { commandId: message.commandId, input }; active = operation;
     if (!init.reducedMotion && ['sendRequest', 'sendResponse'].includes(message.name)) {
       const request = message.name === 'sendRequest';
-      animation = nodes.packet.animate(request ? [{ transform: 'translate(0px,0px)', opacity: 1 }, { transform: 'translate(0px,172px)', opacity: 1 }] : [{ transform: 'translate(156px,172px)', opacity: 1 }, { transform: 'translate(156px,0px)', opacity: 1 }], { duration: 900, easing: 'ease-in-out' });
+      animation = nodes.packet.animate(request ? [{ transform: 'translate(0px,0px)', opacity: 1 }, { transform: 'translate(0px,172px)', opacity: 1 }] : [{ transform: 'translate(400px,172px)', opacity: 1 }, { transform: 'translate(400px,0px)', opacity: 1 }], { duration: 900, easing: 'ease-in-out' });
       try { await animation.finished; } catch { return; }
       if (active !== operation) return;
       animation = undefined;
