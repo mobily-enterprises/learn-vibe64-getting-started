@@ -4,13 +4,26 @@
 
 - `package.json`
 - `training/outline.md`
+- `training/lessons/V64-START-00/lesson.json`
+- `training/lessons/V64-START-00/lesson.md`
 - `training/lessons/V64-START-01/lesson.json`
 - `training/lessons/V64-START-01/lesson.md`
 - `training/author-template/README.md`
 
 ## Public contract
 
-Preview 0.1.5 selects one introduction, V64-START-01. Its three chat quizzes use
+Preview 0.1.6 selects V64-START-00 before the unchanged introduction,
+V64-START-01. Lesson 0 has no exercise or visual and one safe-ai-setup answer
+assessment. It guides human registration, consent and masked key entry through
+normal AI Accounts controls. Full GLM-4.7 needs paid/entitled regular-API access;
+free GLM-4.7-Flash is a distinct explicit option. Native account/model facts are
+separate from a quiz pass. Main future Senior routing, existing Custom overrides
+and Colleague's own choice retain their original owners and scopes. Missing host
+no-exercise admission or safe account reads remain acceptance blockers, not
+fabricated readiness. Authored ordering adds no silent prerequisite gate or
+replacement of old attempts.
+
+The unchanged introduction's three chat quizzes use
 new IDs: help-or-change, preview-purpose and next-step. Earlier networking quiz
 results cannot pass these changed meanings. The three practical contracts remain
 workspace-navigation, try-the-application and return-to-colleague, with the same
@@ -29,7 +42,7 @@ compact complete reply. Hints match the current navigation substep; supported
 follow-ups still end with an independent reply, preserving the original
 single-message grading boundary.
 
-Public Vibe64 validates and bundles this whole one-lesson topic. The published
+Public Vibe64 validates and bundles this whole two-lesson topic. The published
 lesson selection in a preview does not establish human acceptance, native player
 integration or course availability. The template remains an authoring aid, not
 another learner-facing lesson. Further curriculum is out of scope.
