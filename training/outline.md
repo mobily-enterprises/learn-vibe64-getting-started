@@ -1,6 +1,6 @@
 # Introduction to using Vibe64
 
-Preview 0.1.6 contains Z.AI onboarding followed by the existing introduction, for someone with no coding experience. Allow about ten minutes for onboarding plus registration/access time, then 10–15 minutes for the introduction. The person must be signed in; hosted key management requires the workspace owner. The introduction also requires permission to use its prepared practice project.
+Preview 0.1.7 contains Z.AI onboarding followed by the existing introduction, for someone with no coding experience. Allow about ten minutes for onboarding plus registration/access time, then 10–15 minutes for the introduction. The person must be signed in; hosted key management requires the workspace owner. The introduction also requires permission to use its prepared practice project.
 
 | Code | Lesson | Outcome | Status |
 | --- | --- | --- | --- |

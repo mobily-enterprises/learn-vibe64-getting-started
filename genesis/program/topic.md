@@ -12,7 +12,7 @@
 
 ## Public contract
 
-Preview 0.1.6 selects V64-START-00 before the unchanged introduction,
+Preview 0.1.7 selects unchanged V64-START-00 before the introduction,
 V64-START-01. Lesson 0 has no exercise or visual and one safe-ai-setup answer
 assessment. It guides human registration, consent and masked key entry through
 normal AI Accounts controls. Full GLM-4.7 needs paid/entitled regular-API access;
@@ -23,7 +23,7 @@ no-exercise admission or safe account reads remain acceptance blockers, not
 fabricated readiness. Authored ordering adds no silent prerequisite gate or
 replacement of old attempts.
 
-The unchanged introduction's three chat quizzes use
+The introduction's three chat quizzes use
 new IDs: help-or-change, preview-purpose and next-step. Earlier networking quiz
 results cannot pass these changed meanings. The three practical contracts remain
 workspace-navigation, try-the-application and return-to-colleague, with the same
@@ -46,3 +46,14 @@ Public Vibe64 validates and bundles this whole two-lesson topic. The published
 lesson selection in a preview does not establish human acceptance, native player
 integration or course availability. The template remains an authoring aid, not
 another learner-facing lesson. Further curriculum is out of scope.
+
+The introduction's revised missing/discarded-exercise paragraph offers a fresh
+practice project only after a direct request or accepted offer. Colleague explicitly
+ends the selected active lesson and continues that exact ended pin through the
+host's lesson.continue, even for disabled installed content. It reads the new
+brief for original pass provenance and remaining tasks, preserves the earlier
+project, refuses another active lesson and reports unavailable/uncertain recovery.
+No content-owned replacement implementation is added. This document change creates
+a new lesson hash; old evidence is not silently transferred to the revised version.
+Lesson0, rubrics, assessment IDs, native practical contracts, exercise and SVG are
+unchanged in this revision. Validation does not establish deployed host capability.
