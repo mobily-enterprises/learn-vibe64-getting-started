@@ -1,6 +1,6 @@
 # Introduction to using Vibe64
 
-Preview 0.1.4 contains one complete introduction, for someone with no coding experience. Allow about 10–15 minutes. There are no topic prerequisites; the person must be signed in and permitted to use the prepared practice project.
+Preview 0.1.5 contains one complete introduction, for someone with no coding experience. Allow about 10–15 minutes. There are no topic prerequisites; the person must be signed in and permitted to use the prepared practice project.
 
 | Code | Lesson | Outcome | Status |
 | --- | --- | --- | --- |

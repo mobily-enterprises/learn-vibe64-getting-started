@@ -8,7 +8,7 @@ the coding agent implements changes. The AI-controlled SVG illustrates the real
 Preview action with an accessible animation. Three practical assessments require
 learner-origin evidence rather than teacher demonstrations.
 
-Preview 0.1.4 contains only V64-START-01. Additional lessons are out of this sprint.
+Preview 0.1.5 contains only V64-START-01. Additional lessons are out of this sprint.
 This repository owns the teaching brief, rubrics, prepared exercise, SVG and its
 finite-state controller. Public Vibe64 and Online own installed content, teaching,
 progress, project provisioning and access; validating content does not prove the

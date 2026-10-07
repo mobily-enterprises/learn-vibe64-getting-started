@@ -65,12 +65,12 @@ Preserve the learner's admitted answer excerpts, grading reasons and assistance.
 
 Ask one task at a time: “Find our practice project.” Then: “Find its coding conversation.” Finally: “Open where you can try the application.” Pass when learner gestures at native controls settle on the correct project, coding conversation and Preview with limited help. Record assistance. Teacher navigation alone, automatic route restoration or an unrelated project cannot pass. Required producer: `workspace`, operation `workspace-navigation`.
 
-First hint: “Look for where you can try the application.” If a demonstration is needed, finish it before issuing a fresh independent challenge: the learner selects the practice project, reveals its Main coding conversation, then selects Preview. Keep that one new question across all three moves; the demonstrated move does not count. If settled learner observations are unavailable, leave the check incomplete and explain the missing evidence; no alternative producer is approved.
+Hint only the current move: for the project, “Open the project selector and choose our practice project”; for its coding conversation, “Choose its session tab or Show chat to reveal Main”; for Preview, “Open where you can try the application.” Wait for that move before coaching the next. If a demonstration is needed, finish it before issuing a fresh independent challenge: the learner selects the practice project, reveals its Main coding conversation, then selects Preview. Keep that one new question across all three moves; the demonstrated move does not count. If settled learner observations are unavailable, leave the check incomplete and explain the missing evidence; no alternative producer is approved.
 
 <a id="help-or-change"></a>
 ### Ask for help or a change
 
-Ask: “You want the greeting changed to Welcome. How could you ask for that?” Pass when the answer understands that Colleague can discuss, operate Vibe64 and delegate the request, while a coding agent implements the change. Asking the coding agent directly is also valid. “I'd ask Colleague to get the coding agent to change it” is enough. If they name just one agent, acknowledge that valid way of asking, then use a short follow-up to establish the other role. Judge the meaning, not whether they remembered an agent's name.
+Ask: “Who could help you find Preview, and how could you get the greeting changed to Welcome?” Invite one short reply covering both situations. Pass when the answer understands that Colleague can discuss, operate Vibe64 and delegate the request, while a coding agent implements the change. Asking the coding agent directly is also valid. “I'd ask Colleague to get the coding agent to change it” is enough. If they name just one agent, acknowledge that valid way of asking, then use a short follow-up to establish the other role. Judge the meaning, not whether they remembered an agent's name.
 
 Plausible incomplete answers: “I'll type it into Preview” mistakes the application for a chat; “Talking about it changes it” misses implementation; “I must always open the coding chat myself” misses Colleague's coordination. Explain only the missing distinction.
 
@@ -88,7 +88,7 @@ A proxy load, iframe readiness, diagram packet, teacher click or unverified brow
 <a id="preview-purpose"></a>
 ### Know where to try the result
 
-Ask: “The agent says the application is ready. Where would you try it?” Pass when the learner identifies Preview as where to use the running application and observe its behaviour. “Open Preview and try the button” is enough. If needed, ask “What would you look for there?” to establish that they would observe the result.
+Ask: “The agent says the application is ready. Where would you try it, and what would you look for?” Pass when the learner identifies Preview as where to use the running application and observe its behaviour. “Open Preview and try the button” is enough. If needed, ask “What would you look for there?” to establish that they would observe the result.
 
 Plausible incomplete answers: “The animated picture proves it works” confuses illustration with action; “The agent said it works, so we're done” skips trying it; “I'll ask Colleague to describe it” can help but is not a check of the app.
 
@@ -99,7 +99,7 @@ If their answer is split across follow-ups, prepare a fresh independent question
 <a id="next-step"></a>
 ### Give a useful next request
 
-Use the learner's own just-observed result. After success, ask: “You just saw Hello from the server! If you wanted Welcome instead, what would you ask?” Substitute their actual observation rather than inventing success. Pass on a useful request containing what they tried, what happened and what they want changed. For example: “I pressed Ask the server in Preview and saw Hello from the server. Please change that greeting to Welcome.” Then ask separately, “How would you check the change?” The learner should try the button in Preview again and compare the result with the requested words.
+Use the learner's own just-observed result. After success, ask: “You just saw Hello from the server! What would you tell the agent to get Welcome instead, and how would you check it?” Invite one short reply about what they tried, what they saw, the change they want and how they would check it. Substitute their actual observation rather than inventing success. Pass on a useful request containing what they tried, what happened and what they want changed. For example: “I pressed Ask the server in Preview and saw Hello from the server. Please change that greeting to Welcome.” The same reply should explain that they would try the button in Preview again and compare the result with the requested words.
 
 If the real press failed, ask instead: “You pressed the button and saw [their actual failure]. What would you tell Colleague or the coding agent?” Pass on the tried action, observed failure and expected result, such as a greeting. Keep the practical task incomplete until genuine recovery and a new successful press. Do not fabricate a failure for this variant.
 

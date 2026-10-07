@@ -1,4 +1,4 @@
-# Introduction to using Vibe64 — topic preview 0.1.4
+# Introduction to using Vibe64 — topic preview 0.1.5
 
 Canonical topic source for `mobily-enterprises/learn-vibe64-getting-started`. Repository metadata names the destination; no remote publication is implied.
 
@@ -25,7 +25,7 @@ Read lesson 01 as the worked example. Its three quiz IDs assess using Vibe64: `h
 
 Use the [lesson author template](training/author-template/README.md) when authoring separate future material. This preview has no planned continuation or checklist exercise sequence. Declare all local assets, assessment anchors, practical producers and executable checks; use normal application Genesis contracts.
 
-From this topic root, validate with `vibe64 training validate .`. To bundle, use `vibe64 training bundle . ../getting-started-preview-bundle` with a new output directory outside this source. Public Vibe64's `docs/training-content.md` describes the format and CLI; this topic has no second validator or publishing system. This 0.1.4 source revision fits the whole diagram into a narrow Preview, requires a fresh complete navigation challenge after a demonstration, and distinguishes Main chat from the Colleague launcher on phones. It does not replace previously pinned 0.1.1, 0.1.2 or 0.1.3 content or enable a new course release. Source changes require new validation, immutable pins and human review before offering the changed content. Repository publication and catalogue/course locking are separate operations.
+From this topic root, validate with `vibe64 training validate .`. To bundle, use `vibe64 training bundle . ../getting-started-preview-bundle` with a new output directory outside this source. Public Vibe64's `docs/training-content.md` describes the format and CLI; this topic has no second validator or publishing system. This 0.1.5 source revision asks for complete useful quiz answers from the outset and gives navigation hints for the current project, Main chat or Preview step. It retains the compact diagram, independent navigation challenge and dedicated Colleague launcher on phones. It does not replace previously pinned 0.1.1, 0.1.2, 0.1.3 or 0.1.4 content or enable a new course release. Source changes require new validation, immutable pins and human review before offering the changed content. Repository publication and catalogue/course locking are separate operations.
 
 Trial the pinned preview on desktop and phone, including plausible wrong answers, hints, setup failure, interruption, text-only mode and returning after leaving. Author-preview results must not become published learner progress. Keep learner records, credentials, runtime logs and generated output out of Git; local evidence belongs under ignored `.local/`.
 
