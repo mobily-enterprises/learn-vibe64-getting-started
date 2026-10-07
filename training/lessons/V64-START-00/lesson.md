@@ -20,13 +20,15 @@ This lesson uses the **regular Z.AI API through OpenCode**. A **Personal Coding 
 
 Guide the learner to **AI Accounts** in Management. Colleague can open that page through its supported navigation action when requested; opening a page changes no settings. A hosted workspace owner can manage AI connections. If the learner is a member without that permission, explain the restriction and ask them to involve the owner; do not try another account or bypass the control.
 
-Choose **Connect regular Z.AI API**. The existing setup includes **Create a regular Z.AI API key**, which opens Z.AI's key-management site in another tab. On a phone the Vibe64 setup dialog can fill the screen; scroll it to the same controls. Minimise Colleague if necessary, then use its own launcher to return. **Show chat** opens Main coding chat, not Colleague.
+Choose **Connect regular Z.AI API** when that shortcut is visible. An existing Coding Plan connection can hide it even when the regular API is not connected. In that case, choose **Add connection**, then **Choose provider** on the **OpenCode** card. Wait for the actual catalogue, search **Search OpenCode providers** for “Z.AI”, and choose the regular **Z.AI** row (`zai`), not **Z.AI Coding Plan**. The key editor heading is **Connect regular Z.AI API**.
+
+The starter/onboarding setup offers **Create a regular Z.AI API key**. The generic provider editor does not have that button; use the same [Z.AI API key-management page](https://z.ai/manage-apikey/apikey-list) instead. Both paths lead to human registration and key creation outside Vibe64. On a phone the setup dialog can fill the screen; scroll it to the same controls. Minimise Colleague if necessary, then use its own launcher to return. **Show chat** opens Main coding chat, not Colleague.
 
 ## Register and create the key — the person does this
 
 Follow [Z.AI's official getting-started instructions](https://docs.z.ai/guides/overview/quick-start): register or sign in, open API key management and create a key. Complete the provider's actual verification and consent steps. If a paid model needs credit, inspect Billing yourself; creating a key does not require agreeing to a purchase in this lesson.
 
-Suggested invitation: “Open Create a regular Z.AI API key. Finish Z.AI's sign-in steps and create your key there. Keep it private; we'll paste it into Vibe64's API key field, not this chat.” Wait while the person uses the external site. Do not ask them to read out a code or secret, open a shell, or send a screenshot of the key. Colleague has no source, shell or screenshot access for these steps.
+Suggested invitation: “Open Z.AI's key page using the setup button or the link above. Finish Z.AI's sign-in steps and create your key there. Keep it private; we'll paste it into Vibe64's API key field, not this chat.” Wait while the person uses the external site. Do not ask them to read out a code or secret, open a shell, or send a screenshot of the key. Colleague has no source, shell or screenshot access for these steps.
 
 Return to Vibe64's setup dialog. Paste the key into the masked **API key** field. Press **Verify and connect**; on the initial onboarding surface the label is **Verify key and start Vibe64**. The existing verifier makes a tiny GLM-4.7 Flash request on the regular API before saving. This checks that route/key; it does not prove entitlement to full GLM-4.7.
 
