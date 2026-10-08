@@ -12,8 +12,9 @@ the coding agent implements changes. The AI-controlled SVG illustrates the real
 Preview action with an accessible animation. Three practical assessments require
 learner-origin evidence rather than teacher demonstrations.
 
-Preview 0.1.7 keeps prerequisite V64-START-00 and refines V64-START-01 recovery:
-Colleague offers a fresh exercise after a missing/discarded project, using the
+Preview 0.1.8 clarifies the Main teacher/general Colleague roles and one-step
+pacing while retaining prerequisite V64-START-00 and V64-START-01 recovery:
+The teacher offers a fresh exercise after a missing/discarded project, using the
 learner's explicitly ended original pin and retained valid passes. It does not
 silently replace an active attempt, delete old work or select newer content.
 The revised introduction has a new exact hash; old learners retain their pins.
@@ -22,3 +23,5 @@ This repository owns the teaching brief, rubrics, prepared exercise, SVG and its
 finite-state controller. Public Vibe64 and Online own installed content, teaching,
 progress, project provisioning and access; validating content does not prove the
 native lesson experience or award a learner pass.
+
+Main Learning teaches on the left; general Colleague supervises on the right. The original Colleague leave/restore practical remains genuine general-helper work, with no Main-hide substitution. Original descriptor/rubric/exercise/visual contracts stay byte-identical; hosted Main practical/player coordination and real learner trials remain separate acceptance requirements.

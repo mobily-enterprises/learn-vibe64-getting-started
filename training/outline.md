@@ -1,6 +1,6 @@
 # Introduction to using Vibe64
 
-Preview 0.1.7 contains Z.AI onboarding followed by the existing introduction, for someone with no coding experience. Allow about ten minutes for onboarding plus registration/access time, then 10–15 minutes for the introduction. The person must be signed in; hosted key management requires the workspace owner. The introduction also requires permission to use its prepared practice project.
+Preview 0.1.8 contains Z.AI onboarding followed by the existing introduction, for someone with no coding experience. Allow about ten minutes for onboarding plus registration/access time, then 10–15 minutes for the introduction. The person uses this installation’s normal access controls and signs in when required; hosted key management requires the workspace owner. The introduction also requires permission to use its prepared practice project.
 
 | Code | Lesson | Outcome | Status |
 | --- | --- | --- | --- |
@@ -9,6 +9,8 @@ Preview 0.1.7 contains Z.AI onboarding followed by the existing introduction, fo
 
 Lesson 0 has one answer assessment and no exercise. Registration, secret entry and paid-access consent are human steps. Its quiz verifies understanding, not account or model readiness; supported native reads verify those facts separately. This list orders onboarding first without silently blocking or repinning an existing introduction attempt.
 
-In Lesson 1, Colleague prepares a disposable practice project using the existing orientation application. The learner presses its real button and reads its response. Afterwards, Colleague controls an SVG to illustrate that action, adjusting the explanation to the conversation. Three short questions are answered in chat; three practical checks require the learner's actual application actions.
+In Lesson 1, the original preparation owner supplies a disposable practice project using the existing orientation application. The learner presses its real button and reads its response. Afterwards, the Main Learning teacher controls an SVG to illustrate that action, adjusting the explanation to the conversation. Three short questions are answered in chat; three practical checks require the learner's actual application actions.
 
 The introduction ends with a useful habit: ask for help or a change, try the result in Preview, then say what you tried, what happened and what you expected. These two lessons are the complete curriculum for this preview. No further lesson is promised. Release and pilot acceptance remain separate from this source's published lesson status.
+
+The Main Learning conversation teaches both lessons; Colleague stays the general supervisor. The final practical uses the real Colleague drawer’s leave/restore controls while retaining the Main lesson. Original evidence contracts, all six introduction assessments and installed historical pins stay unchanged.

@@ -6,13 +6,27 @@ Suggested welcome: “Let's try a little application together. You'll press a bu
 
 Offer text, voice or both. Choosing audio is not assessed. Give the learner the small goal first: try the app, notice its result, then tell an agent what they would like next. Ask one short question at a time, wait for the learner's answer, and make room for their questions. Everyday language is enough; do not require technical vocabulary. Silence, unsent speech and a teacher's paraphrase are not answers.
 
-Success means the learner can find the project, coding conversation and Preview; distinguish help from an application change; press the real application's button and describe the result; make a useful follow-up request; and return to the same Colleague task. All six declared assessments are required. Watching a demonstration does not complete a practical task.
+Success means the learner can find the project, coding conversation and Preview; distinguish help from an application change; press the real application's button and describe the result; make a useful follow-up request; and return to the same general Colleague helper. All six declared assessments are required. Watching a demonstration does not complete a practical task.
+
+## A simple rhythm
+
+The Main Learning conversation teaches this lesson. The general Colleague drawer
+helps you operate Vibe64 and can coordinate changes to a project. Introduce this
+difference in one sentence, then begin the real task rather than explaining every
+control at once. Keep each spoken explanation to one small idea: invite an action,
+wait, acknowledge what actually happened, and ask the next short question.
+
+If the learner is unsure, say “We can take this one step at a time.” Name one
+useful thing they have done before offering the next hint. For a wrong answer,
+explain the missing distinction with their own observation, then invite a small
+independent retry. Do not praise an unconfirmed action as completed or make them
+repeat a correct answer in technical words.
 
 ## Prepare the practice project
 
-Assume the learner is signed in, can use Colleague and has permission for approved training projects. No GitHub account, project-owner privilege or previous coding knowledge is required. Use the installed, pinned preview topic and its bundled orientation application.
+Confirm the learner can use the Main Learning teacher and general Colleague helper and has permission for approved training projects. Sign in when this installation requires it. No GitHub account, project-owner privilege or previous coding knowledge is required. Use the installed, pinned preview topic and its bundled orientation application.
 
-Colleague uses the approved lesson-start operation to prepare the disposable project and session, then opens that actual project. Wait for genuine native setup and Preview readiness. Setup and launch use the exercise's Genesis contracts, with no separate lesson launcher. Explain failures and retry through supported operations; a drawing cannot replace a failed application.
+Use the original lesson-start operation to prepare the disposable project and session, then open that actual project. The Main Learning teacher guides this saved lesson; Colleague remains the separate general supervisor. Wait for genuine native setup and Preview readiness. Setup and launch use the exercise's Genesis contracts, with no separate lesson launcher. Explain failures and retry through supported operations; a drawing cannot replace a failed application.
 
 Explain that learning progress is retained outside the practice project. A request to begin this introduction authorises its bounded practice setup. A question about course coverage alone does not authorise project creation. Unrelated edits and publication require their own request.
 
@@ -20,13 +34,15 @@ Explain that learning progress is retained outside the practice project. A reque
 
 Introduce only the locations needed now. “The **project** holds our application's work. Its **coding conversation** is where a coding agent works on changes. **Colleague** helps you use Vibe64, explains things and can coordinate a coding agent for you. **Preview** is where you try the running application.” A session keeps the project's current working conversation; the learner need not memorise this term.
 
-Show the current project and point out the actual controls. On desktop, point out the project switcher and **Preview** tab where present; **Collapse chat** makes more room for the project and **Show chat** brings its coding conversation back. On mobile, **Show project** returns from Main coding chat to the workspace and **Show chat** brings Main back, not Colleague; **Show preview controls** expands the Preview toolbar. If output settings are needed, use **Preview options** and **Run**. Colleague inspects current state and waits for readiness before claiming the app is running.
+Show the current project and point out the actual controls. On desktop, point out the project switcher and **Preview** tab where present; **Collapse chat** makes more room for the project and **Show chat** brings its coding conversation back. On mobile, **Show project** returns from Main coding chat to the workspace and **Show chat** brings Main back, not Colleague; **Show preview controls** expands the Preview toolbar. If output settings are needed, use **Preview options** and **Run**. The teacher checks current state and waits for readiness before claiming the app is running.
 
 For Colleague itself, its visible avatar launcher opens the conversation. Type in the shared message box, or use **Talk** to speak in that same chat. Opening the conversation does not start the microphone. The separate speaker control chooses spoken replies independently: you can speak and read silently, or type and hear replies. **Minimize conversation** hides the conversation; the visible Colleague launcher restores it. This is different from minimising the avatar alone, which does not leave the conversation. Use the actual visible controls for this device and host. Browser permissions and sign-in still require the person’s interaction.
 
+When a workspace task needs the practice project’s coding conversation, open its Working view and actual session. Return to Learning for the teacher’s question; changing views keeps the lesson and background work. Use the host’s actual Working/Learning control rather than opening a new conversation.
+
 After a brief demonstration, let the learner find each location themselves, one at a time. Say why each move helps: the coding conversation is where changes happen; Preview is where they will press the button. Avoid making every navigation decision for them.
 
-Keep one issued `workspace-navigation` question for the whole project → coding conversation → Preview challenge. Coach one move at a time without preparing a replacement question between moves; all three observations must belong to that same challenge. Selecting the practice project that is already current is enough for the first move. On a phone, give the task before minimising Colleague, let the learner use the workspace, and wait for their return; do not ask several questions while the conversation is hidden.
+Keep one issued `workspace-navigation` question for the whole project → coding conversation → Preview challenge. Coach one move at a time without preparing a replacement question between moves; all three observations must belong to that same challenge. Selecting the practice project that is already current is enough for the first move. On a phone, give the task before the learner opens the workspace, then wait for their return to this Learning conversation. Keep the same question while the chat is hidden; do not send more questions ahead of them.
 
 ## Who can help?
 
@@ -40,21 +56,33 @@ Ask the `help-or-change` question below before continuing. Support a partial ans
 
 Suggested invitation: “Open Preview and press **Ask the server**. What message appears?” Wait for the learner's actual press. The page briefly shows “Asking the server…” and then **Hello from the server!**, with a request reference. Ask them to describe what happened in their own words.
 
-Acknowledge what they actually observed before explaining it: “You tried the app and saw its greeting.” Do not require them to read or remember the request reference. One useful explanation is: “The button in Preview asked the application's running program for a greeting, and the page displayed its reply.” Keep this tied to the result they saw. The greeting comes from a real server; Colleague did not type it into Preview.
+Acknowledge what they actually observed before explaining it: “You tried the app and saw its greeting.” Do not require them to read or remember the request reference. One useful explanation is: “The button in Preview asked the application's running program for a greeting, and the page displayed its reply.” Keep this tied to the result they saw. The greeting comes from a real server; the teacher did not type it into Preview.
 
-A second press makes a fresh request. If Colleague demonstrates, the learner must then make a fresh independent press. If the page reports a changed server instance, **Ask the server** stays disabled: use **Reload preview**, then press again. **Restart preview** starts the application again; **Reload preview** refreshes its page. Explain actual startup errors and use **Show run output** when needed. Infrastructure failures are not learner failures.
+A second press makes a fresh request. If the teacher demonstrates, the learner must then make a fresh independent press. If the page reports a changed server instance, **Ask the server** stays disabled: use **Reload preview**, then press again. **Restart preview** starts the application again; **Reload preview** refreshes its page. Explain actual startup errors and use **Show run output** when needed. Infrastructure failures are not learner failures.
 
 ## Show what just happened
 
 After the learner's successful real Preview action, show the declared `client-server` SVG when its supported presentation is available. Tell them that they are now looking at an explanation of the app they just tried, rather than the app itself. Use the host's actual controls; do not invent a presentation switch or claim the SVG opened without acknowledgement. Suggested explanation: “This picture shows the action you just tried. Your page asked for the greeting, the application prepared it, and the reply came back to the page.” If the real action failed, explain its observed failure and recover before illustrating a successful reply.
 
-Keep the illustration to three short beats linked to their action: “You pressed the button”; “The practice app prepared a greeting”; “You saw its reply.” Colleague controls it as part of the conversation: use `showOverview`, optionally `highlightClient`, then `sendRequest` with `method: POST` and `path: /api/greeting`; use `showServerWork` with `label: Prepare a greeting`, then `sendResponse` with `label: Hello from the server!`. Pause between beats if the learner has a question. Say “Ask me to pause the diagram.” Use the declared `pause` command and verify its receipt; do not suggest a player Pause button. **Minimise presentation** hides and pauses the diagram through the host checkpoint flow. To return to the conversation, use Colleague’s own avatar launcher, not Main’s **Show chat**. Reset and replay when they ask. Keep labels short and display-only. The method/path are display details, not vocabulary to teach or assess. No port explanation is needed for this introduction.
+Keep the illustration to three short beats linked to their action: “You pressed the button”; “The practice app prepared a greeting”; “You saw its reply.” The Main Learning teacher controls it as part of the conversation: use `showOverview`, optionally `highlightClient`, then `sendRequest` with `method: POST` and `path: /api/greeting`; use `showServerWork` with `label: Prepare a greeting`, then `sendResponse` with `label: Hello from the server!`. Pause between beats if the learner has a question. Say “Ask me to pause the diagram.” Use the declared `pause` command and verify its receipt; do not suggest a player Pause button. **Minimise presentation** hides and pauses the diagram through the host checkpoint flow. Return to the same Main Learning conversation after viewing the diagram. Colleague’s avatar launcher opens the separate general helper. Reset and replay when they ask. Keep labels short and display-only. The method/path are display details, not vocabulary to teach or assess. No port explanation is needed for this introduction.
 
 Wait for each command's completed acknowledgement before describing its result. Acceptance alone does not prove completion; report a failure honestly. Reduced motion uses the same labelled states without travelling animation. Text equivalent: “You pressed the button. The page asked the running application for a greeting. The application replied, and you read that reply in Preview.” If the SVG fails, use this text and retry the player; conceptual questions can continue, but controlled-animation pilot acceptance remains unproved.
 
-Before issuing a diagram cue, explain the next step in the conversation: with sound off, press **Continue**, watch the short transition finish, then return to Colleague and say “ready” or ask a question. Finish the diagram before hiding it to return to chat on a phone. The **Continue** button plays the illustration; it does not send a chat message or start another teacher reply. Keep the cue's final explanation separate from this instruction and from the next assessment question. After the learner returns, read the actual completion before continuing; their “ready” alone is not proof of playback.
+Before issuing a diagram cue, explain the next step in the conversation: with sound off, press **Continue**, watch the short transition finish, then return to the Main Learning teacher and say “ready” or ask a question. Finish the diagram before hiding it to return to chat on a phone. The **Continue** button plays the illustration; it does not send a chat message or start another teacher reply. Keep the cue's final explanation separate from this instruction and from the next assessment question. After the learner returns, read the actual completion before continuing; their “ready” alone is not proof of playback.
 
 When the learner wants to try the button again, return to the actual application using the host's supported controls. Pause visual-dependent explanation while the illustration is hidden, especially on a phone; keep the pending question for their return. The illustration is not the running application and never counts as a practical interaction. It cannot operate editor controls or report assessment success. Ask the `preview-purpose` and `next-step` questions separately after this explanation.
+
+## Practise returning to the general helper
+
+For the final practical, keep this Main lesson and its pending question saved.
+Open the general Colleague drawer, use its **Minimize conversation** control,
+perform the requested workspace action, and restore that same Colleague with
+its avatar launcher. Then return to this Learning conversation for the teacher’s
+feedback. This practises getting back to the general supervisor while a task is
+still in progress. Keep the exact existing Colleague leave/use/restore observation
+and retained-question contract for `return-to-colleague`; hiding Main alone does
+not perform that task. A teacher demonstration still needs an independent learner
+attempt, and missing observations leave the task incomplete.
 
 ## Questions, practical rubrics and hints
 

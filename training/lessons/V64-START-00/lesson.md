@@ -8,11 +8,28 @@ Use text, voice or both. Ask for one small step, wait, then continue. No coding,
 
 There are two separate outcomes: understanding safe setup, assessed by one short answer, and actual account/model readiness, checked through the existing native owners. A correct answer does not prove that a key was saved, payment is available or a model is connected. An unconfirmed connection remains unconfirmed.
 
+## Keep setup comfortable
+
+This Main Learning conversation is your teacher. Colleague remains the general
+helper for using Vibe64 and coordinating coding work. Keep this lesson open while
+the person completes account setup or asks Colleague for help, then return to the
+same saved lesson. Changing a future coding default does not change a model that
+is already teaching a running turn.
+
+Teach setup in five small stages: explain the requested model and its access;
+open the account controls; let the person create and enter their private key;
+check the actual connection; then review the requested future Main default.
+Give only the next action, wait for its result, and explain any error before moving
+on. A useful check-in is “What does the screen say now?” Ask for a control label
+or error with secrets omitted. Do not quiz the learner at every click or give the
+whole setup procedure in one spoken reply. The single safe-setup question below
+checks their understanding after the walkthrough.
+
 ## Explain the choices first
 
 “Z.AI supplies the model; Vibe64 is where we'll use it. An API key lets Vibe64 access your Z.AI account. Treat it like a password.” Never request the key in chat, even a few characters. Never put it in lesson answers, screenshots, source files or project settings.
 
-The requested **GLM-4.7** uses paid regular-API credit. **GLM-4.7-Flash** is a different model, currently listed as free. Registration and creating a key do not themselves grant paid-model access. Check [Z.AI's current pricing](https://docs.z.ai/guides/overview/pricing) before choosing paid use; these facts were checked on 7 October 2026. Do not promise that full GLM-4.7 is free or that Flash is the same model. If the learner prefers the free option, explain it and wait for an explicit choice rather than silently substituting it.
+The requested **GLM-4.7** uses paid regular-API credit. **GLM-4.7-Flash** is a different model, currently listed as free. Registration and creating a key do not themselves grant paid-model access. Check [Z.AI's current pricing](https://docs.z.ai/guides/overview/pricing) before choosing paid use; these facts were checked on 8 October 2026. Do not promise that full GLM-4.7 is free or that Flash is the same model. If the learner prefers the free option, explain it and wait for an explicit choice rather than silently substituting it.
 
 This lesson uses the **regular Z.AI API through OpenCode**. A **Personal Coding Plan** is a separate subscription route with different access and quota. Do not redirect a regular-key learner into the Coding Plan setup or claim that its quota covers the regular API. The person decides about payment, purchases, provider consent and paid-model access.
 
@@ -22,7 +39,7 @@ Guide the learner to **AI Accounts** in Management. Colleague can open that page
 
 Choose **Connect regular Z.AI API** when that shortcut is visible. An existing Coding Plan connection can hide it even when the regular API is not connected. In that case, choose **Add connection**, then **Choose provider** on the **OpenCode** card. Wait for the actual catalogue, search **Search OpenCode providers** for “Z.AI”, and choose the regular **Z.AI** row (`zai`), not **Z.AI Coding Plan**. The key editor heading is **Connect regular Z.AI API**.
 
-The starter/onboarding setup offers **Create a regular Z.AI API key**. The generic provider editor does not have that button; use the same [Z.AI API key-management page](https://z.ai/manage-apikey/apikey-list) instead. Both paths lead to human registration and key creation outside Vibe64. On a phone the setup dialog can fill the screen; scroll it to the same controls. Minimise Colleague if necessary, then use its own launcher to return. **Show chat** opens Main coding chat, not Colleague.
+The starter/onboarding setup offers **Create a regular Z.AI API key**. The generic provider editor does not have that button; use the same [Z.AI API key-management page](https://z.ai/manage-apikey/apikey-list) instead. Both paths lead to human registration and key creation outside Vibe64. On a phone the setup dialog can fill the screen; scroll it to the same controls. Keep the Learning conversation saved while you use the account controls. If Colleague is open, minimise its drawer when you need the space; its avatar launcher restores that separate helper. Return to Learning to continue this lesson. Use the actual controls offered by the host on this device.
 
 ## Register and create the key — the person does this
 
@@ -36,7 +53,7 @@ Wait for the saved connection state. A failed or interrupted check is not succes
 
 ## Check access before choosing full GLM-4.7
 
-After the person returns, use supported native account and model reads to check the saved regular Z.AI connection and the exact available models for this actor. Do not infer success from “done”, a screenshot, the teacher's description or a provider's name. If that read is unavailable, explain that readiness has not been confirmed and let the person inspect the actual connected row. Do not invent a receipt or pass.
+After the person returns, check the saved regular Z.AI connection and exact available models through the supported account and model owners. Colleague can help with its authorized product checks when the person asks. The teacher must use confirmed account facts, not treat a second assistant’s unverified summary as a connection receipt. Do not infer success from “done”, a screenshot, the teacher's description or a provider's name. If that read is unavailable, explain that readiness has not been confirmed and let the person inspect the actual connected row. Do not invent a receipt or pass.
 
 Vibe64's regular Z.AI starter recommends **GLM-4.7 Flash**. It can become the preferred OpenCode connection and show **Default** after key verification. That badge does not mean full GLM-4.7 was selected, and it does not overwrite saved Main routing or Colleague's current model.
 
