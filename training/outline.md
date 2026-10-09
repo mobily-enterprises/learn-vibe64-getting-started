@@ -1,10 +1,10 @@
 # Introduction to using Vibe64
 
-Preview 0.1.9 contains Z.AI onboarding followed by the existing introduction, for someone with no coding experience. Allow about ten minutes for onboarding plus registration/access time, then 10–15 minutes for the introduction. The person uses this installation’s normal access controls and signs in when required; hosted key management requires the workspace owner. The introduction also requires permission to use its prepared practice project.
+Preview 0.1.10 contains Z.AI onboarding followed by the existing introduction, for someone with no coding experience. Allow about ten minutes for onboarding plus registration/access time, then 10–15 minutes for the introduction. The person uses this installation’s normal access controls and signs in when required; hosted key management requires the workspace owner. The introduction also requires permission to use its prepared practice project.
 
 | Code | Lesson | Outcome | Status |
 | --- | --- | --- | --- |
-| V64-START-00 | Connect your AI | Register with Z.AI, enter a regular API key safely, verify actual access and choose the requested future Main GLM-4.7 default when entitled; distinguish paid full 4.7, free Flash and Colleague's separate choice. | Published in preview; host acceptance pending |
+| V64-START-00 | Connect your AI | Register with Z.AI, enter a regular API key safely, verify actual access and choose the requested future OpenCode Senior GLM-4.7 default when entitled; distinguish paid full 4.7, free Flash and Colleague's separate choice. | Published in preview; host acceptance pending |
 | V64-START-01 | Your first steps in Vibe64 | Find the workspace, ask for help or a change, try the real application in Preview, report what happened, and return to the same Colleague conversation. | Published in preview |
 
 Lesson 0 has one answer assessment and no exercise. Registration, secret entry and paid-access consent are human steps. Its quiz verifies understanding, not account or model readiness; supported native reads verify those facts separately. This list orders onboarding first without silently blocking or repinning an existing introduction attempt.
@@ -13,4 +13,4 @@ In Lesson 1, the original preparation owner supplies a disposable practice proje
 
 The introduction ends with a useful habit: ask for help or a change, try the result in Preview, then say what you tried, what happened and what you expected. These two lessons are the complete curriculum for this preview. No further lesson is promised. Release and pilot acceptance remain separate from this source's published lesson status.
 
-The Main Learning conversation teaches both lessons; Colleague stays the general supervisor. The final practical uses the real Colleague drawer’s leave/restore controls while retaining the Main lesson. Original evidence contracts, all six introduction assessments and installed historical pins stay unchanged.
+The Main Learning conversation teaches both lessons; new Learning conversations start with the configured Junior model, selectable through Chat mode, while Resume retains the saved choice. Lesson 0's future OpenCode Senior routing does not change Junior or Colleague. Colleague stays the general supervisor. The final practical uses the real Colleague drawer’s leave/restore controls while retaining the Main lesson. Original evidence contracts, all six introduction assessments and installed historical pins stay unchanged.

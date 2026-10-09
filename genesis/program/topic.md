@@ -12,16 +12,24 @@
 
 ## Public contract
 
-Preview 0.1.9 selects V64-START-00 before the introduction,
+Preview 0.1.10 selects V64-START-00 before the introduction,
 V64-START-01. Lesson 0 has no exercise or visual and one safe-ai-setup answer
 assessment. It guides human registration, consent and masked key entry through
 normal AI Accounts controls. Full GLM-4.7 needs paid/entitled regular-API access;
 free GLM-4.7-Flash is a distinct explicit option. Native account/model facts are
-separate from a quiz pass. Main future Senior routing, existing Custom overrides
+separate from a quiz pass. Future OpenCode Senior routing, configured Junior Learning teachers, existing Custom overrides
 and Colleague's own choice retain their original owners and scopes. Missing host
 no-exercise admission or safe account reads remain acceptance blockers, not
 fabricated readiness. Authored ordering adds no silent prerequisite gate or
 replacement of old attempts.
+
+New Learning conversations start in configured Junior mode. The existing Chat
+mode controls retain Senior, Junior and Custom selection; Resume keeps the saved
+choice. A Senior-only routing request changes neither Junior nor the current
+Custom teacher. A separately requested shared Junior change affects ordinary
+Junior coding too. This 0.1.10 clarification changes Lesson 0 and its exact quiz
+wording/hash; all descriptors and Lesson 1 content remain unchanged from 0.1.9.
+Old installed pins, prepared questions, answers and passes are not rewritten.
 
 The introduction's three chat quizzes use
 new IDs: help-or-change, preview-purpose and next-step. Earlier networking quiz
@@ -46,7 +54,7 @@ The same Learning Main stays selected while Practice project, its session tab or
 Show chat, and App preview supply those native moves. Switching to Working retires
 the active Main observation controls and cannot record this practical. This 0.1.9
 wording correction retains the complete rubrics, descriptors, exercise/check and
-SVG/controller bytes; Lesson 0 is unchanged and earlier installed pins remain intact.
+SVG/controller bytes; that release left Lesson 0 unchanged and earlier installed pins intact.
 
 Public Vibe64 validates and bundles this whole two-lesson topic. The published
 lesson selection in a preview does not establish human acceptance, native player
