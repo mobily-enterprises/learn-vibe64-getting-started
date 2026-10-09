@@ -12,12 +12,14 @@ the coding agent implements changes. The AI-controlled SVG illustrates the real
 Preview action with an accessible animation. Three practical assessments require
 learner-origin evidence rather than teacher demonstrations.
 
-Preview 0.1.8 clarifies the Main teacher/general Colleague roles and one-step
+Preview 0.1.9 clarifies the Main teacher/general Colleague roles and one-step
 pacing while retaining prerequisite V64-START-00 and V64-START-01 recovery:
 The teacher offers a fresh exercise after a missing/discarded project, using the
 learner's explicitly ended original pin and retained valid passes. It does not
 silently replace an active attempt, delete old work or select newer content.
 The revised introduction has a new exact hash; old learners retain their pins.
+Its practical tasks keep the same Learning Main selected while using the saved
+Practice project and App preview controls, preserving the active observation owner.
 Additional lessons are out of this sprint.
 This repository owns the teaching brief, rubrics, prepared exercise, SVG and its
 finite-state controller. Public Vibe64 and Online own installed content, teaching,

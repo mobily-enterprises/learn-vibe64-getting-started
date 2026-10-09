@@ -12,7 +12,7 @@
 
 ## Public contract
 
-Preview 0.1.8 selects V64-START-00 before the introduction,
+Preview 0.1.9 selects V64-START-00 before the introduction,
 V64-START-01. Lesson 0 has no exercise or visual and one safe-ai-setup answer
 assessment. It guides human registration, consent and masked key entry through
 normal AI Accounts controls. Full GLM-4.7 needs paid/entitled regular-API access;
@@ -42,6 +42,12 @@ compact complete reply. Hints match the current navigation substep; supported
 follow-ups still end with an independent reply, preserving the original
 single-message grading boundary.
 
+The same Learning Main stays selected while Practice project, its session tab or
+Show chat, and App preview supply those native moves. Switching to Working retires
+the active Main observation controls and cannot record this practical. This 0.1.9
+wording correction retains the complete rubrics, descriptors, exercise/check and
+SVG/controller bytes; Lesson 0 is unchanged and earlier installed pins remain intact.
+
 Public Vibe64 validates and bundles this whole two-lesson topic. The published
 lesson selection in a preview does not establish human acceptance, native player
 integration or course availability. The template remains an authoring aid, not
@@ -56,8 +62,8 @@ project, refuses another active lesson and reports unavailable/uncertain recover
 No content-owned replacement implementation is added. This document change creates
 a new lesson hash; old evidence is not silently transferred to the revised version.
 Rubric sections, descriptors, assessment IDs, native practical contracts, exercise
-and SVG are unchanged in this revision. Both lesson documents clarify teacher
-roles/pacing and receive new hashes; this is a deliberate new preview release. Validation does not establish deployed host capability.
+and SVG were unchanged in preview 0.1.8. Both lesson documents clarified teacher
+roles/pacing and received new hashes in that release. Validation does not establish deployed host capability.
 
 The Main Learning teacher is distinct from the general Colleague supervisor.
 The original return-to-colleague practical keeps its actual Colleague drawer
