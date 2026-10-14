@@ -1,4 +1,4 @@
-# Introduction to using Vibe64 — topic preview 0.1.10
+# Introduction to using Vibe64 — local topic preview 0.1.11
 
 Canonical topic source for `mobily-enterprises/learn-vibe64-getting-started`. Repository metadata names the destination; no remote publication is implied.
 
@@ -27,13 +27,15 @@ Use the [lesson author template](training/author-template/README.md) when author
 
 From this topic root, validate with `vibe64 training validate .`. To bundle, use `vibe64 training bundle . ../getting-started-preview-bundle` with a new output directory outside this source. Public Vibe64's `docs/training-content.md` describes the format and CLI; this topic has no second validator or publishing system. The 0.1.9 revision corrected Lesson 1 navigation: keep the same Main Learning session selected while using **Practice project**, its session tab or **Show chat**, and **App** in Preview. Switching to Working cannot record that practical task. It preserves all assessment descriptors and full rubric sections, original exercise/check and SVG/controller bytes. The introduction keeps the explicit end/retained-pin continuation guidance. Preview 0.1.10 clarifies Lesson 0's future OpenCode Senior scope and its separate configurable Junior teacher. New Learning conversations start in Junior; Chat mode keeps Senior, Junior and Custom selectable, and Resume retains the saved choice. A separate Junior routing request also affects ordinary Junior coding work. Lesson 0 has a new exact document/rubric hash; Lesson 1 is unchanged from 0.1.9. Old passes are not automatically credited against the changed lesson version. It does not replace previously pinned 0.1.1, 0.1.2, 0.1.3, 0.1.4, 0.1.5, 0.1.6, 0.1.7, 0.1.8 or 0.1.9 content or enable a new course release. No-exercise teaching admission and safe account-status reads must be supplied by the host before offering Lesson 0. Source changes require new validation, immutable pins and human review before offering the changed content. Repository publication and catalogue/course locking are separate operations. Existing learners keep their original installed pins; continuation needs the host’s registered `lesson.continue`, retains genuine passes for that original unchanged lesson and does not replace or delete its earlier project.
 
+Local preview 0.1.11 makes the Lesson 0 setup-to-question order explicit. The teacher waits for the person's account-control result and checks native connection, model and routing facts before preparing the safe-setup assessment. If setup is deferred, the person can explicitly request an understanding-only check; a passing answer still cannot prove account readiness. This draft does not replace the installed 0.1.10 pin or alter Lesson 1's six assessments.
+
 Trial the pinned preview on desktop and phone, including plausible wrong answers, hints, setup failure, interruption, text-only mode and returning after leaving. Author-preview results must not become published learner progress. Keep learner records, credentials, runtime logs and generated output out of Git; local evidence belongs under ignored `.local/`.
 
 ## Focused content regression check
 
 Run `node tests/content-regressions.mjs` from the topic root. It loads the exact client/controller source in a controlled page/channel harness and checks changed-instance reload recovery, stale display callbacks, cached visual result states, and semantic snapshot restoration with bounded validation. It does not start a server or prove native Preview visibility, trusted browser gestures, sandbox isolation or grading. The real standalone server/check smoke and later native pilot acceptance remain separate evidence.
 
-## Preview 0.1.10 teaching readiness
+## Local preview 0.1.11 teaching readiness
 
 The left Main Learning conversation teaches; the right Colleague drawer remains
 the general supervisor. The final `return-to-colleague` practical still means

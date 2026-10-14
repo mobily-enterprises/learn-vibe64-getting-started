@@ -27,6 +27,14 @@ or error with secrets omitted. Do not quiz the learner at every click or give th
 whole setup procedure in one spoken reply. The single safe-setup question below
 checks their understanding after the walkthrough.
 
+Do not prepare or ask that question merely because you have described these
+steps. First let the person report what happened in AI Accounts, then check the
+saved connection, available model and routing through their native owners. If
+an external, permission or paid-access step cannot be completed, name the exact
+unfinished step. Ask the understanding question early only if the person
+explicitly chooses to defer setup and check their understanding now; its result
+must not be presented as account or model readiness.
+
 ## Explain the choices first
 
 “Z.AI supplies the model; Vibe64 is where we'll use it. An API key lets Vibe64 access your Z.AI account. Treat it like a password.” Never request the key in chat, even a few characters. Never put it in lesson answers, screenshots, source files or project settings.
@@ -77,6 +85,9 @@ Freshly read the saved routing and actual permitted model before saying the requ
 
 <a id="safe-ai-setup"></a>
 ## Safe AI setup — one short answer
+
+Ask this only after the account-status checkpoint above, or the person's
+explicit choice to defer setup and check understanding now.
 
 Ask: “Where should your Z.AI key go, which model are we choosing for future OpenCode Senior coding chats, and does that also change Colleague?” Invite one compact answer in the learner's own words; never include the key itself.
 
