@@ -2,7 +2,7 @@
 
 ## Sources
 
-- `training/exercises/orientation-app/server.mjs`
+- Main: `training/exercises/orientation-app/server.mjs`
 - `training/exercises/orientation-app/public/client.js`
 - `training/checks/orientation-app/response.mjs`
 

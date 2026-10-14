@@ -30,4 +30,11 @@ finite-state controller. Public Vibe64 and Online own installed content, teachin
 progress, project provisioning and access; validating content does not prove the
 native lesson experience or award a learner pass.
 
-Main Learning teaches on the left; general Colleague supervises on the right. The original Colleague leave/restore practical remains genuine general-helper work, with no Main-hide substitution. Original descriptors, introduction rubrics and exercise/visual contracts stay byte-identical; hosted Main practical/player coordination and real learner trials remain separate acceptance requirements.
+Main Learning teaches on the left; general Colleague supervises on the right. The original Colleague leave/restore practical remains genuine general-helper work, with no Main-hide substitution. Original descriptors and exercise/visual contracts stay byte-identical; hosted Main practical/player coordination and real learner trials remain separate acceptance requirements.
+
+The unpublished 0.1.11 draft waits for an account-status checkpoint before its
+Lesson 0 quiz, except when the learner expressly defers setup for an
+understanding-only check. Lesson 1 corrects the final practical's return path:
+restore Colleague with its launcher, then return to the saved Main Learning
+question. Assessment identities and producers stay the same, but both lesson
+documents now have new hashes; installed 0.1.10 pins remain unchanged.

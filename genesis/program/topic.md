@@ -3,7 +3,7 @@
 ## Sources
 
 - `package.json`
-- `training/outline.md`
+- Main: `training/outline.md`
 - `training/lessons/V64-START-00/lesson.json`
 - `training/lessons/V64-START-00/lesson.md`
 - `training/lessons/V64-START-01/lesson.json`
@@ -30,6 +30,14 @@ Custom teacher. A separately requested shared Junior change affects ordinary
 Junior coding too. This 0.1.10 clarification changes Lesson 0 and its exact quiz
 wording/hash; all descriptors and Lesson 1 content remain unchanged from 0.1.9.
 Old installed pins, prepared questions, answers and passes are not rewritten.
+
+The unpublished 0.1.11 draft asks the safe-setup question only after a native
+account-status checkpoint, or when the person explicitly defers setup and asks
+for an understanding-only check. Its Lesson 1 final-practical wording directs
+the learner to restore the separate Colleague helper and then return to the
+saved Main Learning question. The six assessment identities and evidence
+contracts remain unchanged; both lesson documents receive new hashes. The
+installed 0.1.10 pin remains intact.
 
 The introduction's three chat quizzes use
 new IDs: help-or-change, preview-purpose and next-step. Earlier networking quiz

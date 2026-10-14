@@ -4,7 +4,7 @@
 
 - `training/visuals/client-server/visual.json`
 - `training/visuals/client-server/diagram.svg`
-- `training/visuals/client-server/controller.js`
+- Main: `training/visuals/client-server/controller.js`
 
 ## Public contract
 
