@@ -38,3 +38,6 @@ understanding-only check. Lesson 1 corrects the final practical's return path:
 restore Colleague with its launcher, then return to the saved Main Learning
 question. Assessment identities and producers stay the same, but both lesson
 documents now have new hashes; installed 0.1.10 pins remain unchanged.
+The introduction's two result questions require a learner to describe what
+they would observe in Preview and how they would recheck a requested fix, even
+when the real button press produced an actual failure.

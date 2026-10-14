@@ -38,6 +38,8 @@ the learner to restore the separate Colleague helper and then return to the
 saved Main Learning question. The six assessment identities and evidence
 contracts remain unchanged; both lesson documents receive new hashes. The
 installed 0.1.10 pin remains intact.
+The Preview-purpose example requires the learner to observe a result, and the
+next-request failure variant still asks how to check a fix after recovery.
 
 The introduction's three chat quizzes use
 new IDs: help-or-change, preview-purpose and next-step. Earlier networking quiz

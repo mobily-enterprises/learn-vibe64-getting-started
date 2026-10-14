@@ -116,7 +116,7 @@ A proxy load, iframe readiness, diagram packet, teacher click or unverified brow
 <a id="preview-purpose"></a>
 ### Know where to try the result
 
-Ask: “The agent says the application is ready. Where would you try it, and what would you look for?” Pass when the learner identifies Preview as where to use the running application and observe its behaviour. “Open Preview and try the button” is enough. If needed, ask “What would you look for there?” to establish that they would observe the result.
+Ask: “The agent says the application is ready. Where would you try it, and what would you look for?” Pass when the learner identifies Preview as where to use the running application and observe its behaviour. “Open Preview, try the button and see what message appears” is enough. If needed, ask “What would you look for there?” to establish that they would observe the result.
 
 Plausible incomplete answers: “The animated picture proves it works” confuses illustration with action; “The agent said it works, so we're done” skips trying it; “I'll ask Colleague to describe it” can help but is not a check of the app.
 
@@ -129,11 +129,11 @@ If their answer is split across follow-ups, prepare a fresh independent question
 
 Use the learner's own just-observed result. After success, ask: “You just saw Hello from the server! What would you tell the agent to get Welcome instead, and how would you check it?” Invite one short reply about what they tried, what they saw, the change they want and how they would check it. Substitute their actual observation rather than inventing success. Pass on a useful request containing what they tried, what happened and what they want changed. For example: “I pressed Ask the server in Preview and saw Hello from the server. Please change that greeting to Welcome.” The same reply should explain that they would try the button in Preview again and compare the result with the requested words.
 
-If the real press failed, ask instead: “You pressed the button and saw [their actual failure]. What would you tell Colleague or the coding agent?” Pass on the tried action, observed failure and expected result, such as a greeting. Keep the practical task incomplete until genuine recovery and a new successful press. Do not fabricate a failure for this variant.
+If the real press failed, ask instead: “You pressed the button and saw [their actual failure]. What would you tell Colleague or the coding agent, and how would you check a fix?” Pass on the tried action, observed failure, expected result (such as a greeting) and a plan to retry the button in Preview after recovery. Keep the practical task incomplete until genuine recovery and a new successful press. Do not fabricate a failure for this variant.
 
 Plausible incomplete answers: “Change it” or “It's broken” leaves out the action and result; “The agent says it's fine, so I'll ignore it” skips the observation; “I must have ruined it” wrongly assumes a setup failure is the learner's fault. Ask for only the missing detail and reassure them that reporting a problem is useful.
 
-First hint: “What did you try, what did you see, and what would you like instead?” Fresh variation after help: “Suppose a different button showed the wrong message. What would help the agent understand the problem?” Clearly label this as a hypothetical independent question. Pass on the tried action, actual message and expected message or desired change. Asking Colleague to delegate is valid; a quiz answer is not an instruction to execute its imagined change.
+First hint: “What did you try, what did you see, and what would you like instead?” Fresh variation after help: “Suppose a different button showed the wrong message. What would help the agent understand the problem, and how would you check a fix?” Clearly label this as a hypothetical independent question. Pass on the tried action, actual message, expected message or desired change, and a way to check the corrected result in Preview. Asking Colleague to delegate is valid; a quiz answer is not an instruction to execute its imagined change.
 
 After separate follow-ups, prepare one fresh independent question: “In one short reply, tell me your request or problem report and how you would check the result.” Ask them to include what they tried, what they saw and what they expected or want changed, using their actual observation. Evaluate that complete reply, not a reconstruction from earlier messages or a teacher paraphrase. Record the assistance actually provided; short everyday language remains enough.
 
