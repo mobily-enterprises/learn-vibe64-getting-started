@@ -1,6 +1,6 @@
 # Introduction to using Vibe64 — local topic preview 0.1.11
 
-Canonical topic source for `mobily-enterprises/learn-vibe64-getting-started`. Repository metadata names the destination; no remote publication is implied.
+Canonical topic source for `mobily-enterprises/learn-vibe64-getting-started`. The source is published on GitHub; installing or enabling a learner release is a separate step.
 
 This preview starts with [**Connect your AI**](training/lessons/V64-START-00/lesson.md): human Z.AI registration and private key entry, verified regular-API access, and the requested future OpenCode Senior GLM-4.7 default. Full GLM-4.7 is paid; the distinct GLM-4.7-Flash option is explained separately. It is followed by the [**Your first steps in Vibe64**](training/lessons/V64-START-01/lesson.md). In about 10–15 minutes, that introduction finds the workspace, asks for help or a change, tries a real application in Preview, and returns to Colleague with an observation. See [the outline](training/outline.md).
 
@@ -54,5 +54,5 @@ model checks and desktop/phone acceptance. Validation and the controlled content
 harness establish neither native delivery nor beginner completion.
 
 Use a new immutable topic/course pin for this source after review; retain existing
-installed releases and learner progress. No release is installed, enabled or
-published remotely by this content change.
+installed releases and learner progress. This source publication does not install
+or enable a learner release.
