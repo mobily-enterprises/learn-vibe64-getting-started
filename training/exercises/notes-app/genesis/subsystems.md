@@ -15,7 +15,8 @@ seed rows for notebooks and notes.
 
 ### Data owned
 
-- SQLite tables `notebooks` and `notes` in the declared `NOTES_DATABASE` file.
+- Table `database` `main` `notebooks`
+- Table `database` `main` `notes`
 
 ### Data used
 
