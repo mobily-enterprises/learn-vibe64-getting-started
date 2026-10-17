@@ -17,6 +17,10 @@
 - Prepare `Check server syntax` with `nodejs`: `node` `--check` `server.mjs`
 - Prepare `Check browser syntax` with `nodejs`: `node` `--check` `public/client.js`
 
+## Connected development
+
+- Default package type: `npm`
+
 ## Outputs
 
 ### Target `app`: Orientation application

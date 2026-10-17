@@ -12,6 +12,10 @@
 
 - Nothing.
 
+## Connected development
+
+- Default package type: `npm`
+
 ## Outputs
 
 - Nothing.

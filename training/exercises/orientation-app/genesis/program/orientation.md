@@ -2,7 +2,7 @@
 
 ## Sources
 
-- `server.mjs`
+- Main: `server.mjs`
 - `public/index.html`
 - `public/client.js`
 
