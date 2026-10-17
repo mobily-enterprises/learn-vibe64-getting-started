@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "code": "V64-START-02",
+  "title": "Build with a database",
+  "document": "lesson.md",
+  "prerequisites": [],
+  "estimatedMinutes": 20,
+  "visuals": [],
+  "exercise": {
+    "kind": "bundled",
+    "source": "../../exercises/notes-app",
+    "reuse": "attempt"
+  },
+  "checks": [],
+  "assessments": [
+    {
+      "id": "where-notes-live",
+      "kind": "answer",
+      "required": true,
+      "rubric": "lesson.md#where-notes-live"
+    },
+    {
+      "id": "read-the-erd",
+      "kind": "answer",
+      "required": true,
+      "rubric": "lesson.md#read-the-erd"
+    }
+  ]
+}
