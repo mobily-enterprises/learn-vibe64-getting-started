@@ -4,24 +4,16 @@
 
 - `package.json`
 - Main: `training/outline.md`
-- `training/lessons/V64-START-00/lesson.json`
-- `training/lessons/V64-START-00/lesson.md`
 - `training/lessons/V64-START-01/lesson.json`
 - `training/lessons/V64-START-01/lesson.md`
 - `training/author-template/README.md`
 
 ## Public contract
 
-Preview 0.1.10 selects V64-START-00 before the introduction,
-V64-START-01. Lesson 0 has no exercise or visual and one safe-ai-setup answer
-assessment. It guides human registration, consent and masked key entry through
-normal AI Accounts controls. Full GLM-4.7 needs paid/entitled regular-API access;
-free GLM-4.7-Flash is a distinct explicit option. Native account/model facts are
-separate from a quiz pass. Future OpenCode Senior routing, configured Junior Learning teachers, existing Custom overrides
-and Colleague's own choice retain their original owners and scopes. Missing host
-no-exercise admission or safe account reads remain acceptance blockers, not
-fabricated readiness. Authored ordering adds no silent prerequisite gate or
-replacement of old attempts.
+Preview 0.1.12 holds only installation-agnostic lessons, V64-START-01 and
+V64-START-02. Lesson 0 is supplied by each installation (local Vibe64 uses
+`learn-vibe64-local-setup`) and is installed first in the same course. Earlier
+previews' V64-START-00 attempts keep their installed pins.
 
 New Learning conversations start in configured Junior mode. The existing Chat
 mode controls retain Senior, Junior and Custom selection; Resume keeps the saved
@@ -38,6 +30,8 @@ the learner to restore the separate Colleague helper and then return to the
 saved Main Learning question. The six assessment identities and evidence
 contracts remain unchanged; both lesson documents receive new hashes. The
 installed 0.1.10 pin remains intact.
+
+Preview 0.1.12 moves Lesson 0 out of this shared topic: each installation supplies its own Lesson 0 (local Vibe64 uses `learn-vibe64-local-setup`), installed first in the same course, so local and hosted setup can differ completely. It adds V64-START-02, Build with a database, with a bundled SQLite notes exercise. Lesson 1 is unchanged. Earlier pins, including their V64-START-00 attempts, are not rewritten.
 The Preview-purpose example requires the learner to observe a result, and the
 next-request failure variant still asks how to check a fix after recovery.
 

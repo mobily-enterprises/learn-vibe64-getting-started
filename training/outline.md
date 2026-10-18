@@ -1,14 +1,11 @@
 # Introduction to using Vibe64
 
-Local preview 0.1.11 contains Z.AI onboarding followed by the existing introduction, for someone with no coding experience. Allow about ten minutes for onboarding plus registration/access time, then 10–15 minutes for the introduction. The person uses this installation’s normal access controls and signs in when required; hosted key management requires the workspace owner. The introduction also requires permission to use its prepared practice project.
+Preview 0.1.12 contains the installation-agnostic lessons, for someone with no coding experience. Lesson 0 ("Set yourself up") is supplied by each installation and is installed before these lessons in the same course. Allow 10–15 minutes for the introduction and about 20 minutes for Lesson 2. The lessons require permission to use their prepared practice projects.
 
 | Code | Lesson | Outcome | Status |
 | --- | --- | --- | --- |
-| V64-START-00 | Connect your AI | Register with Z.AI, enter a regular API key safely, verify actual access and choose the requested future OpenCode Senior GLM-4.7 default when entitled; distinguish paid full 4.7, free Flash and Colleague's separate choice. | Published in preview; host acceptance pending |
 | V64-START-01 | Your first steps in Vibe64 | Find the workspace, ask for help or a change, try the real application in Preview, report what happened, and return to the same Colleague conversation. | Published in preview |
 | V64-START-02 | Build with a database | Add a note in a real SQLite notes app, ask Main for a small change and try it in Preview, then read the app's tables, rows and ERD in Dashboard → Database. | Published in preview |
-
-Lesson 0 has one answer assessment and no exercise. Registration, secret entry and paid-access consent are human steps. Its quiz verifies understanding, not account or model readiness; supported native reads verify those facts separately. This list orders onboarding first without silently blocking or repinning an existing introduction attempt.
 
 In Lesson 1, the original preparation owner supplies a disposable practice project using the existing orientation application. The learner presses its real button and reads its response. Afterwards, the Main Learning teacher controls an SVG to illustrate that action, adjusting the explanation to the conversation. Three short questions are answered in chat; three practical checks require the learner's actual application actions.
 

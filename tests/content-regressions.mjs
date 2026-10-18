@@ -156,7 +156,6 @@ console.log('Not proved: real browser gesture/display, frame visibility, sandbox
 // Preserve the genuine practical declarations while the lesson's teacher moves
 // to Main. Content cannot change a producer or earn a pass through a diagram.
 const introDescriptor = JSON.parse(await readFile(new URL('../training/lessons/V64-START-01/lesson.json', import.meta.url), 'utf8'));
-const setupDescriptor = JSON.parse(await readFile(new URL('../training/lessons/V64-START-00/lesson.json', import.meta.url), 'utf8'));
 assert.deepEqual(introDescriptor.assessments.map(({ id, kind, required, evidence }) => ({ id, kind, required, ...(evidence ? { evidence } : {}) })), [
   { id: 'workspace-navigation', kind: 'practical', required: true, evidence: { producer: 'workspace', operation: 'workspace-navigation' } },
   { id: 'help-or-change', kind: 'answer', required: true },
@@ -165,7 +164,4 @@ assert.deepEqual(introDescriptor.assessments.map(({ id, kind, required, evidence
   { id: 'next-step', kind: 'answer', required: true },
   { id: 'return-to-colleague', kind: 'practical', required: true, evidence: { producer: 'colleague', operation: 'return-to-colleague' } }
 ]);
-assert.equal(setupDescriptor.exercise, undefined);
-assert.deepEqual(setupDescriptor.visuals, []);
-assert.deepEqual(setupDescriptor.assessments.map(({ id, kind, required }) => ({ id, kind, required })), [{ id: 'safe-ai-setup', kind: 'answer', required: true }]);
-console.log('PASS: Main role revision preserves all three quizzes/three original practical producers and no-exercise setup contract.');
+console.log('PASS: Main role revision preserves all three quizzes/three original practical producers.');

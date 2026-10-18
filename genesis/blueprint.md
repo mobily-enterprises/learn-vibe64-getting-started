@@ -16,7 +16,7 @@ Preview 0.1.10 separates the configurable Junior Learning teacher from the
 requested future OpenCode Senior coding model. New Learning conversations start
 in Junior; Senior, Junior and Custom remain selectable, and Resume retains the
 saved choice. Junior routing requires a separate request and also affects Junior
-coding work. The prerequisite V64-START-00 and V64-START-01 recovery remain:
+coding work. V64-START-01 recovery remains:
 The teacher offers a fresh exercise after a missing/discarded project, using the
 learner's explicitly ended original pin and retained valid passes. It does not
 silently replace an active attempt, delete old work or select newer content.
@@ -38,6 +38,8 @@ understanding-only check. Lesson 1 corrects the final practical's return path:
 restore Colleague with its launcher, then return to the saved Main Learning
 question. Assessment identities and producers stay the same, but both lesson
 documents now have new hashes; installed 0.1.10 pins remain unchanged.
+
+Preview 0.1.12 moves Lesson 0 out of this shared topic: each installation supplies its own Lesson 0 (local Vibe64 uses `learn-vibe64-local-setup`), installed first in the same course, so local and hosted setup can differ completely. It adds V64-START-02, Build with a database, with a bundled SQLite notes exercise. Lesson 1 is unchanged. Earlier pins, including their V64-START-00 attempts, are not rewritten.
 The introduction's two result questions require a learner to describe what
 they would observe in Preview and how they would recheck a requested fix, even
 when the real button press produced an actual failure.
