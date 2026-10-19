@@ -40,6 +40,26 @@ Owns the browser/server example, finite response check and optional host observa
 
 - Nothing.
 
+## `greeting` Editable greeting exercise
+
+Owns the greeting exercise whose one function the learner edits, and its finite code check. Does not own learner progress, authorship records or grading.
+
+### Source
+
+- Directory `training/exercises/greeting-app`
+
+### Program
+
+- `genesis/program/greeting.md`
+
+### Data owned
+
+- Nothing.
+
+### Data used
+
+- Nothing.
+
 ## `visual` Client/server explanation
 
 Owns static SVG, declared finite-state commands and their sandbox controller. Has no editor capabilities.

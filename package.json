@@ -27,6 +27,12 @@
         "descriptor": "training/lessons/V64-START-01/lesson.json",
         "status": "published",
         "required": true
+      },
+      {
+        "code": "V64-START-02",
+        "descriptor": "training/lessons/V64-START-02/lesson.json",
+        "status": "published",
+        "required": true
       }
     ]
   }

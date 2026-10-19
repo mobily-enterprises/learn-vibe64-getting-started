@@ -24,7 +24,10 @@ Lesson 0 has a new exact hash; the introduction is unchanged from 0.1.9, and
 old learners retain their pins.
 Its practical tasks keep the same Learning Main selected while using the saved
 Practice project and App preview controls, preserving the active observation owner.
-Additional lessons are out of this sprint.
+Preview 0.1.11 adds V64-START-02, a short code lesson: the learner edits one
+function in a separate greeting exercise in Dashboard → Files, sees the new
+greeting in Preview and uses Check my code, whose pinned check verifies
+behaviour rather than exact words.
 This repository owns the teaching brief, rubrics, prepared exercise, SVG and its
 finite-state controller. Public Vibe64 and Online own installed content, teaching,
 progress, project provisioning and access; validating content does not prove the

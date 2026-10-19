@@ -8,6 +8,8 @@
 - `training/lessons/V64-START-00/lesson.md`
 - `training/lessons/V64-START-01/lesson.json`
 - `training/lessons/V64-START-01/lesson.md`
+- `training/lessons/V64-START-02/lesson.json`
+- `training/lessons/V64-START-02/lesson.md`
 - `training/author-template/README.md`
 
 ## Public contract
@@ -41,6 +43,15 @@ installed 0.1.10 pin remains intact.
 The Preview-purpose example requires the learner to observe a result, and the
 next-request failure variant still asks how to check a fix after recovery.
 
+Preview 0.1.11 adds published, required V64-START-02 "Make your first change",
+which requires V64-START-01. It prepares its own disposable greeting exercise
+(`reuse:"attempt"`; code questions do not support sequence reuse) and asks one
+`code` practical, `count-the-presses`, whose learner-edited file is
+`greeting.mjs` and whose pinned `greeting-count` check verifies behaviour, plus
+two answer assessments about the Preview result and why the check tests
+behaviour. It may replay the shared client-server SVG with the learner's new
+greeting. Lessons 0 and 1 are untouched by this addition.
+
 The introduction's three chat quizzes use
 new IDs: help-or-change, preview-purpose and next-step. Earlier networking quiz
 results cannot pass these changed meanings. The three practical contracts remain
@@ -66,10 +77,10 @@ the active Main observation controls and cannot record this practical. This 0.1.
 wording correction retains the complete rubrics, descriptors, exercise/check and
 SVG/controller bytes; that release left Lesson 0 unchanged and earlier installed pins intact.
 
-Public Vibe64 validates and bundles this whole two-lesson topic. The published
+Public Vibe64 validates and bundles this whole three-lesson topic. The published
 lesson selection in a preview does not establish human acceptance, native player
 integration or course availability. The template remains an authoring aid, not
-another learner-facing lesson. Further curriculum is out of scope.
+another learner-facing lesson.
 
 The introduction's revised missing/discarded-exercise paragraph offers a fresh
 practice project only after a direct request or accepted offer. The teacher explicitly

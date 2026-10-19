@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "code": "V64-START-02",
+  "title": "Make your first change",
+  "document": "lesson.md",
+  "prerequisites": [
+    {
+      "code": "V64-START-01"
+    }
+  ],
+  "estimatedMinutes": 12,
+  "visuals": [
+    {
+      "id": "client-server",
+      "descriptor": "../../visuals/client-server/visual.json"
+    }
+  ],
+  "exercise": {
+    "kind": "bundled",
+    "source": "../../exercises/greeting-app",
+    "reuse": "attempt"
+  },
+  "checks": [
+    {
+      "id": "greeting-count",
+      "file": "../../checks/greeting-app/count.mjs",
+      "kind": "code",
+      "timeoutSeconds": 5
+    }
+  ],
+  "assessments": [
+    {
+      "id": "count-the-presses",
+      "kind": "practical",
+      "required": true,
+      "rubric": "lesson.md#count-the-presses",
+      "evidence": {
+        "producer": "code",
+        "operation": "edit-and-check",
+        "check": "greeting-count",
+        "files": [
+          "greeting.mjs"
+        ],
+        "explanationRequired": true
+      }
+    },
+    {
+      "id": "what-preview-showed",
+      "kind": "answer",
+      "required": true,
+      "rubric": "lesson.md#what-preview-showed"
+    },
+    {
+      "id": "why-check-behaviour",
+      "kind": "answer",
+      "required": true,
+      "rubric": "lesson.md#why-check-behaviour"
+    }
+  ]
+}
