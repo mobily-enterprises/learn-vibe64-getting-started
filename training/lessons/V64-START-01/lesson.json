@@ -41,7 +41,7 @@
       "body": "steps/find-your-way.md",
       "guide": {
         "target": "preview",
-        "navigate": false,
+        "navigate": true,
         "caption": "Preview: your app runs here"
       },
       "check": {

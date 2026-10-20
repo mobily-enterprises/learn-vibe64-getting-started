@@ -7,7 +7,10 @@ Now ask for one small new feature. If you don't have an idea of your own, try:
    “Please add a checkbox to each note so I can mark it as done. It should
    stay ticked after I reload the page.”
 2. Wait until the agent says it has finished.
-3. Try it yourself in **Preview**: tick a note, then reload the page. Is it
+3. The agent changed the app's server code (`server.mjs`), and Preview is
+   still running the old copy. Press **Restart preview** (the circular-arrow
+   button in the Preview toolbar) so it runs the new code.
+4. Try it yourself in **Preview**: tick a note, then reload the page. Is it
    still ticked?
 
 If it doesn't work, tell the agent what you tried, what happened and what you

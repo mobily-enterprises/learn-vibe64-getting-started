@@ -21,8 +21,10 @@ can still read the lesson and answer its questions.
 
 ## Finding AI Accounts
 
-**AI Accounts** is a Management page. If you can't find it, ask Colleague to
-open it for you; opening it changes no settings.
+On your own computer, **AI Accounts** is a tab in **Account settings**: press
+the person button in the header. On Vibe64 Online it is a Management page. If
+you can't find it, ask Colleague to open it for you; opening it changes no
+settings.
 
 If you already have a Coding Plan connection, the **Connect regular Z.AI API**
 button may not be shown. Use **Add connection**, then **Choose provider** on the

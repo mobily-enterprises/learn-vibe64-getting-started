@@ -13,7 +13,7 @@ The button posts to the server, which counts presses in memory and calls
 `greeting(count)` from `greeting.mjs`; the page shows the returned message and the
 count. The server reloads `greeting.mjs` when its saved file changes, so an edit
 shows on the next press, and reports a readable error for a broken file. The
-starter ignores `count`.
+starter ignores `count`. Its pages send a content security policy that loads only its own scripts plus inline script, because Vibe64 Preview injects an inline bridge script without a nonce; the pages have no inline script of their own and write only text.
 
 The `greeting-count` code check follows the public code-check contract: it reads
 `{check, filesHash, files}` on stdin, imports the learner's copy relative to the

@@ -40,7 +40,9 @@ const server = createServer(async (request, response) => {
   }
   const asset = request.method === 'GET' && assets.get(url.pathname);
   if (asset) {
-    response.writeHead(200, { 'content-type': `${asset.type}; charset=utf-8`, 'cache-control': 'no-store', 'x-content-type-options': 'nosniff', 'content-security-policy': "default-src 'none'; script-src 'self'; style-src 'unsafe-inline'; connect-src 'self'; frame-ancestors *; base-uri 'none'; form-action 'none'" }); response.end(asset.bytes); return;
+    // Vibe64's Preview injects one inline bridge script into HTML; it has no nonce or hash support, so
+    // script-src also allows inline scripts. This page has no inline script of its own and writes only text.
+    response.writeHead(200, { 'content-type': `${asset.type}; charset=utf-8`, 'cache-control': 'no-store', 'x-content-type-options': 'nosniff', 'content-security-policy': "default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'self'; frame-ancestors *; base-uri 'none'; form-action 'none'" }); response.end(asset.bytes); return;
   }
   json(response, 404, { error: 'Not found.' });
 });

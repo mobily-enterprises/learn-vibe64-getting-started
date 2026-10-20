@@ -30,7 +30,10 @@ notes. Everything you add is saved in the same database.
 ## If something goes wrong
 
 - **Restart preview** starts the app again; your notes survive because they
-  live in the database. **Show run output** shows what the app printed while
+  live in the database. Press it after the coding agent changes `server.mjs`,
+  so Preview runs the new code.
+- If **Database** doesn't show a new table or column yet, press **Refresh
+  schema**. **Show run output** shows what the app printed while
   starting.
 - If a change breaks the app, tell the coding agent what you see and ask it to
   fix it in this practice project.
