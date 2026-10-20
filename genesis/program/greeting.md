@@ -21,5 +21,6 @@ check, calls `greeting` with several counts and prints one JSON line. It verifie
 that each greeting is short text with words that includes the current count, so
 any wording passes and a fixed number does not. Learner output is diverted to
 stderr. It needs no packages, network or files outside its copy, and a 5 second
-timeout bounds endless loops. A passing check never passes the assessment alone;
-the learner's explanation is graded with it.
+timeout bounds endless loops. In V64-START-02 the check is the
+`change-the-greeting` step's automatic check; its verdict is final, and a pass
+also needs the host's record that the learner wrote the change.

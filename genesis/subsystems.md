@@ -2,7 +2,7 @@
 
 ## `topic` Teaching content
 
-Owns the topic outline, lesson briefs/rubrics and author template. Does not own learner progress, access or execution.
+Owns the topic outline, lesson step text and teaching notes. Does not own learner progress, access, checks' execution or grading.
 
 ### Source
 
@@ -42,7 +42,7 @@ Owns the browser/server example, finite response check and optional host observa
 
 ## `greeting` Editable greeting exercise
 
-Owns the greeting exercise whose one function the learner edits, and its finite code check. Does not own learner progress, authorship records or grading.
+Owns the greeting exercise whose one function the learner edits, and its finite code check. Does not own learner progress or authorship records.
 
 ### Source
 

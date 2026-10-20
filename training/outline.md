@@ -1,18 +1,19 @@
 # Introduction to using Vibe64
 
-Preview 0.1.11 contains Z.AI onboarding, the existing introduction and a first hands-on code change, for someone with no coding experience. Allow about ten minutes for onboarding plus registration/access time, then 10–15 minutes for the introduction and about 12 minutes for the code lesson. The person uses this installation’s normal access controls and signs in when required; hosted key management requires the workspace owner. The introduction also requires permission to use its prepared practice project.
+Topic 0.2.0 is the first Learning v2 release of the introduction, for someone
+with no coding experience. Each lesson is a list of short steps the learner can
+read on their own in the Learning environment (**L**). **Teach me** asks
+Colleague to explain the current step on the real screens; **Show me** points
+at or opens the place a step talks about. Steps pass only through automatic
+checks, choice questions or the learner's own **Done**; Colleague never grades.
 
-| Code | Lesson | Outcome | Status |
+| Code | Lesson | Outcome | Steps |
 | --- | --- | --- | --- |
-| V64-START-00 | Connect your AI | Register with Z.AI, enter a regular API key safely, verify actual access and choose the requested future OpenCode Senior GLM-4.7 default when entitled; distinguish paid full 4.7, free Flash and Colleague's separate choice. | Published in preview; host acceptance pending |
-| V64-START-01 | Your first steps in Vibe64 | Find the workspace, ask for help or a change, try the real application in Preview, report what happened, and return to the same Colleague conversation. | Published in preview |
-| V64-START-02 | Make your first change | Edit one small function in Dashboard → Files so the greeting counts button presses, see it in Preview, use Check my code and explain the change. | Published in preview |
-| V64-START-03 | Build with a database | Add a note in a real SQLite notes app, ask for a small change and try it in Preview, then read the app's tables, rows and ERD in Dashboard → Database. | Published in preview |
+| V64-START-00 | Connect your AI | Create a Z.AI key, enter it safely in AI Accounts and choose the future Senior coding model; know what that choice does and does not change. | 9 (3 choice required; setup steps are self-checks, optional because only the workspace owner can perform them) |
+| V64-START-01 | Your first steps in Vibe64 | Find the project, coding conversation, Preview and Colleague; press the real button; know who changes an application and how to check and report a result. | 9 (1 auto, 3 choice, 2 self required) |
+| V64-START-02 | Make your first change | Edit `greeting(count)` in Dashboard → Files so the greeting counts presses, see it in Preview and pass the behaviour check. | 8 (1 auto code check, 1 choice, 1 self required) |
+| V64-START-03 | Build with a database | Add a note in a real SQLite notes app, find it in Dashboard → Database, read the ERD, ask for a small feature and try it. | 8 (2 choice, 3 self required) |
 
-Lesson 0 has one answer assessment and no exercise. Registration, secret entry and paid-access consent are human steps. Its quiz verifies understanding, not account or model readiness; supported native reads verify those facts separately. This list orders onboarding first without silently blocking or repinning an existing introduction attempt.
-
-In Lesson 1, the original preparation owner supplies a disposable practice project using the existing orientation application. The learner presses its real button and reads its response. Afterwards, the Main Learning teacher controls an SVG to illustrate that action, adjusting the explanation to the conversation. Three short questions are answered in chat; three practical checks require the learner's actual application actions.
-
-The introduction ends with a useful habit: ask for help or a change, try the result in Preview, then say what you tried, what happened and what you expected. Lesson 2 then puts that habit in the learner's own hands. A separate disposable greeting practice project looks like the introduction's app, but its greeting comes from one short function. The learner changes it so the greeting says how many times the button was pressed, sees the result in Preview and presses **Check my code**. The check tries several press counts and accepts any wording that uses the count. Two short questions ask what Preview showed and why checking behaviour beats checking exact words. These three lessons are the complete curriculum for this preview. Release and pilot acceptance remain separate from this source's published lesson status.
-
-The Main Learning conversation teaches every lesson; new Learning conversations start with the configured Junior model, selectable through Chat mode, while Resume retains the saved choice. Lesson 0's future OpenCode Senior routing does not change Junior or Colleague. Colleague stays the general supervisor. The final practical uses the real Colleague drawer’s leave/restore controls while retaining the Main lesson. Original evidence contracts, all six introduction assessments and installed historical pins stay unchanged.
+Lessons 1–3 each prepare their own disposable practice project from a bundled
+exercise. Lessons 2 and 3 require Lesson 1. Lesson 0 has no exercise; it stays
+in this shared topic until each installation supplies its own Lesson 0 topic.

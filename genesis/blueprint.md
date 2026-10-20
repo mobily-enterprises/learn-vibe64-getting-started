@@ -1,46 +1,28 @@
 # Blueprint
 
-Help a complete beginner connect their AI, then use Vibe64 through one carefully
-crafted introduction. Onboarding guides human Z.AI registration and private key
-entry, verifies actual access and chooses the requested future OpenCode Senior GLM-4.7 model
-when entitled. It distinguishes paid full GLM-4.7 from free Flash and keeps
-Colleague's own choice separate.
-The learner finds the project, Colleague, coding conversation and Preview, tries a
-real application, answers three short chat quizzes, and returns with a useful
-observation or change request. Colleague can explain and coordinate a coding agent;
-the coding agent implements changes. The AI-controlled SVG illustrates the real
-Preview action with an accessible animation. Three practical assessments require
-learner-origin evidence rather than teacher demonstrations.
+Help a complete beginner connect their AI, then use Vibe64 through a short,
+hands-on introduction: find the project, coding conversation, Preview and
+Colleague; try a real application; change a small function themselves; and
+see where an application keeps the data it saves.
 
-Preview 0.1.10 separates the configurable Junior Learning teacher from the
-requested future OpenCode Senior coding model. New Learning conversations start
-in Junior; Senior, Junior and Custom remain selectable, and Resume retains the
-saved choice. Junior routing requires a separate request and also affects Junior
-coding work. The prerequisite V64-START-00 and V64-START-01 recovery remain:
-The teacher offers a fresh exercise after a missing/discarded project, using the
-learner's explicitly ended original pin and retained valid passes. It does not
-silently replace an active attempt, delete old work or select newer content.
-Lesson 0 has a new exact hash; the introduction is unchanged from 0.1.9, and
-old learners retain their pins.
-Its practical tasks keep the same Learning Main selected while using the saved
-Practice project and App preview controls, preserving the active observation owner.
-Preview 0.1.11 adds V64-START-02, a short code lesson: the learner edits one
-function in a separate greeting exercise in Dashboard → Files, sees the new
-greeting in Preview and uses Check my code, whose pinned check verifies
-behaviour rather than exact words.
-This repository owns the teaching brief, rubrics, prepared exercise, SVG and its
-finite-state controller. Public Vibe64 and Online own installed content, teaching,
-progress, project provisioning and access; validating content does not prove the
-native lesson experience or award a learner pass.
+Topic 0.2.0 uses Learning v2 lessons. Every lesson is an ordered list of short
+steps whose learner-facing text is readable without AI. Colleague is the
+teacher: it follows the current step, explains it using the lesson's teaching
+notes, opens real screens, points at declared guide places and replays the
+client-server SVG. Colleague never judges. A step passes only through a
+declared automatic check with learner-origin evidence, a choice question
+compared on the server, or the learner's own **Done**.
 
-Main Learning teaches on the left; general Colleague supervises on the right. The original Colleague leave/restore practical remains genuine general-helper work, with no Main-hide substitution. Original descriptors and exercise/visual contracts stay byte-identical; hosted Main practical/player coordination and real learner trials remain separate acceptance requirements.
+Lesson 0 (Connect your AI) guides human Z.AI registration and private key
+entry, choosing GLM-4.7 for future Senior coding chats when entitled, and
+distinguishes paid full GLM-4.7 from free Flash and Colleague's own choice. It
+stays in this shared topic until installations supply their own Lesson 0.
+Lessons 1–3 each prepare a disposable practice project from a bundled
+exercise: the orientation app, the editable greeting app and the SQLite notes
+app.
 
-The unpublished 0.1.11 draft waits for an account-status checkpoint before its
-Lesson 0 quiz, except when the learner expressly defers setup for an
-understanding-only check. Lesson 1 corrects the final practical's return path:
-restore Colleague with its launcher, then return to the saved Main Learning
-question. Assessment identities and producers stay the same, but both lesson
-documents now have new hashes; installed 0.1.10 pins remain unchanged.
-The introduction's two result questions require a learner to describe what
-they would observe in Preview and how they would recheck a requested fix, even
-when the real button press produced an actual failure.
+This repository owns the step text, teaching notes, exercises, checks, SVG and
+its finite-state controller. Public Vibe64 and Online own installed content,
+the Learning environment, Colleague, progress, practice projects and access;
+validating content does not prove the native lesson experience. Earlier 0.1.x
+releases keep their installed pins and learner history.

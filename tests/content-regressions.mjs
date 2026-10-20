@@ -153,19 +153,35 @@ console.log('PASS: semantic snapshot restores paused/custom labels/state before 
 console.log('Not proved: real browser gesture/display, frame visibility, sandbox handshake, host admission or durable grading.');
 
 
-// Preserve the genuine practical declarations while the lesson's teacher moves
-// to Main. Content cannot change a producer or earn a pass through a diagram.
-const introDescriptor = JSON.parse(await readFile(new URL('../training/lessons/V64-START-01/lesson.json', import.meta.url), 'utf8'));
-const setupDescriptor = JSON.parse(await readFile(new URL('../training/lessons/V64-START-00/lesson.json', import.meta.url), 'utf8'));
-assert.deepEqual(introDescriptor.assessments.map(({ id, kind, required, evidence }) => ({ id, kind, required, ...(evidence ? { evidence } : {}) })), [
-  { id: 'workspace-navigation', kind: 'practical', required: true, evidence: { producer: 'workspace', operation: 'workspace-navigation' } },
-  { id: 'help-or-change', kind: 'answer', required: true },
-  { id: 'try-the-application', kind: 'practical', required: true, evidence: { producer: 'exercise', operation: 'try-the-application', check: 'orientation-response', explanationRequired: true } },
-  { id: 'preview-purpose', kind: 'answer', required: true },
-  { id: 'next-step', kind: 'answer', required: true },
-  { id: 'return-to-colleague', kind: 'practical', required: true, evidence: { producer: 'colleague', operation: 'return-to-colleague' } }
-]);
-assert.equal(setupDescriptor.exercise, undefined);
-assert.deepEqual(setupDescriptor.visuals, []);
-assert.deepEqual(setupDescriptor.assessments.map(({ id, kind, required }) => ({ id, kind, required })), [{ id: 'safe-ai-setup', kind: 'answer', required: true }]);
-console.log('PASS: Main role revision preserves all three quizzes/three original practical producers and no-exercise setup contract.');
+// Learning v2: pin the step inventory and the evidence each required step relies
+// on. Format validation belongs to public Vibe64's `training validate`; this
+// only catches accidental changes to what a learner must do in this topic.
+const lesson = async code => JSON.parse(await readFile(new URL(`../training/lessons/${code}/lesson.json`, import.meta.url), 'utf8'));
+const inventory = descriptor => descriptor.steps.map(({ id, check, required }) => `${id}:${check.kind}${check.check ? `=${check.check}` : ''}${required ? '!' : ''}`);
+const lessons = Object.fromEntries(await Promise.all(['V64-START-00', 'V64-START-01', 'V64-START-02', 'V64-START-03'].map(async code => [code, await lesson(code)])));
+assert.deepEqual(inventory(lessons['V64-START-00']), ['welcome:none', 'keys-and-models:none', 'create-key:self', 'connect-key:self', 'choose-senior-model:self', 'key-safety:choice!', 'model-choices:choice!', 'model-scope:choice!', 'recap:none']);
+assert.deepEqual(inventory(lessons['V64-START-01']), ['welcome:none', 'find-your-way:self!', 'help-or-change:choice!', 'try-the-app:auto=orientation-response!', 'what-happened:none', 'preview-purpose:choice!', 'useful-request:choice!', 'meet-colleague:self!', 'recap:none']);
+assert.deepEqual(inventory(lessons['V64-START-02']), ['welcome:none', 'try-it-first:self', 'meet-the-file:none', 'change-the-greeting:auto=greeting-count!', 'what-preview-showed:self!', 'why-check-behaviour:choice!', 'replay-the-journey:none', 'recap:none']);
+assert.deepEqual(inventory(lessons['V64-START-03']), ['welcome:none', 'add-a-note:self!', 'see-the-rows:self!', 'where-notes-live:choice!', 'read-the-erd:choice!', 'ask-for-a-change:self!', 'see-the-new-column:self', 'recap:none']);
+assert.equal(lessons['V64-START-00'].exercise, undefined);
+assert.deepEqual(lessons['V64-START-01'].checks.map(({ id, file }) => ({ id, file })), [{ id: 'orientation-response', file: '../../checks/orientation-app/response.mjs' }]);
+assert.deepEqual(lessons['V64-START-02'].steps.find(step => step.id === 'change-the-greeting').check.files, ['greeting.mjs']);
+const visual = JSON.parse(await readFile(new URL('../training/visuals/client-server/visual.json', import.meta.url), 'utf8'));
+const declared = new Map(visual.commands.map(entry => [entry.name, entry.parameters]));
+for (const [code, descriptor] of Object.entries(lessons)) {
+  assert.equal(descriptor.schemaVersion, 2, `${code} uses lesson format v2`);
+  for (const step of descriptor.steps) {
+    await readFile(new URL(`../training/lessons/${code}/${step.body}`, import.meta.url), 'utf8');
+    if (step.check.kind === 'choice') assert.ok(step.check.answer.every(index => index >= 0 && index < step.check.options.length), `${code}/${step.id} answer in range`);
+    for (const { name, parameters } of step.visual?.play || []) {
+      const shape = declared.get(name);
+      assert.ok(shape, `${code}/${step.id} plays declared command ${name}`);
+      for (const { name: parameter, required, maxLength } of shape) {
+        if (required) assert.equal(typeof parameters[parameter], 'string', `${code}/${step.id} ${name}.${parameter} supplied`);
+        if (parameter in parameters) assert.ok(parameters[parameter].length <= maxLength, `${code}/${step.id} ${name}.${parameter} within ${maxLength}`);
+      }
+      assert.ok(Object.keys(parameters).every(key => shape.some(entry => entry.name === key)), `${code}/${step.id} ${name} has only declared parameters`);
+    }
+  }
+}
+console.log('PASS: v2 step inventory, check evidence and visual play sequences match the declared commands.');

@@ -1,60 +1,65 @@
-# Introduction to using Vibe64 — topic preview 0.1.11
+# Introduction to using Vibe64 — topic 0.2.0 (Learning v2 draft)
 
-Canonical topic source for `mobily-enterprises/learn-vibe64-getting-started`. The source is published on GitHub; installing or enabling a learner release is a separate step.
+Canonical topic source for `mobily-enterprises/learn-vibe64-getting-started`.
+Publishing this source does not install or enable a learner release; course
+pins are prepared separately in the official catalogue.
 
-This preview starts with [**Connect your AI**](training/lessons/V64-START-00/lesson.md): human Z.AI registration and private key entry, verified regular-API access, and the requested future OpenCode Senior GLM-4.7 default. Full GLM-4.7 is paid; the distinct GLM-4.7-Flash option is explained separately. It is followed by the [**Your first steps in Vibe64**](training/lessons/V64-START-01/lesson.md). In about 10–15 minutes, that introduction finds the workspace, asks for help or a change, tries a real application in Preview, and returns to Colleague with an observation. Then [**Make your first change**](training/lessons/V64-START-02/lesson.md) has the learner edit one small function themselves, see the result in Preview and press **Check my code**. See [the outline](training/outline.md).
+This release uses lesson format v2 (`lesson.json` `schemaVersion: 2`). See
+public Vibe64's `docs/training-content.md` for the format and the
+`vibe64 training` CLI, and its `docs/templates/learn-topic/` template for new
+topics. [The outline](training/outline.md) lists the four lessons.
 
-Lesson 0 has one safe-setup answer assessment and no exercise. Lesson 1 retains three short questions in chat and three practical tasks in the application. The Main Learning teacher controls the existing SVG after the learner's real Preview action to explain what happened. The SVG is an illustration; practical completion requires trusted evidence from the workspace, exercise and Colleague owners. Content validation alone does not prove host integration or learner-pilot acceptance.
+## How a v2 lesson is laid out
 
-## Run the real practice application
+```
+training/lessons/V64-START-01/
+  lesson.json      descriptor: exercise, checks, visuals and ordered steps
+  notes.md         teaching notes for Colleague (how to explain, common mistakes)
+  steps/*.md       learner-facing text, one file per step
+```
 
-Requires Node.js 22 or newer. No npm dependencies, installation or database are needed.
+Each step has a plain, second-person body that a learner can follow without AI,
+an optional `visual` play sequence using the visual's declared commands, an
+optional `guide` (a declared Vibe64 place that **Show me** points at or opens)
+and a `check`:
+
+- `auto` runs a declared check script. A pass needs learner-origin evidence:
+  the learner's own Preview press (V64-START-01 `orientation-response`) or
+  code the learner wrote after entering the step (V64-START-02
+  `greeting-count`, file `greeting.mjs`).
+- `choice` replaces former answer assessments that have a right answer. The
+  correct options are compared on the server and never shown to Colleague.
+- `self` is the learner's own **Done** for reflective or human-only steps.
+- `none` steps are reading steps and are never required.
+
+Colleague teaches from the step text and `notes.md`, opens real screens, uses
+the guides and replays visuals. It never grades: no rubric, no AI grader.
+
+## Run the practice applications
+
+Requires Node.js 22 or newer (the notes app uses the built-in `node:sqlite`).
+No npm dependencies are needed.
 
 ```sh
-cd training/exercises/orientation-app
+cd training/exercises/orientation-app   # or greeting-app, notes-app
 node server.mjs --host 127.0.0.1 --port 8080
 ```
 
-Open `http://127.0.0.1:8080`, press **Ask the server**, and read the returned message. If the server restarts while the page remains open, its button stays disabled after detecting the changed instance. In Vibe64 use **Reload preview**, then press again; standalone, reload the browser page. Stop with Ctrl+C. Vibe64 uses the exercise's authored `genesis/stack.md` setup and Outputs contracts through its native execution/Preview owners. The lesson does not launch another preview service.
+Open `http://127.0.0.1:8080`. In Vibe64 each exercise runs through its own
+`genesis/stack.md` setup and Outputs contracts. The orientation app's optional
+host channel and check input are described in
+[its check README](training/checks/orientation-app/README.md); the
+[SVG protocol](training/visuals/client-server/README.md) is separate, and motion
+is never evidence that the application ran.
 
-The exercise's optional host channel reports formative observations, not grades. [Exercise protocol and check input](training/checks/orientation-app/README.md) describe exact correlation and restart limits. The [SVG protocol](training/visuals/client-server/README.md) is separate; motion is never evidence that the application ran.
+## Validate and check
 
-## Review and adapt the content
+From public Vibe64 (with v2 support), run
+`node bin/run.js training validate <this topic>`. Then run
+`node tests/content-regressions.mjs` from this topic root: it exercises the
+orientation client, the visual controller and the v2 step inventory in a
+controlled harness. It does not prove native Preview, browser gestures or
+learner acceptance; trial the lessons on desktop and phone before release.
 
-Read lesson 01 as the worked example. Its three quiz IDs assess using Vibe64: `help-or-change`, `preview-purpose` and `next-step`. Earlier networking-quiz passes do not count as passes for these questions. The three practical IDs and their evidence contracts remain unchanged.
-
-Use the [lesson author template](training/author-template/README.md) when authoring separate future material. This preview has no planned continuation or checklist exercise sequence. Declare all local assets, assessment anchors, practical producers and executable checks; use normal application Genesis contracts.
-
-From this topic root, validate with `vibe64 training validate .`. To bundle, use `vibe64 training bundle . ../getting-started-preview-bundle` with a new output directory outside this source. Public Vibe64's `docs/training-content.md` describes the format and CLI; this topic has no second validator or publishing system. The 0.1.9 revision corrected Lesson 1 navigation: keep the same Main Learning session selected while using **Practice project**, its session tab or **Show chat**, and **App** in Preview. Switching to Working cannot record that practical task. It preserves all assessment descriptors and full rubric sections, original exercise/check and SVG/controller bytes. The introduction keeps the explicit end/retained-pin continuation guidance. Preview 0.1.10 clarifies Lesson 0's future OpenCode Senior scope and its separate configurable Junior teacher. New Learning conversations start in Junior; Chat mode keeps Senior, Junior and Custom selectable, and Resume retains the saved choice. A separate Junior routing request also affects ordinary Junior coding work. Lesson 0 has a new exact document/rubric hash; Lesson 1 is unchanged from 0.1.9. Old passes are not automatically credited against the changed lesson version. It does not replace previously pinned 0.1.1, 0.1.2, 0.1.3, 0.1.4, 0.1.5, 0.1.6, 0.1.7, 0.1.8 or 0.1.9 content or enable a new course release. No-exercise teaching admission and safe account-status reads must be supplied by the host before offering Lesson 0. Source changes require new validation, immutable pins and human review before offering the changed content. Repository publication and catalogue/course locking are separate operations. Existing learners keep their original installed pins; continuation needs the host’s registered `lesson.continue`, retains genuine passes for that original unchanged lesson and does not replace or delete its earlier project.
-
-Local preview 0.1.11 makes the Lesson 0 setup-to-question order explicit. The teacher waits for the person's account-control result and checks native connection, model and routing facts before preparing the safe-setup assessment. If setup is deferred, the person can explicitly request an understanding-only check; a passing answer still cannot prove account readiness. Lesson 1 now says to restore the separate Colleague helper before returning to the saved Main Learning question. Its Preview-purpose example requires observing the result, and its next-request rubric requires a way to recheck even when the real press failed. Its six assessment identities and evidence contracts are unchanged, but its document hash changes. This draft does not replace the installed 0.1.10 pin.
-
-Preview 0.1.11 also adds V64-START-02, **Make your first change** (about 12 minutes, requires V64-START-01). It prepares its own disposable [greeting exercise](training/exercises/greeting-app/) (`reuse:"attempt"`, as the code-question contract requires), which looks like the introduction's app but writes its greeting with `greeting(count)` in `greeting.mjs`. The learner edits that one declared file in **Dashboard → Files** so the greeting says how many times the button was pressed, tries it in Preview and presses **Check my code**. The pinned [code check](training/checks/greeting-app/count.mjs) calls the learner's function with several counts and accepts any short wording that uses the count; the untouched starter, a fixed number or broken code get a helpful **Not yet** reason. Two answer questions cover what Preview showed and why the check tests behaviour. The shared client-server SVG may replay the journey with the new greeting. Adding this lesson changes no Lesson 0 or Lesson 1 file.
-
-Trial the pinned preview on desktop and phone, including plausible wrong answers, hints, setup failure, interruption, text-only mode and returning after leaving. Author-preview results must not become published learner progress. Keep learner records, credentials, runtime logs and generated output out of Git; local evidence belongs under ignored `.local/`.
-
-## Focused content regression check
-
-Run `node tests/content-regressions.mjs` from the topic root. It loads the exact client/controller source in a controlled page/channel harness and checks changed-instance reload recovery, stale display callbacks, cached visual result states, and semantic snapshot restoration with bounded validation. It does not start a server or prove native Preview visibility, trusted browser gestures, sandbox isolation or grading. The real standalone server/check smoke and later native pilot acceptance remain separate evidence.
-
-## Preview 0.1.11 teaching readiness
-
-The left Main Learning conversation teaches; the right Colleague drawer remains
-the general supervisor. The final `return-to-colleague` practical still means
-using that actual Colleague drawer and returning to the same retained task. It is
-not redefined as hiding Main. The original descriptors and assessment contracts
-remain unchanged. Main’s lesson/question must be correlated with the original
-Colleague observations before that practical can pass.
-
-This source is a content candidate. Do not enable it as a completed Main course
-until the host composes the actual workspace practical observer, response check
-and explanation admission, Colleague leave/restore observations, and piloted
-player with Main’s exact delivered questions and accepted learner answers. The
-existing no-exercise Main quiz integration alone cannot deliver the introduction.
-Lesson0 also requires a real human account/key/default trial, truthful permitted
-model checks and desktop/phone acceptance. Validation and the controlled content
-harness establish neither native delivery nor beginner completion.
-
-Use a new immutable topic/course pin for this source after review; retain existing
-installed releases and learner progress. This source publication does not install
-or enable a learner release.
+Earlier releases (0.1.x, schema version 1) keep their installed pins and
+learner history; this source does not rewrite them.

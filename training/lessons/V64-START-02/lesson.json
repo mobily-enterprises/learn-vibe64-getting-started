@@ -1,8 +1,8 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "code": "V64-START-02",
   "title": "Make your first change",
-  "document": "lesson.md",
+  "notes": "notes.md",
   "prerequisites": [
     {
       "code": "V64-START-01"
@@ -28,33 +28,142 @@
       "timeoutSeconds": 5
     }
   ],
-  "assessments": [
+  "steps": [
     {
-      "id": "count-the-presses",
-      "kind": "practical",
-      "required": true,
-      "rubric": "lesson.md#count-the-presses",
-      "evidence": {
-        "producer": "code",
-        "operation": "edit-and-check",
+      "id": "welcome",
+      "title": "Welcome",
+      "body": "steps/welcome.md",
+      "check": {
+        "kind": "none"
+      },
+      "required": false
+    },
+    {
+      "id": "try-it-first",
+      "title": "Try the app first",
+      "body": "steps/try-it-first.md",
+      "guide": {
+        "target": "preview",
+        "navigate": true,
+        "caption": "Press Ask the server a few times"
+      },
+      "check": {
+        "kind": "self"
+      },
+      "required": false
+    },
+    {
+      "id": "meet-the-file",
+      "title": "Meet the file",
+      "body": "steps/meet-the-file.md",
+      "guide": {
+        "target": "files",
+        "navigate": true,
+        "filePath": "greeting.mjs",
+        "caption": "The greeting is written here"
+      },
+      "check": {
+        "kind": "none"
+      },
+      "required": false
+    },
+    {
+      "id": "change-the-greeting",
+      "title": "Make the greeting count",
+      "body": "steps/change-the-greeting.md",
+      "guide": {
+        "target": "files",
+        "navigate": true,
+        "filePath": "greeting.mjs",
+        "caption": "Change the line that starts with return"
+      },
+      "check": {
+        "kind": "auto",
         "check": "greeting-count",
         "files": [
           "greeting.mjs"
-        ],
-        "explanationRequired": true
-      }
+        ]
+      },
+      "required": true
     },
     {
       "id": "what-preview-showed",
-      "kind": "answer",
-      "required": true,
-      "rubric": "lesson.md#what-preview-showed"
+      "title": "See it in Preview",
+      "body": "steps/what-preview-showed.md",
+      "guide": {
+        "target": "preview",
+        "navigate": true,
+        "caption": "Press Ask the server again"
+      },
+      "check": {
+        "kind": "self"
+      },
+      "required": true
     },
     {
       "id": "why-check-behaviour",
-      "kind": "answer",
-      "required": true,
-      "rubric": "lesson.md#why-check-behaviour"
+      "title": "Why the check tries several numbers",
+      "body": "steps/why-check-behaviour.md",
+      "check": {
+        "kind": "choice",
+        "question": "Why is trying several press counts, instead of looking for exact words, a good way to check your change?",
+        "options": [
+          "It is faster than reading the words.",
+          "It checks your spelling.",
+          "Any wording that does the job passes, and different numbers show the greeting really uses count instead of one fixed number.",
+          "One try would have been enough; the extra tries are just for show."
+        ],
+        "answer": [
+          2
+        ]
+      },
+      "required": true
+    },
+    {
+      "id": "replay-the-journey",
+      "title": "Watch the journey again",
+      "body": "steps/replay-the-journey.md",
+      "visual": {
+        "id": "client-server",
+        "play": [
+          {
+            "name": "showOverview",
+            "parameters": {}
+          },
+          {
+            "name": "sendRequest",
+            "parameters": {
+              "method": "POST",
+              "path": "/api/greeting"
+            }
+          },
+          {
+            "name": "showServerWork",
+            "parameters": {
+              "label": "greeting(count)"
+            }
+          },
+          {
+            "name": "sendResponse",
+            "parameters": {
+              "label": "Hello! You asked 3 times."
+            }
+          }
+        ]
+      },
+      "check": {
+        "kind": "none"
+      },
+      "required": false
+    },
+    {
+      "id": "recap",
+      "title": "What you learned",
+      "body": "steps/recap.md",
+      "check": {
+        "kind": "none"
+      },
+      "required": false
     }
   ]
 }

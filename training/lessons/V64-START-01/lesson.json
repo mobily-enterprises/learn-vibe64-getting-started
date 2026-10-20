@@ -1,8 +1,8 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "code": "V64-START-01",
   "title": "Your first steps in Vibe64",
-  "document": "lesson.md",
+  "notes": "notes.md",
   "prerequisites": [],
   "estimatedMinutes": 12,
   "visuals": [
@@ -25,56 +25,161 @@
       ]
     }
   ],
-  "assessments": [
+  "steps": [
     {
-      "id": "workspace-navigation",
-      "kind": "practical",
-      "required": true,
-      "rubric": "lesson.md#workspace-navigation",
-      "evidence": {
-        "producer": "workspace",
-        "operation": "workspace-navigation"
-      }
+      "id": "welcome",
+      "title": "Welcome",
+      "body": "steps/welcome.md",
+      "check": {
+        "kind": "none"
+      },
+      "required": false
+    },
+    {
+      "id": "find-your-way",
+      "title": "Find your way around",
+      "body": "steps/find-your-way.md",
+      "guide": {
+        "target": "preview",
+        "navigate": false,
+        "caption": "Preview: your app runs here"
+      },
+      "check": {
+        "kind": "self"
+      },
+      "required": true
     },
     {
       "id": "help-or-change",
-      "kind": "answer",
-      "required": true,
-      "rubric": "lesson.md#help-or-change"
+      "title": "Ask for help or a change",
+      "body": "steps/help-or-change.md",
+      "check": {
+        "kind": "choice",
+        "question": "You want the greeting to say “Welcome” instead. What gets the application changed?",
+        "options": [
+          "Type “Welcome” into the page in Preview.",
+          "Ask a coding agent to make the change, either yourself in the coding conversation or by asking Colleague to pass it on.",
+          "Describe the idea in any chat; talking about it changes the app.",
+          "Nothing: a running application can't be changed."
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "required": true
     },
     {
-      "id": "try-the-application",
-      "kind": "practical",
-      "required": true,
-      "rubric": "lesson.md#try-the-application",
-      "evidence": {
-        "producer": "exercise",
-        "operation": "try-the-application",
+      "id": "try-the-app",
+      "title": "Press the button",
+      "body": "steps/try-the-app.md",
+      "guide": {
+        "target": "preview",
+        "navigate": true,
+        "caption": "Press Ask the server here"
+      },
+      "check": {
+        "kind": "auto",
         "check": "orientation-response",
-        "explanationRequired": true
-      }
+        "files": []
+      },
+      "required": true
+    },
+    {
+      "id": "what-happened",
+      "title": "What just happened",
+      "body": "steps/what-happened.md",
+      "visual": {
+        "id": "client-server",
+        "play": [
+          {
+            "name": "showOverview",
+            "parameters": {}
+          },
+          {
+            "name": "highlightClient",
+            "parameters": {}
+          },
+          {
+            "name": "sendRequest",
+            "parameters": {
+              "method": "POST",
+              "path": "/api/greeting"
+            }
+          },
+          {
+            "name": "showServerWork",
+            "parameters": {
+              "label": "Prepare a greeting"
+            }
+          },
+          {
+            "name": "sendResponse",
+            "parameters": {
+              "label": "Hello from the server!"
+            }
+          }
+        ]
+      },
+      "check": {
+        "kind": "none"
+      },
+      "required": false
     },
     {
       "id": "preview-purpose",
-      "kind": "answer",
-      "required": true,
-      "rubric": "lesson.md#preview-purpose"
+      "title": "Where to try a change",
+      "body": "steps/preview-purpose.md",
+      "check": {
+        "kind": "choice",
+        "question": "The coding agent says your change is ready. What should you do next?",
+        "options": [
+          "Nothing: if the agent says it works, it works.",
+          "Watch the animated diagram again.",
+          "Open Preview, try it yourself and look at what happens.",
+          "Ask for another change straight away."
+        ],
+        "answer": [
+          2
+        ]
+      },
+      "required": true
     },
     {
-      "id": "next-step",
-      "kind": "answer",
-      "required": true,
-      "rubric": "lesson.md#next-step"
+      "id": "useful-request",
+      "title": "Make a useful request",
+      "body": "steps/useful-request.md",
+      "check": {
+        "kind": "choice",
+        "question": "You saw “Hello from the server!” but want “Welcome”. Which message helps the coding agent most?",
+        "options": [
+          "“Change it.”",
+          "“It's broken.”",
+          "“Make the app better.”",
+          "“I pressed Ask the server in Preview and saw ‘Hello from the server!’. Please make it say ‘Welcome’. I'll press it again to check.”"
+        ],
+        "answer": [
+          3
+        ]
+      },
+      "required": true
     },
     {
-      "id": "return-to-colleague",
-      "kind": "practical",
-      "required": true,
-      "rubric": "lesson.md#return-to-colleague",
-      "evidence": {
-        "producer": "colleague",
-        "operation": "return-to-colleague"
-      }
+      "id": "meet-colleague",
+      "title": "Open and close Colleague",
+      "body": "steps/meet-colleague.md",
+      "check": {
+        "kind": "self"
+      },
+      "required": true
+    },
+    {
+      "id": "recap",
+      "title": "What you learned",
+      "body": "steps/recap.md",
+      "check": {
+        "kind": "none"
+      },
+      "required": false
     }
   ]
 }

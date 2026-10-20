@@ -5,103 +5,39 @@
 - `package.json`
 - Main: `training/outline.md`
 - `training/lessons/V64-START-00/lesson.json`
-- `training/lessons/V64-START-00/lesson.md`
+- `training/lessons/V64-START-00/notes.md`
 - `training/lessons/V64-START-01/lesson.json`
-- `training/lessons/V64-START-01/lesson.md`
+- `training/lessons/V64-START-01/notes.md`
 - `training/lessons/V64-START-02/lesson.json`
-- `training/lessons/V64-START-02/lesson.md`
+- `training/lessons/V64-START-02/notes.md`
 - `training/lessons/V64-START-03/lesson.json`
-- `training/lessons/V64-START-03/lesson.md`
-- `training/author-template/README.md`
+- `training/lessons/V64-START-03/notes.md`
+- `tests/content-regressions.mjs`
 
 ## Public contract
 
-Preview 0.1.10 selects V64-START-00 before the introduction,
-V64-START-01. Lesson 0 has no exercise or visual and one safe-ai-setup answer
-assessment. It guides human registration, consent and masked key entry through
-normal AI Accounts controls. Full GLM-4.7 needs paid/entitled regular-API access;
-free GLM-4.7-Flash is a distinct explicit option. Native account/model facts are
-separate from a quiz pass. Future OpenCode Senior routing, configured Junior Learning teachers, existing Custom overrides
-and Colleague's own choice retain their original owners and scopes. Missing host
-no-exercise admission or safe account reads remain acceptance blockers, not
-fabricated readiness. Authored ordering adds no silent prerequisite gate or
-replacement of old attempts.
+Topic 0.2.0 lists four published, required lessons in order: V64-START-00
+Connect your AI, V64-START-01 Your first steps in Vibe64, V64-START-02 Make
+your first change (requires 01) and V64-START-03 Build with a database
+(requires 01). Each descriptor uses lesson format v2: `notes` for Colleague and
+ordered `steps` whose `body` files under `steps/` are learner-facing Markdown.
 
-New Learning conversations start in configured Junior mode. The existing Chat
-mode controls retain Senior, Junior and Custom selection; Resume keeps the saved
-choice. A Senior-only routing request changes neither Junior nor the current
-Custom teacher. A separately requested shared Junior change affects ordinary
-Junior coding too. This 0.1.10 clarification changes Lesson 0 and its exact quiz
-wording/hash; all descriptors and Lesson 1 content remain unchanged from 0.1.9.
-Old installed pins, prepared questions, answers and passes are not rewritten.
+Steps declare an optional `visual` play sequence of the client-server visual's
+declared commands, an optional `guide` to a declared Vibe64 place and a
+`check`. `auto` checks name a declared check script: `orientation-response`
+needs the learner's own Preview press, and the `greeting-count` code check
+covers `greeting.mjs` written by the learner after entering the step. `choice`
+checks replace former answer assessments that have a right answer; their
+`answer` indexes are compared on the server and never shown to Colleague or the
+browser. `self` checks are the learner's **Done**. `none` steps are optional
+reading. There are no rubrics and no AI grading.
 
-The unpublished 0.1.11 draft asks the safe-setup question only after a native
-account-status checkpoint, or when the person explicitly defers setup and asks
-for an understanding-only check. Its Lesson 1 final-practical wording directs
-the learner to restore the separate Colleague helper and then return to the
-saved Main Learning question. The six assessment identities and evidence
-contracts remain unchanged; both lesson documents receive new hashes. The
-installed 0.1.10 pin remains intact.
-The Preview-purpose example requires the learner to observe a result, and the
-next-request failure variant still asks how to check a fix after recovery.
+Lesson 0 has no exercise; its account and routing steps are optional self
+checks because only the workspace owner can perform them, and its three choice
+questions check understanding, not account readiness. Lessons 1–3 each prepare
+a disposable practice project (`reuse: "attempt"`). Lesson 3 declares its only
+data-changing route, `POST /api/notes`.
 
-Preview 0.1.11 adds published, required V64-START-02 "Make your first change",
-which requires V64-START-01. It prepares its own disposable greeting exercise
-(`reuse:"attempt"`; code questions do not support sequence reuse) and asks one
-`code` practical, `count-the-presses`, whose learner-edited file is
-`greeting.mjs` and whose pinned `greeting-count` check verifies behaviour, plus
-two answer assessments about the Preview result and why the check tests
-behaviour. It may replay the shared client-server SVG with the learner's new
-greeting. Lessons 0 and 1 are untouched by this addition.
-
-The introduction's three chat quizzes use
-new IDs: help-or-change, preview-purpose and next-step. Earlier networking quiz
-results cannot pass these changed meanings. The three practical contracts remain
-workspace-navigation, try-the-application and return-to-colleague, with the same
-native evidence producers, pinned response check and explanation requirement.
-
-The learner tries the real application before the Main Learning teacher illustrates that action
-using the existing declared SVG commands and acknowledgements. The brief provides
-short questions, plausible misconceptions, hints, fresh follow-ups, actual-result
-reporting and recovery. It permits asking for changes directly or through
-Colleague's delegation. A quiz answer does not authorize the imagined change.
-
-One issued navigation challenge retains its identity across the three native
-moves. Diagram Continue plays the illustration without starting a teacher turn;
-the learner returns to Main Learning afterwards. Initial quiz prompts invite one
-compact complete reply. Hints match the current navigation substep; supported
-follow-ups still end with an independent reply, preserving the original
-single-message grading boundary.
-
-The same Learning Main stays selected while Practice project, its session tab or
-Show chat, and App preview supply those native moves. Switching to Working retires
-the active Main observation controls and cannot record this practical. This 0.1.9
-wording correction retains the complete rubrics, descriptors, exercise/check and
-SVG/controller bytes; that release left Lesson 0 unchanged and earlier installed pins intact.
-
-Public Vibe64 validates and bundles this whole three-lesson topic. The published
-lesson selection in a preview does not establish human acceptance, native player
-integration or course availability. The template remains an authoring aid, not
-another learner-facing lesson.
-
-The introduction's revised missing/discarded-exercise paragraph offers a fresh
-practice project only after a direct request or accepted offer. The teacher explicitly
-ends the selected active lesson and continues that exact ended pin through the
-host's lesson.continue, even for disabled installed content. It reads the new
-brief for original pass provenance and remaining tasks, preserves the earlier
-project, refuses another active lesson and reports unavailable/uncertain recovery.
-No content-owned replacement implementation is added. This document change creates
-a new lesson hash; old evidence is not silently transferred to the revised version.
-Rubric sections, descriptors, assessment IDs, native practical contracts, exercise
-and SVG were unchanged in preview 0.1.8. Both lesson documents clarified teacher
-roles/pacing and received new hashes in that release. Validation does not establish deployed host capability.
-
-The Main Learning teacher is distinct from the general Colleague supervisor.
-The original return-to-colleague practical keeps its actual Colleague drawer
-minimise/workspace-use/restore proof, with the Main pending lesson retained.
-It cannot be passed by hiding Main. Main practical/check/player and Colleague
-observation association are required host integration, not content-owned code.
-The current no-exercise teacher subset alone establishes none of that readiness.
-Lesson0 uses confirmed original account/model facts; a quiz or another assistant’s
-unverified summary cannot prove live connection/default success. Registration,
-secret entry and paid consent remain human, with no automatic model substitution.
+New topics start from public Vibe64's `docs/templates/learn-topic/`; this
+repository no longer carries its own author template. Earlier 0.1.x releases
+(lesson format v1) keep their installed pins and learner history.

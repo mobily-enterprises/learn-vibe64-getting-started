@@ -1,17 +1,122 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "code": "V64-START-00",
   "title": "Connect your AI",
-  "document": "lesson.md",
+  "notes": "notes.md",
   "prerequisites": [],
   "estimatedMinutes": 10,
   "visuals": [],
-  "assessments": [
+  "steps": [
     {
-      "id": "safe-ai-setup",
-      "kind": "answer",
-      "required": true,
-      "rubric": "lesson.md#safe-ai-setup"
+      "id": "welcome",
+      "title": "Welcome",
+      "body": "steps/welcome.md",
+      "check": {
+        "kind": "none"
+      },
+      "required": false
+    },
+    {
+      "id": "keys-and-models",
+      "title": "Keys, models and costs",
+      "body": "steps/keys-and-models.md",
+      "check": {
+        "kind": "none"
+      },
+      "required": false
+    },
+    {
+      "id": "create-key",
+      "title": "Create your Z.AI key",
+      "body": "steps/create-key.md",
+      "check": {
+        "kind": "self"
+      },
+      "required": false
+    },
+    {
+      "id": "connect-key",
+      "title": "Connect the key in AI Accounts",
+      "body": "steps/connect-key.md",
+      "check": {
+        "kind": "self"
+      },
+      "required": false
+    },
+    {
+      "id": "choose-senior-model",
+      "title": "Choose your coding model",
+      "body": "steps/choose-senior-model.md",
+      "check": {
+        "kind": "self"
+      },
+      "required": false
+    },
+    {
+      "id": "key-safety",
+      "title": "Keep your key safe",
+      "body": "steps/key-safety.md",
+      "check": {
+        "kind": "choice",
+        "question": "Where should your Z.AI API key go?",
+        "options": [
+          "Into a chat, so Colleague can set it up for you.",
+          "Into a file in your project.",
+          "Into the masked API key field in AI Accounts.",
+          "Into a screenshot you share for help."
+        ],
+        "answer": [
+          2
+        ]
+      },
+      "required": true
+    },
+    {
+      "id": "model-choices",
+      "title": "GLM-4.7 and GLM-4.7-Flash",
+      "body": "steps/model-choices.md",
+      "check": {
+        "kind": "choice",
+        "question": "Which of these is true?",
+        "options": [
+          "GLM-4.7 and GLM-4.7-Flash are the same model with different names.",
+          "GLM-4.7 uses paid credit; GLM-4.7-Flash is a different model, currently listed as free.",
+          "Creating a Z.AI key unlocks every model for free.",
+          "GLM-4.7-Flash needs a Coding Plan."
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "required": true
+    },
+    {
+      "id": "model-scope",
+      "title": "What your choice changes",
+      "body": "steps/model-scope.md",
+      "check": {
+        "kind": "choice",
+        "question": "You choose GLM-4.7 for future Senior coding chats. What else changes?",
+        "options": [
+          "Colleague switches to GLM-4.7 too.",
+          "Junior chats switch to GLM-4.7 too.",
+          "Every chat that is already running switches straight away.",
+          "Nothing else: Junior, Colleague and running chats keep their own choices."
+        ],
+        "answer": [
+          3
+        ]
+      },
+      "required": true
+    },
+    {
+      "id": "recap",
+      "title": "What's done and what's next",
+      "body": "steps/recap.md",
+      "check": {
+        "kind": "none"
+      },
+      "required": false
     }
   ]
 }

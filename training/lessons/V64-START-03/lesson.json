@@ -1,9 +1,13 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "code": "V64-START-03",
   "title": "Build with a database",
-  "document": "lesson.md",
-  "prerequisites": [],
+  "notes": "notes.md",
+  "prerequisites": [
+    {
+      "code": "V64-START-01"
+    }
+  ],
   "estimatedMinutes": 20,
   "visuals": [],
   "exercise": {
@@ -12,18 +16,129 @@
     "reuse": "attempt"
   },
   "checks": [],
-  "assessments": [
+  "appRoutes": [
+    {
+      "method": "POST",
+      "path": "/api/notes"
+    }
+  ],
+  "steps": [
+    {
+      "id": "welcome",
+      "title": "Welcome",
+      "body": "steps/welcome.md",
+      "check": {
+        "kind": "none"
+      },
+      "required": false
+    },
+    {
+      "id": "add-a-note",
+      "title": "Add a note",
+      "body": "steps/add-a-note.md",
+      "guide": {
+        "target": "preview",
+        "navigate": true,
+        "caption": "Add a note here"
+      },
+      "check": {
+        "kind": "self"
+      },
+      "required": true
+    },
+    {
+      "id": "see-the-rows",
+      "title": "Look inside the database",
+      "body": "steps/see-the-rows.md",
+      "guide": {
+        "target": "database-data",
+        "navigate": true,
+        "caption": "Your note is a row in the notes table"
+      },
+      "check": {
+        "kind": "self"
+      },
+      "required": true
+    },
     {
       "id": "where-notes-live",
-      "kind": "answer",
-      "required": true,
-      "rubric": "lesson.md#where-notes-live"
+      "title": "Where notes are kept",
+      "body": "steps/where-notes-live.md",
+      "check": {
+        "kind": "choice",
+        "question": "When you press Add note, where does your note end up?",
+        "options": [
+          "Only in the page in your browser.",
+          "In the chat with Colleague.",
+          "In the app's database, where Dashboard → Database shows it as a row.",
+          "In Preview."
+        ],
+        "answer": [
+          2
+        ]
+      },
+      "required": true
     },
     {
       "id": "read-the-erd",
-      "kind": "answer",
-      "required": true,
-      "rubric": "lesson.md#read-the-erd"
+      "title": "Read the diagram",
+      "body": "steps/read-the-erd.md",
+      "guide": {
+        "target": "database-erd",
+        "navigate": true,
+        "caption": "Follow the line between the tables"
+      },
+      "check": {
+        "kind": "choice",
+        "question": "Looking at the diagram, how is a note connected to a notebook?",
+        "options": [
+          "Each note belongs to one notebook, through the notebook_id column.",
+          "A notebook and a note are the same thing.",
+          "They are not connected.",
+          "Each notebook belongs to one note."
+        ],
+        "answer": [
+          0
+        ]
+      },
+      "required": true
+    },
+    {
+      "id": "ask-for-a-change",
+      "title": "Ask for a small change",
+      "body": "steps/ask-for-a-change.md",
+      "guide": {
+        "target": "preview",
+        "navigate": true,
+        "caption": "Try your new feature here"
+      },
+      "check": {
+        "kind": "self"
+      },
+      "required": true
+    },
+    {
+      "id": "see-the-new-column",
+      "title": "See your change in the data",
+      "body": "steps/see-the-new-column.md",
+      "guide": {
+        "target": "database-erd",
+        "navigate": true,
+        "caption": "Look for the new column in notes"
+      },
+      "check": {
+        "kind": "self"
+      },
+      "required": false
+    },
+    {
+      "id": "recap",
+      "title": "What you learned",
+      "body": "steps/recap.md",
+      "check": {
+        "kind": "none"
+      },
+      "required": false
     }
   ]
 }
