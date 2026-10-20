@@ -8,8 +8,15 @@ Now ask for one small new feature. If you don't have an idea of your own, try:
    stay ticked after I reload the page.”
 2. Wait until the agent says it has finished.
 3. The agent changed the app's server code (`server.mjs`), and Preview is
-   still running the old copy. Press **Restart preview** (the circular-arrow
-   button in the Preview toolbar) so it runs the new code.
+   still running the old copy. Restart the preview so it runs the new code.
+   Use the control labelled **Restart preview**, not **Reload preview**:
+   Reload only reloads the page and keeps the old server running. Several
+   Preview buttons share the same circular-arrow icon, so go by the label or
+   tooltip. You may see a warning icon in the Preview toolbar saying
+   **Preview may be stale** (“Server-side app files changed… Restart preview”);
+   open it and press **Restart preview** there. Otherwise look for
+   **Restart preview** in the Preview toolbar or in the run output panel. If
+   you can't find it, ask Colleague to restart the preview for you.
 4. Try it yourself in **Preview**: tick a note, then reload the page. Is it
    still ticked?
 

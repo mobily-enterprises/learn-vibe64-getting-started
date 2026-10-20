@@ -5,7 +5,7 @@ hands-on introduction: find the project, coding conversation, Preview and
 Colleague; try a real application; change a small function themselves; and
 see where an application keeps the data it saves.
 
-Topic 0.2.1 uses Learning v2 lessons. Every lesson is an ordered list of short
+Topic 0.2.2 uses Learning v2 lessons. Every lesson is an ordered list of short
 steps whose learner-facing text is readable without AI. Colleague is the
 teacher: it follows the current step, explains it using the lesson's teaching
 notes, opens real screens, points at declared guide places and replays the
