@@ -1,0 +1,6 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Notes</title>
+<style>body{font:18px/1.5 system-ui,sans-serif;max-width:38rem;margin:2rem auto;padding:0 1rem;color:#172a3a;background:#f4f8fc}main{background:white;padding:1.5rem;border-radius:1rem}form{display:flex;flex-wrap:wrap;gap:.5rem}input,select,button{font:inherit;padding:.5rem;border-radius:.4rem;border:1px solid #9bb}button{color:white;background:#215ca6;border:0;cursor:pointer}li{padding:.25rem 0}small{color:#567}</style></head>
+<body><main><h1>Notes</h1><p>Every note is saved in this project's SQLite database.</p>
+<form id="add"><input id="title" placeholder="New note" maxlength="200" required><select id="notebook" aria-label="Notebook"></select><button>Add note</button></form>
+<p id="status" role="status"></p><ul id="notes"></ul></main><script type="module" src="/client.js"></script></body></html>

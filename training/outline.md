@@ -7,6 +7,7 @@ Preview 0.1.11 contains Z.AI onboarding, the existing introduction and a first h
 | V64-START-00 | Connect your AI | Register with Z.AI, enter a regular API key safely, verify actual access and choose the requested future OpenCode Senior GLM-4.7 default when entitled; distinguish paid full 4.7, free Flash and Colleague's separate choice. | Published in preview; host acceptance pending |
 | V64-START-01 | Your first steps in Vibe64 | Find the workspace, ask for help or a change, try the real application in Preview, report what happened, and return to the same Colleague conversation. | Published in preview |
 | V64-START-02 | Make your first change | Edit one small function in Dashboard → Files so the greeting counts button presses, see it in Preview, use Check my code and explain the change. | Published in preview |
+| V64-START-03 | Build with a database | Add a note in a real SQLite notes app, ask for a small change and try it in Preview, then read the app's tables, rows and ERD in Dashboard → Database. | Published in preview |
 
 Lesson 0 has one answer assessment and no exercise. Registration, secret entry and paid-access consent are human steps. Its quiz verifies understanding, not account or model readiness; supported native reads verify those facts separately. This list orders onboarding first without silently blocking or repinning an existing introduction attempt.
 

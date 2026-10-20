@@ -10,6 +10,8 @@
 - `training/lessons/V64-START-01/lesson.md`
 - `training/lessons/V64-START-02/lesson.json`
 - `training/lessons/V64-START-02/lesson.md`
+- `training/lessons/V64-START-03/lesson.json`
+- `training/lessons/V64-START-03/lesson.md`
 - `training/author-template/README.md`
 
 ## Public contract

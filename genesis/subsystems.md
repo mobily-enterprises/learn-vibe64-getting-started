@@ -60,6 +60,26 @@ Owns the greeting exercise whose one function the learner edits, and its finite 
 
 - Nothing.
 
+## `notes` Notes database exercise
+
+Owns the notes exercise whose notebooks and notes live in a Stack-declared SQLite database. Does not own learner progress or the editor's database views.
+
+### Source
+
+- Directory `training/exercises/notes-app`
+
+### Program
+
+- `genesis/program/notes.md`
+
+### Data owned
+
+- Nothing.
+
+### Data used
+
+- Nothing.
+
 ## `visual` Client/server explanation
 
 Owns static SVG, declared finite-state commands and their sandbox controller. Has no editor capabilities.
