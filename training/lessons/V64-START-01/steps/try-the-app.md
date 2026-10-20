@@ -9,7 +9,7 @@ The page briefly says “Asking the server…” and then shows
 to remember the reference.
 
 When your press goes through, this step checks it for you. If it doesn't
-update, press **Check**.
+update, press **Check now**.
 
 **If something goes wrong:** if the button stays greyed out and the page asks
 you to reload, use **Reload preview** and press the button again. If the app

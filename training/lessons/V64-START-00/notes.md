@@ -1,74 +1,55 @@
-# Teaching notes: Connect your AI
+# Good to know: Connect your AI
 
-These notes are for Colleague. Follow the learner's current step with
-`lesson.read`. Give only the next action, wait for its result, and explain any
-error before moving on. A useful check-in is “What does the screen say now?”,
-asking for a control label or error with secrets left out. Do not give the
-whole setup procedure in one reply.
+These notes add background to the steps. You can read them at any time; they
+don't change anything.
 
-## Rules for every step
+## Your key is yours alone
 
-- Steps pass only through their own checks. Never claim a pass. Never reveal
-  which choice option is correct.
-- **Never ask for the key**, not even a few characters, and never accept one
-  pasted into chat. If the learner pastes one, tell them to delete that
-  message and create a new key on Z.AI, because the old one is no longer
-  private.
-- Registration, verification, secret entry, payment and consent to paid
-  models are the person's steps. You must not unlock paid models, buy credit
-  or infer consent.
-- Do not say a connection or a model is ready from “done”, a screenshot or a
-  description. Read the saved connection, the available models and the routing
-  through the supported AI Accounts and routing reads when the learner asks
-  you to check. If you cannot read them, say readiness is unconfirmed.
-- AI Accounts is a Management page. You can open it with ordinary navigation
-  when asked; opening it changes no settings. There is no lesson guide target
-  for it.
+- Your API key works like a password. Nobody needs to see it, not even
+  Colleague, and Colleague will never ask you for it.
+- If you paste a key into a chat by mistake, delete that message and create a
+  new key on Z.AI. The old one is no longer private.
+- Signing up, verifying your account, entering the key, paying and agreeing to
+  paid models are always your own steps. Colleague can explain them and open
+  the right screen, but it can't do them for you.
 
-## Step by step
+## If you're not the workspace owner
 
-**welcome** — Members without owner permission cannot manage AI connections.
-Explain the restriction and suggest involving the owner; never try another
-account or bypass the control. The lesson's questions still work for them.
+Only the workspace owner can manage AI connections. If **AI Accounts** isn't
+available to you, that's expected: ask the owner to do the setup steps. You
+can still read the lesson and answer its questions.
 
-**keys-and-models** — GLM-4.7 uses paid regular-API credit; GLM-4.7-Flash is a
-different model, currently listed as free. Pricing facts were checked on
-8 October 2026; point to Z.AI's pricing page rather than promising prices. Do
-not redirect a regular-key learner into Coding Plan setup or claim its quota
-covers the regular API.
+## Finding AI Accounts
 
-**create-key** — Wait while the person uses the external site. Do not ask them
-to read out codes, open a shell or send screenshots.
+**AI Accounts** is a Management page. If you can't find it, ask Colleague to
+open it for you; opening it changes no settings.
 
-**connect-key** — An existing Coding Plan connection can hide **Connect
-regular Z.AI API**; then use **Add connection** → **Choose provider** on
-**OpenCode**, wait for the catalogue, search “Z.AI” and choose the regular
-`zai` row. The editor heading is **Connect regular Z.AI API**. The generic
-editor has no **Create a regular Z.AI API key** button; use the Z.AI link. The
-verifier makes a tiny GLM-4.7 Flash request on the regular API before saving;
-this proves the route and key, not entitlement to full GLM-4.7. A connection
-can be saved even if later routing setup failed: explain that distinction.
+If you already have a Coding Plan connection, the **Connect regular Z.AI API**
+button may not be shown. Use **Add connection**, then **Choose provider** on the
+**OpenCode** card, search for “Z.AI” and pick the regular **Z.AI** row.
 
-**choose-senior-model** — Only save the changes the person asked for. With the
-owner's explicit authorisation you can read the current routing revision,
-preview supported routing changes and save them; you cannot connect the key or
-consent to paid access. Do not replace unrelated Helper, Router or Shared
-backup choices. Change **Junior** only if separately requested, explaining it
-also affects ordinary Junior coding work. If a save is uncertain, reread the
-current revision before retrying. Colleague's own model is chosen in its
-composer model picker, not by routing; the avatar or voice settings do not
-select the AI model.
+When you press **Verify and connect**, Vibe64 sends a tiny test request
+before saving. That proves the key works; it doesn't prove your account can
+use every model.
 
-**key-safety**, **model-choices**, **model-scope** — Former rubric: the key
-goes into the masked **API key** field in AI Accounts, never chat; the
-requested Senior model is GLM-4.7 when paid access is available, distinct from
-free GLM-4.7-Flash; Colleague's model is chosen separately. Common mistakes:
-pasting a secret into chat, thinking registration unlocks every model,
-treating Flash and full GLM-4.7 as interchangeable, thinking Senior routing
-also changes Junior, a running chat or Colleague. Explain only the missing
-distinction. These questions check understanding, not account readiness.
+## Costs and models
 
-**recap** — Report facts separately: what the learner understands, which
-connection you actually verified, the saved model and its scope, and anything
-still pending (for example paid access). Offer **Your first steps in Vibe64**
-next.
+- Prices change. Check [Z.AI's pricing page](https://docs.z.ai/guides/overview/pricing)
+  before you decide to pay for anything.
+- A **Coding Plan** is a separate Z.AI subscription. You don't need one for
+  this lesson, and its quota isn't the same thing as regular API credit.
+- If you ask Colleague to change your routing, it changes only what you asked
+  for. It won't switch your Helper, Router or backup choices on its own.
+- Colleague's own model is chosen in Colleague's model picker, not in routing.
+
+## Checking that it worked
+
+“Done” means you've finished a step, not that every setting is confirmed. To
+be sure, look in **AI Accounts**: your connection should be listed and
+**Configure routing** should show your Senior model. You can also ask
+Colleague to read your saved connection and routing for you. If something is
+still pending, such as paid access, you can come back to it later.
+
+## Next
+
+When you're ready, continue with **Your first steps in Vibe64**.

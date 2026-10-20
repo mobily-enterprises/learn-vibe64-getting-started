@@ -14,7 +14,7 @@ topics. [The outline](training/outline.md) lists the four lessons.
 ```
 training/lessons/V64-START-01/
   lesson.json      descriptor: exercise, checks, visuals and ordered steps
-  notes.md         teaching notes for Colleague (how to explain, common mistakes)
+  notes.md         “Good to know” background for the learner (Lesson notes)
   steps/*.md       learner-facing text, one file per step
 ```
 
@@ -32,8 +32,11 @@ and a `check`:
 - `self` is the learner's own **Done** for reflective or human-only steps.
 - `none` steps are reading steps and are never required.
 
-Colleague teaches from the step text and `notes.md`, opens real screens, uses
-the guides and replays visuals. It never grades: no rubric, no AI grader.
+`notes.md` is shown to the learner as **Lesson notes**: plain background,
+tips and recovery, written in the second person. It never contains answers to
+choice questions or instructions for judging the learner. Colleague teaches
+from the same step text and notes, opens real screens, uses the guides and
+replays visuals. It never grades: no rubric, no AI grader.
 
 ## Run the practice applications
 

@@ -1,85 +1,49 @@
-# Teaching notes: Your first steps in Vibe64
+# Good to know: Your first steps in Vibe64
 
-These notes are for Colleague. The learner reads the step text; you follow the
-step they are on (read it with `lesson.read`), explain it in your own words,
-open real screens and point at them. Keep each reply to one small idea: invite
-an action, wait, acknowledge what actually happened, then offer the next step.
+These notes add background to the steps. You can read them at any time.
 
-## Rules for every step
+## How steps are marked
 
-- Steps pass only through their own checks: the automatic check, the learner's
-  answer to a choice question, or the learner pressing **Done**. Never say a
-  step is passed until the lesson shows it; your feedback never changes it.
-- Never reveal or hint at which option of a choice question is correct. Explain
-  the idea behind it with the learner's own observations, then let them choose.
-- Demonstrating is fine, but the learner makes the real Preview press
-  themselves. A press you trigger never passes the check.
-- Infrastructure failures are not learner failures. Explain what you actually
-  see and use the supported recovery.
+Each step is marked in one of three ways: an automatic check, your answer to
+a question, or your own **Done**. Colleague can explain and show you things,
+but it never marks a step for you. If an answer isn't right yet, read the
+step again and have another go: there's no penalty for trying.
 
-## Step by step
+## Teach me and Show me
 
-**welcome** — Offer text or voice; neither is assessed. Give the goal first:
-try the app, notice its result, then know who to ask for help or a change.
+- **Teach me** opens Colleague next to the lesson. It explains the step you're
+  on, one small idea at a time, and can point at things on the real screen.
+- **Show me** points at the place a step talks about, and sometimes opens it.
+- On a phone, the lesson slides out of the way while you look. Open it again
+  with the **L** button; you'll be back on the same step.
 
-**find-your-way** — Introduce only the places needed now: project, coding
-conversation, Preview, Colleague. Use the `preview` guide to point, and let the
-learner find each place themselves, one at a time. On a phone, give the task
-before they leave the lesson and wait for their return. The session is the
-project's current working conversation; the learner need not memorise the word.
+## Pressing the button yourself
 
-**help-or-change** — Use a small example tied to the app: “Where do I try
-this?” is a help question; “Please change the greeting to Welcome” is a change
-request. Common mistakes: thinking typing into Preview changes the app;
-thinking talking about an idea changes it; thinking they must always open the
-coding chat themselves (asking Colleague to pass it on is valid). If they pick
-a wrong option, explain only the missing distinction and let them try again.
+The **Press the button** step is checked from your own press in Preview.
+Colleague can show you where the button is, but a press that someone else
+starts doesn't count. The greeting comes from a real server: nobody types it.
 
-**try-the-app** — The check needs the learner's own press in the real Preview.
-The greeting comes from a real server; you did not type it. If the page reports
-a changed server instance, the button stays disabled: **Reload preview**, then
-press again. **Restart preview** starts the app again. Use **Show run output**
-to read startup errors. If the check says “not yet”, read its reason with them
-and ask for a fresh press; do not run the check on their behalf to make it pass.
+## Talking to Colleague
 
-**what-happened** — Tell them they are looking at an explanation of what they
-just did, not the app. Keep three beats tied to their action: “You pressed the
-button”, “The app prepared a greeting”, “You saw its reply.” The declared play
-sequence is `showOverview`, `highlightClient`, `sendRequest` (POST
-/api/greeting), `showServerWork`, `sendResponse`. Offer to pause or replay. The
-method and path are display details, not vocabulary to teach. If their press
-failed, explain the real failure and recover before illustrating a success.
-Text equivalent: “You pressed the button. The page asked the running
-application for a greeting. The application replied, and you read that reply
-in Preview.”
+- You can type or speak. Opening Colleague doesn't turn on your microphone;
+  **Talk** does.
+- Spoken replies have their own speaker control, separate from the
+  microphone.
+- **Minimize conversation** tucks Colleague away and keeps your conversation.
+  Voice can keep going while it's minimised; **Stop voice chat** stops it.
+- On a phone, **Show project** and **Show chat** switch between your project
+  and the coding chat.
 
-**preview-purpose** — Former rubric: the learner knows Preview is where to use
-the running application and observe its behaviour. Common mistakes: “the
-animation proves it works” (illustration is not action); “the agent said it
-works, so we're done” (skips trying it). Hint: “Where did you press the real
-button and see the result?”
+## If something goes wrong
 
-**useful-request** — Former rubric: a useful request names what they tried,
-what happened and what they want, plus how they would check it. Common
-mistakes: “Change it” or “It's broken” (missing action and result); assuming a
-setup failure is their fault. If their real press failed, use their actual
-failure as the example instead of the success wording.
+Problems with the app or the computer it runs on are never your fault.
 
-**meet-colleague** — Show the avatar launcher, **Talk**, the separate speaker
-control (spoken replies are independent of the microphone) and **Minimize
-conversation**. Minimising the avatar alone does not leave the conversation.
-Minimising can leave voice active; **Stop voice chat** stops audio. On a
-phone, **Show project** and **Show chat** switch between the workspace and the
-coding chat; neither restores Colleague. Opening the conversation does not
-start the microphone. Browser permissions and sign-in are the person's steps.
-
-**recap** — Mention only what they actually did. Offer **Make your first
-change** next.
-
-## Recovery
-
-- **Missing or deleted practice project:** saved step results are kept. Offer
-  to end this attempt and continue the same lesson with a fresh practice
-  project; do it only after the learner agrees.
-- **Voice failure:** continue in text in the same conversation.
-- **Animation failure:** use the text equivalent above; it is not assessed.
+- **Reload preview** refreshes the page. Use it if the button stays greyed out
+  and the page asks you to reload.
+- **Restart preview** starts the application again.
+- **Show run output** shows what the application printed while starting,
+  which helps if it doesn't start.
+- If the animation doesn't play, the step's text says the same thing.
+- If voice doesn't work, carry on by typing in the same conversation.
+- If your practice project goes missing, your step results are kept. You can
+  end this attempt and start the lesson again with a fresh practice project.

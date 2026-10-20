@@ -185,3 +185,14 @@ for (const [code, descriptor] of Object.entries(lessons)) {
   }
 }
 console.log('PASS: v2 step inventory, check evidence and visual play sequences match the declared commands.');
+
+// notes.md is shown to the learner as Lesson notes: it must not carry grading
+// instructions or the text of a correct choice option.
+for (const [code, descriptor] of Object.entries(lessons)) {
+  const notes = await readFile(new URL(`../training/lessons/${code}/${descriptor.notes}`, import.meta.url), 'utf8');
+  assert.doesNotMatch(notes, /rubric|for Colleague|lesson\.read/iu, `${code} notes are learner-facing`);
+  for (const step of descriptor.steps.filter(entry => entry.check.kind === 'choice')) {
+    for (const index of step.check.answer) assert.ok(!notes.includes(step.check.options[index]), `${code}/${step.id} answer is not in the notes`);
+  }
+}
+console.log('PASS: lesson notes are learner-facing and reveal no choice answers.');

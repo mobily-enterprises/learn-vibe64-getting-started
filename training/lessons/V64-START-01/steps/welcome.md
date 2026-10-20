@@ -6,5 +6,5 @@ application lives in a **practice project** made just for you, so nothing you
 do here can break anything that matters.
 
 You can read each step on your own, or press **Teach me** at any time and
-Colleague, your helper in Vibe64, will walk you through it. Use the step list
-to move on when you're ready.
+Colleague, your helper in Vibe64, will walk you through it. Press **Next step**
+when you're ready to move on.

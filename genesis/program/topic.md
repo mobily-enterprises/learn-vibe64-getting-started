@@ -19,8 +19,9 @@
 Topic 0.2.0 lists four published, required lessons in order: V64-START-00
 Connect your AI, V64-START-01 Your first steps in Vibe64, V64-START-02 Make
 your first change (requires 01) and V64-START-03 Build with a database
-(requires 01). Each descriptor uses lesson format v2: `notes` for Colleague and
-ordered `steps` whose `body` files under `steps/` are learner-facing Markdown.
+(requires 01). Each descriptor uses lesson format v2: learner-facing `notes` (shown as Lesson
+notes; never answers or judging instructions) and ordered `steps` whose `body`
+files under `steps/` are learner-facing Markdown.
 
 Steps declare an optional `visual` play sequence of the client-server visual's
 declared commands, an optional `guide` to a declared Vibe64 place and a
