@@ -17,9 +17,11 @@ says so, and you can still practise opening and closing it.
 On a phone Colleague fills the screen. Its **Step** button or **Minimize
 conversation** brings the lesson back.
 
-When you've opened, minimised and brought back Colleague, press **Done**.
+When you've opened and minimised Colleague, the step bar marks this step
+done (or press **Done**). Then bring it back once to see your conversation.
 
 ```beats
 do colleague: Press the avatar at the top right to open Colleague. Try asking: What is the Dashboard for?
-check done: Minimised Colleague and brought it back? Press Done.
+do colleague-minimised: Press Minimize conversation to tuck Colleague away. Your conversation is kept.
+check done: Open Colleague again: the same conversation comes back.
 ```

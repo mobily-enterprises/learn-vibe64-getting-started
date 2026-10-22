@@ -220,9 +220,9 @@ assert.deepEqual(sequence, {
   'current-changes': ['do changes', 'show changes'],
   save: ['do save', 'do git-log', 'check done'],
   'where-work-lives': ['show lesson-bar'],
-  'meet-colleague': ['do colleague', 'check done'],
+  'meet-colleague': ['do colleague', 'do colleague-minimised', 'check done'],
   'who-does-what': ['show lesson-bar'],
-  'courses-and-l': ['do courses', 'show learning', 'check done'],
+  'courses-and-l': ['do courses', 'do learning', 'check done'],
   'l-pauses': ['show learning'],
   'ai-setup': ['show lesson-bar'],
   recap: ['show lesson-bar', 'check done']
