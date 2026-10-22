@@ -16,8 +16,8 @@
 
 ## Public contract
 
-Topic 0.2.2 lists four published, required lessons in order: V64-START-00
-Connect your AI, V64-START-01 Your first steps in Vibe64, V64-START-02 Make
+Topic 0.3.0 lists four published, required lessons in order: V64-START-00
+Introduction to Vibe64, V64-START-01 Your first steps in Vibe64, V64-START-02 Make
 your first change (requires 01) and V64-START-03 Build with a database
 (requires 01). Each descriptor uses lesson format v2: learner-facing `notes` (shown as Lesson
 notes; never answers or judging instructions) and ordered `steps` whose `body`
@@ -33,10 +33,10 @@ checks replace former answer assessments that have a right answer; their
 browser. `self` checks are the learner's **Done**. `none` steps are optional
 reading. There are no rubrics and no AI grading.
 
-Lesson 0 has no exercise; its account and routing steps are optional self
-checks because only the workspace owner can perform them, and its three choice
-questions check understanding, not account readiness. Lessons 1–3 each prepare
-a disposable practice project (`reuse: "attempt"`). Lesson 3 declares its only
+Lesson 0 tours the editor on the static tour page; its coding-chat, check and
+Save steps are optional self checks so it can be finished without a connected
+AI, and it has no automatic check. Every lesson prepares a disposable practice
+project (`reuse: "attempt"`). Lesson 3 declares its only
 data-changing route, `POST /api/notes`.
 
 New topics start from public Vibe64's `docs/templates/learn-topic/`; this

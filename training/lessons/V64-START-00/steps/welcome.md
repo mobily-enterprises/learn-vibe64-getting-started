@@ -1,14 +1,13 @@
-Vibe64 works with an AI model to write and explain code. In this lesson you'll
-connect the AI you want to use:
+Welcome to Vibe64! In about 15 minutes you'll take a short tour and make your
+first change to a real app.
 
-1. Create a Z.AI account and a private **API key**.
-2. Put that key safely into Vibe64's **AI Accounts**.
-3. Choose which model future coding chats use. We want **GLM-4.7** when your
-   account can use it.
+Vibe64 works like this: **you describe what you want, an AI coding agent
+builds it, and you try the result.**
 
-Allow about ten minutes, plus however long Z.AI's sign-up takes. There's no
-coding and no practice project. You'll enter your key yourself; nobody else,
-not even Colleague, should ever see it.
+This lesson opened a **practice project** made just for you: a tiny app with
+one web page. Nothing you do here can break anything that matters, and you
+don't need to know how to code.
 
-Only the workspace owner can manage AI connections. If you're a member of
-someone else's workspace, read along and ask the owner to do the setup steps.
+- **Next step** moves on to the next step.
+- **Teach me** asks Colleague, your teacher, to explain the step you're on.
+- **Show me**, on some steps, points at the place on the screen.

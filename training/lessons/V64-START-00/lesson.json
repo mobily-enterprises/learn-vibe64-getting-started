@@ -1,11 +1,16 @@
 {
   "schemaVersion": 2,
   "code": "V64-START-00",
-  "title": "Connect your AI",
+  "title": "Introduction to Vibe64",
   "notes": "notes.md",
   "prerequisites": [],
-  "estimatedMinutes": 10,
+  "estimatedMinutes": 15,
   "visuals": [],
+  "exercise": {
+    "kind": "bundled",
+    "source": "../../exercises/tour-app",
+    "reuse": "attempt"
+  },
   "steps": [
     {
       "id": "welcome",
@@ -17,72 +22,120 @@
       "required": false
     },
     {
-      "id": "keys-and-models",
-      "title": "Keys, models and costs",
-      "body": "steps/keys-and-models.md",
+      "id": "the-page",
+      "title": "Your project page",
+      "body": "steps/the-page.md",
+      "guide": {
+        "target": "dashboard",
+        "navigate": false,
+        "caption": "Preview and Dashboard switch here"
+      },
+      "check": {
+        "kind": "self"
+      },
+      "required": true
+    },
+    {
+      "id": "lesson-pane",
+      "title": "Reading a lesson",
+      "body": "steps/lesson-pane.md",
       "check": {
         "kind": "none"
       },
       "required": false
     },
     {
-      "id": "create-key",
-      "title": "Create your Z.AI key",
-      "body": "steps/create-key.md",
+      "id": "see-preview",
+      "title": "Your app in Preview",
+      "body": "steps/see-preview.md",
+      "guide": {
+        "target": "preview",
+        "navigate": true,
+        "caption": "Your app runs here"
+      },
       "check": {
         "kind": "self"
-      },
-      "required": false
-    },
-    {
-      "id": "connect-key",
-      "title": "Connect the key in AI Accounts",
-      "body": "steps/connect-key.md",
-      "check": {
-        "kind": "self"
-      },
-      "required": false
-    },
-    {
-      "id": "choose-senior-model",
-      "title": "Choose your coding model",
-      "body": "steps/choose-senior-model.md",
-      "check": {
-        "kind": "self"
-      },
-      "required": false
-    },
-    {
-      "id": "key-safety",
-      "title": "Keep your key safe",
-      "body": "steps/key-safety.md",
-      "check": {
-        "kind": "choice",
-        "question": "Where should your Z.AI API key go?",
-        "options": [
-          "Into a chat, so Colleague can set it up for you.",
-          "Into a file in your project.",
-          "Into the masked API key field in AI Accounts.",
-          "Into a screenshot you share for help."
-        ],
-        "answer": [
-          2
-        ]
       },
       "required": true
     },
     {
-      "id": "model-choices",
-      "title": "GLM-4.7 and GLM-4.7-Flash",
-      "body": "steps/model-choices.md",
+      "id": "ask-the-chat",
+      "title": "Ask for a tiny change",
+      "body": "steps/ask-the-chat.md",
+      "check": {
+        "kind": "self"
+      },
+      "required": false
+    },
+    {
+      "id": "see-the-change",
+      "title": "Check it yourself",
+      "body": "steps/see-the-change.md",
+      "guide": {
+        "target": "preview",
+        "navigate": true,
+        "caption": "Press Reload preview to see the change"
+      },
+      "check": {
+        "kind": "self"
+      },
+      "required": false
+    },
+    {
+      "id": "dashboard",
+      "title": "The Dashboard",
+      "body": "steps/dashboard.md",
+      "guide": {
+        "target": "files",
+        "navigate": true,
+        "filePath": "public/index.html",
+        "caption": "Your page is written here"
+      },
+      "check": {
+        "kind": "self"
+      },
+      "required": true
+    },
+    {
+      "id": "current-changes",
+      "title": "What changed",
+      "body": "steps/current-changes.md",
+      "guide": {
+        "target": "changes",
+        "navigate": true,
+        "caption": "The agent's edit shows here"
+      },
+      "check": {
+        "kind": "none"
+      },
+      "required": false
+    },
+    {
+      "id": "save",
+      "title": "Save your work",
+      "body": "steps/save.md",
+      "guide": {
+        "target": "git-log",
+        "navigate": true,
+        "caption": "Saved versions are listed here"
+      },
+      "check": {
+        "kind": "self"
+      },
+      "required": false
+    },
+    {
+      "id": "where-work-lives",
+      "title": "What keeps your work",
+      "body": "steps/where-work-lives.md",
       "check": {
         "kind": "choice",
-        "question": "Which of these is true?",
+        "question": "The agent changed your page and you like it. What keeps that version for good?",
         "options": [
-          "GLM-4.7 and GLM-4.7-Flash are the same model with different names.",
-          "GLM-4.7 uses paid credit; GLM-4.7-Flash is a different model, currently listed as free.",
-          "Creating a Z.AI key unlocks every model for free.",
-          "GLM-4.7-Flash needs a Coding Plan."
+          "Nothing more: Preview keeps it.",
+          "Pressing Save. The saved version then appears in Git log.",
+          "Telling Colleague about it.",
+          "Reloading the preview."
         ],
         "answer": [
           1
@@ -91,32 +144,83 @@
       "required": true
     },
     {
-      "id": "model-scope",
-      "title": "What your choice changes",
-      "body": "steps/model-scope.md",
+      "id": "meet-colleague",
+      "title": "Your teacher, Colleague",
+      "body": "steps/meet-colleague.md",
+      "check": {
+        "kind": "self"
+      },
+      "required": true
+    },
+    {
+      "id": "who-does-what",
+      "title": "Who changes the app",
+      "body": "steps/who-does-what.md",
       "check": {
         "kind": "choice",
-        "question": "You choose GLM-4.7 for future Senior coding chats. What else changes?",
+        "question": "You want the heading to say “Welcome”. Who changes the app?",
         "options": [
-          "Colleague switches to GLM-4.7 too.",
-          "Junior chats switch to GLM-4.7 too.",
-          "Every chat that is already running switches straight away.",
-          "Nothing else: Junior, Colleague and running chats keep their own choices."
+          "You type “Welcome” into the page in Preview.",
+          "The coding agent, when you ask it in the coding chat (or ask Colleague to pass the request on).",
+          "Colleague changes it as soon as you mention it.",
+          "The Lesson pane."
         ],
         "answer": [
-          3
+          1
         ]
       },
       "required": true
     },
     {
-      "id": "recap",
-      "title": "What's done and what's next",
-      "body": "steps/recap.md",
+      "id": "courses-and-l",
+      "title": "Courses and the L button",
+      "body": "steps/courses-and-l.md",
+      "guide": {
+        "target": "learning",
+        "navigate": false,
+        "caption": "L switches between Learn and your own projects"
+      },
+      "check": {
+        "kind": "self"
+      },
+      "required": true
+    },
+    {
+      "id": "l-pauses",
+      "title": "What L does to a lesson",
+      "body": "steps/l-pauses.md",
+      "check": {
+        "kind": "choice",
+        "question": "You press L in the middle of this lesson. What happens?",
+        "options": [
+          "The lesson is deleted.",
+          "You go to your own projects. The lesson waits, and L brings you back to the same step.",
+          "The lesson is marked as finished.",
+          "Your practice project becomes one of your own projects."
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "required": true
+    },
+    {
+      "id": "ai-setup",
+      "title": "Where AI setup lives",
+      "body": "steps/ai-setup.md",
       "check": {
         "kind": "none"
       },
       "required": false
+    },
+    {
+      "id": "recap",
+      "title": "What's next",
+      "body": "steps/recap.md",
+      "check": {
+        "kind": "self"
+      },
+      "required": true
     }
   ]
 }

@@ -20,6 +20,26 @@ Owns the topic outline, lesson step text and teaching notes. Does not own learne
 
 - Nothing.
 
+## `tour` Tour page
+
+Owns the static practice page of the introduction lesson, read fresh on every request so a coding-chat edit shows after Reload preview.
+
+### Source
+
+- Directory `training/exercises/tour-app`
+
+### Program
+
+- `genesis/program/tour.md`
+
+### Data owned
+
+- Nothing.
+
+### Data used
+
+- Nothing.
+
 ## `orientation` Runnable orientation
 
 Owns the browser/server example, finite response check and optional host observation protocol.

@@ -4,7 +4,7 @@
   "title": "Your first steps in Vibe64",
   "notes": "notes.md",
   "prerequisites": [],
-  "estimatedMinutes": 12,
+  "estimatedMinutes": 10,
   "visuals": [
     {
       "id": "client-server",
@@ -36,31 +36,17 @@
       "required": false
     },
     {
-      "id": "find-your-way",
-      "title": "Find your way around",
-      "body": "steps/find-your-way.md",
-      "guide": {
-        "target": "preview",
-        "navigate": true,
-        "caption": "Preview: your app runs here"
-      },
-      "check": {
-        "kind": "self"
-      },
-      "required": true
-    },
-    {
       "id": "help-or-change",
       "title": "Ask for help or a change",
       "body": "steps/help-or-change.md",
       "check": {
         "kind": "choice",
-        "question": "You want the greeting to say “Welcome” instead. What gets the application changed?",
+        "question": "You can’t find where to try the app. What can you do?",
         "options": [
-          "Type “Welcome” into the page in Preview.",
-          "Ask a coding agent to make the change, either yourself in the coding conversation or by asking Colleague to pass it on.",
-          "Describe the idea in any chat; talking about it changes the app.",
-          "Nothing: a running application can't be changed."
+          "Nothing: you need to know how to code first.",
+          "Ask Colleague. It can answer and open the right screen for you.",
+          "Type your question into the page in Preview.",
+          "Wait until the coding agent notices."
         ],
         "answer": [
           1
@@ -160,15 +146,6 @@
         "answer": [
           3
         ]
-      },
-      "required": true
-    },
-    {
-      "id": "meet-colleague",
-      "title": "Open and close Colleague",
-      "body": "steps/meet-colleague.md",
-      "check": {
-        "kind": "self"
       },
       "required": true
     },

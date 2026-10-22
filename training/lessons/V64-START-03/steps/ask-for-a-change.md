@@ -1,11 +1,10 @@
 Now ask for one small new feature. If you don't have an idea of your own, try:
 “Let me mark a note as done.”
 
-1. Ask in your own words. You can write to the coding agent in the project's
-   coding conversation, or ask Colleague to pass the request on. A useful
-   request says what you'd like and how you'll know it works, for example:
-   “Please add a checkbox to each note so I can mark it as done. It should
-   stay ticked after I reload the page.”
+1. Ask in the coding chat, as in the introduction, or ask Colleague to pass
+   the request on. Say what you'd like and how you'll know it works, for
+   example: “Please add a checkbox to each note so I can mark it as done. It
+   should stay ticked after I reload the page.”
 2. Wait until the agent says it has finished.
 3. The agent changed the app's server code (`server.mjs`), and Preview is
    still running the old copy. Restart the preview so it runs the new code.

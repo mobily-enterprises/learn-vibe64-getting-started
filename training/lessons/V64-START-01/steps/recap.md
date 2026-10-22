@@ -1,5 +1,5 @@
-Well done. You found the project, the coding conversation and Preview, tried a
-real application and saw how its reply came back.
+Well done. You tried a real application and saw how its reply came back from
+the server.
 
 The habit to keep:
 

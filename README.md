@@ -1,4 +1,4 @@
-# Introduction to using Vibe64 — topic 0.2.2 (Learning v2 draft)
+# Introduction to using Vibe64 — topic 0.3.0 (Learning v2 draft)
 
 Canonical topic source for `mobily-enterprises/learn-vibe64-getting-started`.
 Publishing this source does not install or enable a learner release; course
@@ -40,11 +40,12 @@ replays visuals. It never grades: no rubric, no AI grader.
 
 ## Run the practice applications
 
-Requires Node.js 22 or newer (the notes app uses the built-in `node:sqlite`).
+Each lesson has its own practice app. Requires Node.js 22 or newer (the notes
+app uses the built-in `node:sqlite`).
 No npm dependencies are needed.
 
 ```sh
-cd training/exercises/orientation-app   # or greeting-app, notes-app
+cd training/exercises/tour-app   # or orientation-app, greeting-app, notes-app
 node server.mjs --host 127.0.0.1 --port 8080
 ```
 
@@ -60,7 +61,7 @@ is never evidence that the application ran.
 From public Vibe64 (with v2 support), run
 `node bin/run.js training validate <this topic>`. Then run
 `node tests/content-regressions.mjs` from this topic root: it exercises the
-orientation client, the visual controller and the v2 step inventory in a
+tour page server, the orientation client, the visual controller and the v2 step inventory in a
 controlled harness. It does not prove native Preview, browser gestures or
 learner acceptance; trial the lessons on desktop and phone before release.
 

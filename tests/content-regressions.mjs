@@ -2,6 +2,10 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { randomUUID } from 'node:crypto';
 import { Script, createContext } from 'node:vm';
+import { spawn } from 'node:child_process';
+import { cp, mkdtemp, rm, writeFile } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
 import { mountVisual } from '../training/visuals/client-server/controller.js';
 
 // Exact client source in an isolated, controlled page harness. This proves fences,
@@ -159,11 +163,12 @@ console.log('Not proved: real browser gesture/display, frame visibility, sandbox
 const lesson = async code => JSON.parse(await readFile(new URL(`../training/lessons/${code}/lesson.json`, import.meta.url), 'utf8'));
 const inventory = descriptor => descriptor.steps.map(({ id, check, required }) => `${id}:${check.kind}${check.check ? `=${check.check}` : ''}${required ? '!' : ''}`);
 const lessons = Object.fromEntries(await Promise.all(['V64-START-00', 'V64-START-01', 'V64-START-02', 'V64-START-03'].map(async code => [code, await lesson(code)])));
-assert.deepEqual(inventory(lessons['V64-START-00']), ['welcome:none', 'keys-and-models:none', 'create-key:self', 'connect-key:self', 'choose-senior-model:self', 'key-safety:choice!', 'model-choices:choice!', 'model-scope:choice!', 'recap:none']);
-assert.deepEqual(inventory(lessons['V64-START-01']), ['welcome:none', 'find-your-way:self!', 'help-or-change:choice!', 'try-the-app:auto=orientation-response!', 'what-happened:none', 'preview-purpose:choice!', 'useful-request:choice!', 'meet-colleague:self!', 'recap:none']);
+assert.deepEqual(inventory(lessons['V64-START-00']), ['welcome:none', 'the-page:self!', 'lesson-pane:none', 'see-preview:self!', 'ask-the-chat:self', 'see-the-change:self', 'dashboard:self!', 'current-changes:none', 'save:self', 'where-work-lives:choice!', 'meet-colleague:self!', 'who-does-what:choice!', 'courses-and-l:self!', 'l-pauses:choice!', 'ai-setup:none', 'recap:self!']);
+assert.deepEqual(inventory(lessons['V64-START-01']), ['welcome:none', 'help-or-change:choice!', 'try-the-app:auto=orientation-response!', 'what-happened:none', 'preview-purpose:choice!', 'useful-request:choice!', 'recap:none']);
 assert.deepEqual(inventory(lessons['V64-START-02']), ['welcome:none', 'try-it-first:self', 'meet-the-file:none', 'change-the-greeting:auto=greeting-count!', 'what-preview-showed:self!', 'why-check-behaviour:choice!', 'replay-the-journey:none', 'recap:none']);
 assert.deepEqual(inventory(lessons['V64-START-03']), ['welcome:none', 'add-a-note:self!', 'see-the-rows:self!', 'where-notes-live:choice!', 'read-the-erd:choice!', 'ask-for-a-change:self!', 'see-the-new-column:self', 'recap:none']);
-assert.equal(lessons['V64-START-00'].exercise, undefined);
+assert.deepEqual(lessons['V64-START-00'].exercise, { kind: 'bundled', source: '../../exercises/tour-app', reuse: 'attempt' });
+assert.equal(lessons['V64-START-00'].checks, undefined, 'The introduction has no automatic check.');
 assert.deepEqual(lessons['V64-START-01'].checks.map(({ id, file }) => ({ id, file })), [{ id: 'orientation-response', file: '../../checks/orientation-app/response.mjs' }]);
 assert.deepEqual(lessons['V64-START-02'].steps.find(step => step.id === 'change-the-greeting').check.files, ['greeting.mjs']);
 const visual = JSON.parse(await readFile(new URL('../training/visuals/client-server/visual.json', import.meta.url), 'utf8'));
@@ -196,3 +201,29 @@ for (const [code, descriptor] of Object.entries(lessons)) {
   }
 }
 console.log('PASS: lesson notes are learner-facing and reveal no choice answers.');
+
+// The introduction's tour page is read on every request, so a coding-chat edit
+// shows after a plain Reload preview. Run a copy so the source stays untouched.
+const tourCopy = await mkdtemp(join(tmpdir(), 'tour-app-'));
+await cp(new URL('../training/exercises/tour-app', import.meta.url), tourCopy, { recursive: true });
+const tour = spawn(process.execPath, ['server.mjs', '--host', '127.0.0.1', '--port', '0'], { cwd: tourCopy, stdio: ['ignore', 'pipe', 'inherit'] });
+try {
+  const origin = await new Promise((resolve, reject) => {
+    let output = '';
+    tour.stdout.on('data', chunk => { output += chunk; const match = /listening on (\S+)/u.exec(output); if (match) resolve(`http://${match[1]}`); });
+    tour.once('exit', code => reject(new Error(`tour app exited early (${code})`)));
+  });
+  const health = await fetch(`${origin}/api/health`);
+  assert.equal(health.status, 200);
+  const first = await fetch(`${origin}/`);
+  assert.equal(first.headers.get('cache-control'), 'no-store');
+  assert.match(await first.text(), /<h1>My first Vibe64 app<\/h1>/u);
+  const index = join(tourCopy, 'public', 'index.html');
+  await writeFile(index, (await readFile(index, 'utf8')).replace('My first Vibe64 app</h1>', 'Hello from Sam</h1>'));
+  assert.match(await (await fetch(`${origin}/`)).text(), /<h1>Hello from Sam<\/h1>/u, 'An edited page shows without restarting the server.');
+  assert.equal((await fetch(`${origin}/missing`)).status, 404);
+  console.log('PASS: tour page is served fresh on every request; health is 200 and unknown paths are 404.');
+} finally {
+  tour.kill();
+  await rm(tourCopy, { recursive: true, force: true });
+}

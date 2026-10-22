@@ -1,6 +1,7 @@
 The greeting is written by a tiny piece of code in a file called
-`greeting.mjs`. Press **Show me** to open it in **Dashboard → Files**. On a
-phone, use the files button to see the file list.
+`greeting.mjs`. Press **Show me** to open it in **Dashboard → Files**, which
+you saw in the introduction. On a phone, use the files button to see the file
+list.
 
 It looks like this:
 

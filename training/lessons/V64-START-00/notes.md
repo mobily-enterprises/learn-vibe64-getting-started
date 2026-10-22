@@ -1,57 +1,47 @@
-# Good to know: Connect your AI
+# Good to know: Introduction to Vibe64
 
-These notes add background to the steps. You can read them at any time; they
-don't change anything.
+These notes add background to the steps. You can read them at any time.
 
-## Your key is yours alone
+## Teach me and Show me
 
-- Your API key works like a password. Nobody needs to see it, not even
-  Colleague, and Colleague will never ask you for it.
-- If you paste a key into a chat by mistake, delete that message and create a
-  new key on Z.AI. The old one is no longer private.
-- Signing up, verifying your account, entering the key, paying and agreeing to
-  paid models are always your own steps. Colleague can explain them and open
-  the right screen, but it can't do them for you.
+- **Teach me** opens Colleague next to the lesson. It explains the step you're
+  on, one small idea at a time, and can point at things on the real screen.
+- **Show me** points at the place a step talks about, and sometimes opens it.
+- On a phone, the lesson moves out of the way while you look. Come back with
+  the button at the top of the project (**Lesson**) or the step bar's
+  **Open**. Don't use **L** for this: **L** switches between Learn and your
+  own projects.
 
-## If you're not the workspace owner
+## How steps are marked
 
-Only the workspace owner can manage AI connections. If **AI Accounts** isn't
-available to you, that's expected: ask the owner to do the setup steps. You
-can still read the lesson and answer its questions.
+Each step is marked by an automatic check, your answer to a question, or your
+own **Done**. Colleague can explain and show you things, but it never marks a
+step for you. If an answer isn't right yet, read the step again and have
+another go: there's no penalty for trying. Steps marked **Optional** can be
+skipped.
 
-## Finding AI Accounts
+## Talking to Colleague
 
-On your own computer, **AI Accounts** is a tab in **Account settings**: press
-the person button in the header. On Vibe64 Online it is a Management page. If
-you can't find it, ask Colleague to open it for you; opening it changes no
-settings.
+- You can type or speak. Opening Colleague doesn't turn on your microphone;
+  **Talk** does.
+- Spoken replies have their own speaker control, separate from the
+  microphone.
+- **Minimize conversation** tucks Colleague away and keeps your conversation.
+  Voice can keep going while it's minimised; **Stop voice chat** stops it.
+- On a phone, **Show project** and **Show chat** switch between your project
+  and the coding chat.
 
-If you already have a Coding Plan connection, the **Connect regular Z.AI API**
-button may not be shown. Use **Add connection**, then **Choose provider** on the
-**OpenCode** card, search for “Z.AI” and pick the regular **Z.AI** row.
+## If something goes wrong
 
-When you press **Verify and connect**, Vibe64 sends a tiny test request
-before saving. That proves the key works; it doesn't prove your account can
-use every model.
+Problems with the app or the computer it runs on are never your fault.
 
-## Costs and models
-
-- Prices change. Check [Z.AI's pricing page](https://docs.z.ai/guides/overview/pricing)
-  before you decide to pay for anything.
-- A **Coding Plan** is a separate Z.AI subscription. You don't need one for
-  this lesson, and its quota isn't the same thing as regular API credit.
-- If you ask Colleague to change your routing, it changes only what you asked
-  for. It won't switch your Helper, Router or backup choices on its own.
-- Colleague's own model is chosen in Colleague's model picker, not in routing.
-
-## Checking that it worked
-
-“Done” means you've finished a step, not that every setting is confirmed. To
-be sure, look in **AI Accounts**: your connection should be listed and
-**Configure routing** should show your Senior model. You can also ask
-Colleague to read your saved connection and routing for you. If something is
-still pending, such as paid access, you can come back to it later.
-
-## Next
-
-When you're ready, continue with **Your first steps in Vibe64**.
+- **Reload preview** loads the page again. Use it when a change doesn't show
+  yet.
+- **Restart preview** starts the app again.
+- **Show run output** shows what the app printed while starting, which helps
+  if it doesn't start.
+- If the coding agent's change isn't what you wanted, tell it in the coding
+  chat what you see and what you expected.
+- If your practice project goes missing, open **Courses**, go to **In
+  progress** and press **Restart**. The lesson starts again from the first
+  step with a fresh practice project.
