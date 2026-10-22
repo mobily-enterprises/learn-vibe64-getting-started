@@ -19,5 +19,5 @@ the change: asking for it was your part.
 do preview: Select Preview.
 do reload-preview: Press Reload preview so the page loads again.
 show preview: Look: does the heading say what you asked for? Is the box green?
-check review: Your page has a new heading (not “My first Vibe64 app”) and the box is green. The rest of public/index.html is still there: the short sentence and the box itself. It's fine that the agent made the change for you.
+check review
 ```

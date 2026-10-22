@@ -197,6 +197,8 @@ console.log('PASS: v2 step inventory, check evidence and visual play sequences m
 const beatsOf = markdown => {
   const match = /\n```beats\n([\s\S]*?)\n```\n*$/u.exec(markdown);
   return match ? match[1].split('\n').filter(Boolean).map(line => {
+    // A review check beat has no text: the bar shows the step's check.rubric.
+    if (line === 'check review') return { kind: 'check', target: 'review' };
     const [, kind, target, arg, text] = /^(show|do|check) ([a-z-]+)(?: ([^:]+?))?: (.+)$/u.exec(line) || [];
     assert.ok(kind, `beat line reads <kind> <target>: <text>: ${line}`);
     return { kind, target, arg, text };
@@ -236,13 +238,15 @@ for (const step of lessons['V64-START-00'].steps) {
 const [sendBeat] = tourBeats['ask-the-chat'].filter(beat => beat.target === 'send-message');
 assert.equal([...sendBeat.text.matchAll(/"([^"]+)"/gu)].length, 1, 'Do it for me sends exactly one quoted prompt');
 assert.match(sendBeat.text, /"Please change the heading to say .+ and make the box green\."/u);
-// The first change is reviewed by the learner's own AI against the rubric in
-// its check beat, from the practice project's changes only.
+// The first change is reviewed by the learner's own AI against its check's
+// rubric (the single source; its check beat has no text), from the practice
+// project's changes only.
 const review = lessons['V64-START-00'].steps.find(step => step.id === 'see-the-change');
-assert.deepEqual(review.check, { kind: 'review', evidence: ['changes'] });
+const { rubric, ...reviewCheck } = review.check;
+assert.deepEqual(reviewCheck, { kind: 'review', evidence: ['changes'] });
+assert.equal(tourBeats['see-the-change'].at(-1).text, undefined, 'the check review beat carries no rubric text');
 assert.equal(review.required, false, 'The reviewed change stays optional: it needs a connected AI.');
-const rubric = tourBeats['see-the-change'].at(-1).text;
-assert.ok(rubric.length <= 600, 'rubric fits its 600 characters');
+assert.ok(typeof rubric === 'string' && rubric.length <= 600, 'rubric fits its 600 characters');
 assert.match(rubric, /heading/u); assert.match(rubric, /green/u); assert.match(rubric, /public\/index\.html/u);
 const tourPage = await readFile(new URL('../training/exercises/tour-app/public/index.html', import.meta.url), 'utf8');
 assert.ok(tourPage.includes('<h1>My first Vibe64 app</h1>') && rubric.includes('My first Vibe64 app'), 'rubric names the starting heading');

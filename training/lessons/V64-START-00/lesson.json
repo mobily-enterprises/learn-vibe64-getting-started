@@ -63,6 +63,7 @@
       "body": "steps/see-the-change.md",
       "check": {
         "kind": "review",
+        "rubric": "Your page has a new heading (not “My first Vibe64 app”) and the box is green. The rest of public/index.html is still there: the short sentence and the box itself. It's fine that the agent made the change for you.",
         "evidence": [
           "changes"
         ]

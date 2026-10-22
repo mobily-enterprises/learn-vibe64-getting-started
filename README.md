@@ -32,8 +32,9 @@ one line at a time (V64-START-00 uses beats on every step), and a `check`:
   correct options are compared on the server and never shown to Colleague.
 - `self` is the learner's own **Done** for reflective or human-only steps.
 - `review` asks the learner's own AI to judge their practice project changes
-  against the rubric in the step's `check review:` beat (V64-START-00
-  `see-the-change`, `evidence: ["changes"]`). It runs only when the learner
+  against the check's `rubric` (V64-START-00 `see-the-change`,
+  `evidence: ["changes"]`); its `check review` beat has no text, and the bar
+  shows the rubric. It runs only when the learner
   presses **Check my work**.
 - `none` steps are reading steps and are never required.
 
