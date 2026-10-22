@@ -173,10 +173,16 @@ assert.deepEqual(lessons['V64-START-01'].checks.map(({ id, file }) => ({ id, fil
 assert.deepEqual(lessons['V64-START-02'].steps.find(step => step.id === 'change-the-greeting').check.files, ['greeting.mjs']);
 const visual = JSON.parse(await readFile(new URL('../training/visuals/client-server/visual.json', import.meta.url), 'utf8'));
 const declared = new Map(visual.commands.map(entry => [entry.name, entry.parameters]));
+// The step bar has no Open button and does not collapse: no text sends the
+// learner to either.
+const retiredBarControls = /step bar's\s+\*\*Open\*\*|\*\*Open\*\* brings|folds it to\s+one line/u;
 for (const [code, descriptor] of Object.entries(lessons)) {
   assert.equal(descriptor.schemaVersion, 2, `${code} uses lesson format v2`);
+  const notes = await readFile(new URL(`../training/lessons/${code}/notes.md`, import.meta.url), 'utf8').catch(() => '');
+  assert.doesNotMatch(notes, retiredBarControls, `${code} notes name no retired step bar control`);
   for (const step of descriptor.steps) {
-    await readFile(new URL(`../training/lessons/${code}/${step.body}`, import.meta.url), 'utf8');
+    const body = await readFile(new URL(`../training/lessons/${code}/${step.body}`, import.meta.url), 'utf8');
+    assert.doesNotMatch(body, retiredBarControls, `${code}/${step.id} names no retired step bar control`);
     if (step.check.kind === 'choice') assert.ok(step.check.answer.every(index => index >= 0 && index < step.check.options.length), `${code}/${step.id} answer in range`);
     for (const { name, parameters } of step.visual?.play || []) {
       const shape = declared.get(name);

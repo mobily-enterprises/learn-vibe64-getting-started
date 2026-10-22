@@ -12,9 +12,8 @@ These notes add background to the steps. You can read them at any time.
   on, one small idea at a time, and can point at things on the real screen.
 - **Show me** plays the step's lines in the bar again from the start.
 - On a phone, the lesson moves out of the way while you look. Come back with
-  the button at the top of the project (**Lesson**) or the step bar's
-  **Open**. Don't use **L** for this: **L** switches between Learn and your
-  own projects.
+  the button at the top of the project (**Lesson**). Don't use **L** for
+  this: **L** switches between Learn and your own projects.
 
 ## How steps are marked
 

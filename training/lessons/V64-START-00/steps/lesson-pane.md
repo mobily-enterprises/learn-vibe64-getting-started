@@ -8,9 +8,8 @@ You're reading the **Lesson** pane. Three things help you find your way:
 - **The yellow step bar** above the page always shows where you are
   (**3/16**, with a dot for each of the step's lines). Its arrows move line by
   line and into the next step, **Step** opens the whole step text right under
-  it, **Open** brings this Lesson pane back from anywhere, and **Courses** at
-  its right end lists all the lessons. The small arrow at its left folds it to
-  one line.
+  it, and **Courses** at its right end lists all the lessons. The **Lesson**
+  tab brings this Lesson pane back from anywhere.
 
 A step is marked by an automatic check, your answer to a question, a review
 of your work by your own AI, or your own **Done**. When a step only asks you

@@ -13,7 +13,7 @@ step again and have another go: there's no penalty for trying.
 
 **Teach me** asks Colleague to explain the step you're on. **Show me** points
 at the place a step talks about. On a phone, come back to the lesson with the
-button at the top of the project (**Lesson**) or the step bar's **Open**.
+button at the top of the project (**Lesson**).
 
 ## Pressing the button yourself
 
