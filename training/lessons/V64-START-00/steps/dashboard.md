@@ -1,7 +1,7 @@
 **Dashboard** shows what's inside your project.
 
-1. Select **Dashboard**. Its tools come in groups: the project's tools first,
-   then the tools for your coding chat.
+1. Select **Dashboard**. Its tools come in two groups: **Project**, for the
+   whole project, and **Session**, for your coding chat.
 2. Open **Files**, then the file `public/index.html`. **Show me** takes you
    straight there.
 3. Find your heading in the text. It sits between `<h1>` and `</h1>`.

@@ -8,6 +8,7 @@ Two buttons help you move around:
   in Learn mode and **Switch to Learn** in Develop.
 
 Try both: open Courses and close it, then press **L**, and press **L** again
-to come back here.
+to come back. On a phone you come back to the coding chat: press **Show
+project** to see this step again.
 
 When you're back on this step, press **Done**.

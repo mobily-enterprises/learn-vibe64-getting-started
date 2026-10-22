@@ -74,7 +74,7 @@
       "guide": {
         "target": "preview",
         "navigate": true,
-        "caption": "Press Reload preview to see the change"
+        "caption": "Your app runs here. Press Reload preview to see the change."
       },
       "check": {
         "kind": "self"

@@ -5,9 +5,10 @@ Now ask the coding agent for a tiny change.
 2. Type a request in your own words, for example:
    “Please change the heading to say Hello from Sam and make the box green.”
    (Use your own name.)
-3. Press the send button or Enter.
-4. Wait while the agent works. It can take a minute, and the agent tells you
-   when it has finished. If you change your mind, **Stop** stops it.
+3. Press the send button (the arrow) or Enter.
+4. Wait while the agent works. This can take a few minutes. When it has
+   finished, it tells you what it changed. If you change your mind, **Stop**
+   stops it.
 
 **No AI connected yet?** Then the send button says **Connect your AI account
 to send messages**. The step **Where AI setup lives** says where to connect

@@ -4,15 +4,17 @@ Your project page has four parts. Find each one:
    Next to the **L** button it shows your project's name,
    **Practice: Introduction to Vibe64**.
 2. **The coding chat**, the column on the left. Here you talk to the AI coding
-   agent that changes your app.
-3. **The project**, the big area beside it. Its switches read **Preview**,
-   **Dashboard** and **Lesson**. You're reading this in **Lesson**.
-4. **Colleague**, your teacher, behind the avatar button at the top right.
+   agent that changes your app. The agent has its own little character.
+3. **The project**, the big area beside the chat. The switches at the top of
+   the page choose what it shows: **Preview**, **Dashboard** or **Lesson**.
+   You're reading this in **Lesson**.
+4. **Colleague**, your teacher, behind the round picture at the far top right.
 
 Press **Show me** to see where Preview and Dashboard are.
 
-On a phone you see one side at a time: **Show chat** shows the coding chat
-and **Show project** the project. The button at the top of the project goes
-from **Lesson** to **Preview** to **Dashboard**.
+On a phone you see one side at a time. The arrow button at the top (**Show
+chat** or **Show project**) switches between the coding chat and the project.
+The button beside it moves the project on from **Lesson** to **Preview** to
+**Dashboard**; on a narrow screen it shows only an icon.
 
 When you've found all four, press **Done**.

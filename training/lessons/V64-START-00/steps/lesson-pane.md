@@ -1,7 +1,7 @@
 You're reading the **Lesson** pane. Three things help you find your way:
 
-- **The step list** shows every step and its status: **Passed**, **Not yet
-  passed**, **Not checked yet** or **Optional**. When there's little room it
+- **The step list** shows every step. A green tick means the step is done;
+  **Optional** steps can be skipped. When there's little room, the list
   becomes a row of numbered circles. Select a step to read it.
 - **Next step** and **Previous step** move through the lesson. **Lesson
   notes** has extra background whenever you want it.

@@ -1,0 +1,6 @@
+# Vibe64 writes its agent guidance here when the practice project opens.
+# Ignored so Current changes and Save show only your own changes.
+.agents/
+.claude/
+.codex/
+.opencode/
