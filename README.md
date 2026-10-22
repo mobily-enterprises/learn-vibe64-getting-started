@@ -1,4 +1,4 @@
-# Introduction to using Vibe64 — topic 0.3.1 (Learning v2 draft)
+# Introduction to using Vibe64 — topic 0.4.0 (Learning v2 draft)
 
 Canonical topic source for `mobily-enterprises/learn-vibe64-getting-started`.
 Publishing this source does not install or enable a learner release; course
@@ -21,7 +21,8 @@ training/lessons/V64-START-01/
 Each step has a plain, second-person body that a learner can follow without AI,
 an optional `visual` play sequence using the visual's declared commands, an
 optional `guide` (a declared Vibe64 place that **Show me** points at or opens)
-and a `check`:
+or, instead of a guide, a closing `beats` block that the lesson step bar plays
+one line at a time (V64-START-00 uses beats on every step), and a `check`:
 
 - `auto` runs a declared check script. A pass needs learner-origin evidence:
   the learner's own Preview press (V64-START-01 `orientation-response`) or
@@ -30,13 +31,18 @@ and a `check`:
 - `choice` replaces former answer assessments that have a right answer. The
   correct options are compared on the server and never shown to Colleague.
 - `self` is the learner's own **Done** for reflective or human-only steps.
+- `review` asks the learner's own AI to judge their practice project changes
+  against the rubric in the step's `check review:` beat (V64-START-00
+  `see-the-change`, `evidence: ["changes"]`). It runs only when the learner
+  presses **Check my work**.
 - `none` steps are reading steps and are never required.
 
 `notes.md` is shown to the learner as **Lesson notes**: plain background,
 tips and recovery, written in the second person. It never contains answers to
 choice questions or instructions for judging the learner. Colleague teaches
 from the same step text and notes, opens real screens, uses the guides and
-replays visuals. It never grades: no rubric, no AI grader.
+replays visuals. It never grades; a `review` check is the lesson's own
+check, run on the learner's request, not Colleague's.
 
 ## Run the practice applications
 

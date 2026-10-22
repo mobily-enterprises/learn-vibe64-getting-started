@@ -7,3 +7,7 @@ to use. The coding agent and Colleague both use it.
 - On a shared workspace, only its owner connects AI.
 - An AI key works like a password. Never paste it into a chat, a lesson or a
   project file.
+
+```beats
+show lesson-bar: You connect your own AI in Account settings → AI Accounts. Never paste an AI key into a chat.
+```

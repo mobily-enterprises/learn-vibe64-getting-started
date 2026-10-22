@@ -8,6 +8,15 @@ This lesson opened a **practice project** made just for you: a tiny app with
 one web page. Nothing you do here can break anything that matters, and you
 don't need to know how to code.
 
-- **Next step** moves on to the next step.
+- **The yellow step bar** at the top walks you through each step, one short
+  line at a time, pointing at the real screen. When a line asks you to do
+  something, it notices when you've done it. **Next** (the right arrow)
+  moves on; **Step** opens the whole step text under the bar.
 - **Teach me** asks Colleague, your teacher, to explain the step you're on.
-- **Show me**, on some steps, points at the place on the screen.
+- **Show me** plays a step's lines in the bar again from the start.
+
+```beats
+show lesson-bar: Hello! This yellow bar walks you through each step, one short line at a time.
+show lesson: The whole lesson is also here, in the Lesson tab, whenever you want to read it.
+show colleague: Colleague, your teacher, is behind this picture. Teach me asks it about any step.
+```

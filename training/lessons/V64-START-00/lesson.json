@@ -25,11 +25,6 @@
       "id": "the-page",
       "title": "Your project page",
       "body": "steps/the-page.md",
-      "guide": {
-        "target": "dashboard",
-        "navigate": false,
-        "caption": "Preview and Dashboard switch here"
-      },
       "check": {
         "kind": "self"
       },
@@ -48,11 +43,6 @@
       "id": "see-preview",
       "title": "Your app in Preview",
       "body": "steps/see-preview.md",
-      "guide": {
-        "target": "preview",
-        "navigate": true,
-        "caption": "Your app runs here"
-      },
       "check": {
         "kind": "self"
       },
@@ -71,13 +61,11 @@
       "id": "see-the-change",
       "title": "Check it yourself",
       "body": "steps/see-the-change.md",
-      "guide": {
-        "target": "preview",
-        "navigate": true,
-        "caption": "Your app runs here. Press Reload preview to see the change."
-      },
       "check": {
-        "kind": "self"
+        "kind": "review",
+        "evidence": [
+          "changes"
+        ]
       },
       "required": false
     },
@@ -85,12 +73,6 @@
       "id": "dashboard",
       "title": "The Dashboard",
       "body": "steps/dashboard.md",
-      "guide": {
-        "target": "files",
-        "navigate": true,
-        "filePath": "public/index.html",
-        "caption": "Your page is written here"
-      },
       "check": {
         "kind": "self"
       },
@@ -100,11 +82,6 @@
       "id": "current-changes",
       "title": "What changed",
       "body": "steps/current-changes.md",
-      "guide": {
-        "target": "changes",
-        "navigate": true,
-        "caption": "The agent's edit shows here"
-      },
       "check": {
         "kind": "none"
       },
@@ -114,11 +91,6 @@
       "id": "save",
       "title": "Save your work",
       "body": "steps/save.md",
-      "guide": {
-        "target": "git-log",
-        "navigate": true,
-        "caption": "Saved versions are listed here"
-      },
       "check": {
         "kind": "self"
       },
@@ -175,11 +147,6 @@
       "id": "courses-and-l",
       "title": "Courses and the L button",
       "body": "steps/courses-and-l.md",
-      "guide": {
-        "target": "learning",
-        "navigate": false,
-        "caption": "L switches between Learn and your own projects"
-      },
       "check": {
         "kind": "self"
       },

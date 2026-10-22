@@ -2,11 +2,15 @@
 
 These notes add background to the steps. You can read them at any time.
 
-## Teach me and Show me
+## The step bar, Teach me and Show me
 
+- **The yellow step bar** plays each step as a few short lines. Some point at
+  a place on the screen and move on by themselves; others ask you to do
+  something and notice when you have. **Pause** holds a line, the arrows go
+  back and forward, and **Step** opens the whole step text under the bar.
 - **Teach me** opens Colleague next to the lesson. It explains the step you're
   on, one small idea at a time, and can point at things on the real screen.
-- **Show me** points at the place a step talks about, and sometimes opens it.
+- **Show me** plays the step's lines in the bar again from the start.
 - On a phone, the lesson moves out of the way while you look. Come back with
   the button at the top of the project (**Lesson**) or the step bar's
   **Open**. Don't use **L** for this: **L** switches between Learn and your
@@ -14,9 +18,11 @@ These notes add background to the steps. You can read them at any time.
 
 ## How steps are marked
 
-Each step is marked by an automatic check, your answer to a question, or your
-own **Done**. Colleague can explain and show you things, but it never marks a
-step for you. If an answer isn't right yet, read the step again and have
+Each step is marked by an automatic check, your answer to a question, a
+review of your work, or your own **Done**. A review uses your own AI: it reads
+what changed in your practice project and tells you whether it matches what
+the step asks for, with a hint if not. Colleague can explain and show you
+things, but it never marks a step for you. If an answer isn't right yet, read the step again and have
 another go: there's no penalty for trying. Steps marked **Optional** can be
 skipped.
 

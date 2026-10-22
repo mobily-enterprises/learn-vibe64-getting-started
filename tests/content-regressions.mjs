@@ -163,7 +163,7 @@ console.log('Not proved: real browser gesture/display, frame visibility, sandbox
 const lesson = async code => JSON.parse(await readFile(new URL(`../training/lessons/${code}/lesson.json`, import.meta.url), 'utf8'));
 const inventory = descriptor => descriptor.steps.map(({ id, check, required }) => `${id}:${check.kind}${check.check ? `=${check.check}` : ''}${required ? '!' : ''}`);
 const lessons = Object.fromEntries(await Promise.all(['V64-START-00', 'V64-START-01', 'V64-START-02', 'V64-START-03'].map(async code => [code, await lesson(code)])));
-assert.deepEqual(inventory(lessons['V64-START-00']), ['welcome:none', 'the-page:self!', 'lesson-pane:none', 'see-preview:self!', 'ask-the-chat:self', 'see-the-change:self', 'dashboard:self!', 'current-changes:none', 'save:self', 'where-work-lives:choice!', 'meet-colleague:self!', 'who-does-what:choice!', 'courses-and-l:self!', 'l-pauses:choice!', 'ai-setup:none', 'recap:self!']);
+assert.deepEqual(inventory(lessons['V64-START-00']), ['welcome:none', 'the-page:self!', 'lesson-pane:none', 'see-preview:self!', 'ask-the-chat:self', 'see-the-change:review', 'dashboard:self!', 'current-changes:none', 'save:self', 'where-work-lives:choice!', 'meet-colleague:self!', 'who-does-what:choice!', 'courses-and-l:self!', 'l-pauses:choice!', 'ai-setup:none', 'recap:self!']);
 assert.deepEqual(inventory(lessons['V64-START-01']), ['welcome:none', 'help-or-change:choice!', 'try-the-app:auto=orientation-response!', 'what-happened:none', 'preview-purpose:choice!', 'useful-request:choice!', 'recap:none']);
 assert.deepEqual(inventory(lessons['V64-START-02']), ['welcome:none', 'try-it-first:self', 'meet-the-file:none', 'change-the-greeting:auto=greeting-count!', 'what-preview-showed:self!', 'why-check-behaviour:choice!', 'replay-the-journey:none', 'recap:none']);
 assert.deepEqual(inventory(lessons['V64-START-03']), ['welcome:none', 'add-a-note:self!', 'see-the-rows:self!', 'where-notes-live:choice!', 'read-the-erd:choice!', 'ask-for-a-change:self!', 'see-the-new-column:self', 'recap:none']);
@@ -190,6 +190,63 @@ for (const [code, descriptor] of Object.entries(lessons)) {
   }
 }
 console.log('PASS: v2 step inventory, check evidence and visual play sequences match the declared commands.');
+
+// Lesson 0 is a guided tour: every step ends with a beats block that the step
+// bar plays. Pin each step's beat sequence (kind and target) and the few beat
+// details the tour relies on; the grammar itself is public `training validate`.
+const beatsOf = markdown => {
+  const match = /\n```beats\n([\s\S]*?)\n```\n*$/u.exec(markdown);
+  return match ? match[1].split('\n').filter(Boolean).map(line => {
+    const [, kind, target, arg, text] = /^(show|do|check) ([a-z-]+)(?: ([^:]+?))?: (.+)$/u.exec(line) || [];
+    assert.ok(kind, `beat line reads <kind> <target>: <text>: ${line}`);
+    return { kind, target, arg, text };
+  }) : null;
+};
+const tourBeats = {};
+for (const step of lessons['V64-START-00'].steps) {
+  assert.equal(step.guide, undefined, `V64-START-00/${step.id} uses beats instead of a guide`);
+  tourBeats[step.id] = beatsOf(await readFile(new URL(`../training/lessons/V64-START-00/${step.body}`, import.meta.url), 'utf8'));
+  assert.ok(tourBeats[step.id], `V64-START-00/${step.id} ends with a beats block`);
+}
+const sequence = Object.fromEntries(Object.entries(tourBeats).map(([id, beats]) => [id, beats.map(({ kind, target, arg }) => `${kind} ${target}${arg ? ` ${arg}` : ''}`)]));
+assert.deepEqual(sequence, {
+  welcome: ['show lesson-bar', 'show lesson', 'show colleague'],
+  'the-page': ['show learning', 'show chat', 'show preview', 'show dashboard', 'show colleague', 'check done'],
+  'lesson-pane': ['show lesson', 'show lesson-bar', 'show courses'],
+  'see-preview': ['do preview', 'show preview', 'show reload-preview', 'check done'],
+  'ask-the-chat': ['show chat', 'do send-message', 'do agent-finished', 'check done'],
+  'see-the-change': ['do preview', 'do reload-preview', 'show preview', 'check review'],
+  dashboard: ['show dashboard', 'do files', 'do file-opened public/index.html', 'check done'],
+  'current-changes': ['do changes', 'show changes'],
+  save: ['do save', 'do git-log', 'check done'],
+  'where-work-lives': ['show lesson-bar'],
+  'meet-colleague': ['do colleague', 'check done'],
+  'who-does-what': ['show lesson-bar'],
+  'courses-and-l': ['do courses', 'show learning', 'check done'],
+  'l-pauses': ['show learning'],
+  'ai-setup': ['show lesson-bar'],
+  recap: ['show lesson-bar', 'check done']
+});
+const checkKind = { done: 'self', review: 'review' };
+for (const step of lessons['V64-START-00'].steps) {
+  const check = tourBeats[step.id].find(beat => beat.kind === 'check');
+  if (check) assert.equal(checkKind[check.target], step.check.kind, `V64-START-00/${step.id} check beat matches its check`);
+  else assert.ok(['none', 'choice'].includes(step.check.kind), `V64-START-00/${step.id} ${step.check.kind} check has its check beat`);
+}
+const [sendBeat] = tourBeats['ask-the-chat'].filter(beat => beat.target === 'send-message');
+assert.equal([...sendBeat.text.matchAll(/"([^"]+)"/gu)].length, 1, 'Do it for me sends exactly one quoted prompt');
+assert.match(sendBeat.text, /"Please change the heading to say .+ and make the box green\."/u);
+// The first change is reviewed by the learner's own AI against the rubric in
+// its check beat, from the practice project's changes only.
+const review = lessons['V64-START-00'].steps.find(step => step.id === 'see-the-change');
+assert.deepEqual(review.check, { kind: 'review', evidence: ['changes'] });
+assert.equal(review.required, false, 'The reviewed change stays optional: it needs a connected AI.');
+const rubric = tourBeats['see-the-change'].at(-1).text;
+assert.ok(rubric.length <= 600, 'rubric fits its 600 characters');
+assert.match(rubric, /heading/u); assert.match(rubric, /green/u); assert.match(rubric, /public\/index\.html/u);
+const tourPage = await readFile(new URL('../training/exercises/tour-app/public/index.html', import.meta.url), 'utf8');
+assert.ok(tourPage.includes('<h1>My first Vibe64 app</h1>') && rubric.includes('My first Vibe64 app'), 'rubric names the starting heading');
+console.log('PASS: Lesson 0 beats pin the guided tour, its Do it for me prompt and the reviewed first change.');
 
 // notes.md is shown to the learner as Lesson notes: it must not carry grading
 // instructions or the text of a correct choice option.

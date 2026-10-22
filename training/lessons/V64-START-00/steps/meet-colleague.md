@@ -18,3 +18,8 @@ On a phone Colleague fills the screen. Its **Step** button or **Minimize
 conversation** brings the lesson back.
 
 When you've opened, minimised and brought back Colleague, press **Done**.
+
+```beats
+do colleague: Press the avatar at the top right to open Colleague. Try asking: What is the Dashboard for?
+check done: Minimised Colleague and brought it back? Press Done.
+```

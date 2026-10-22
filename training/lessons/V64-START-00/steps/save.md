@@ -6,10 +6,16 @@ A change isn't kept for good until you **save** it.
 2. The **Save changes** dialog says how many files changed. **View diff**
    shows them. Press **Save**.
 3. Saving takes a moment: Vibe64 writes a short description of your change.
-4. Open **Dashboard → Git log**, or press **Show me**. Your saved version is
-   at the top of the list.
+4. Open **Dashboard → Git log**. Your saved version is at the top of the
+   list.
 
 No change yet? Then there's nothing to save, and Git log shows only your
 project's first version.
 
 When your saved version is in Git log, press **Done**.
+
+```beats
+do save: Press Save, the disk icon at the top of the coding chat, then Save in the dialog.
+do git-log: Open Dashboard → Git log. Your saved version is at the top.
+check done: Your saved version is in Git log? Press Done.
+```
