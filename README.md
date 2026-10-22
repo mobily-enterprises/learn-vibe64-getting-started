@@ -1,4 +1,4 @@
-# Introduction to using Vibe64 — topic 0.4.0 (Learning v2 draft)
+# Introduction to using Vibe64 — topic 0.4.1 (Learning v2 draft)
 
 Canonical topic source for `mobily-enterprises/learn-vibe64-getting-started`.
 Publishing this source does not install or enable a learner release; course

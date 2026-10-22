@@ -238,6 +238,9 @@ for (const step of lessons['V64-START-00'].steps) {
 const [sendBeat] = tourBeats['ask-the-chat'].filter(beat => beat.target === 'send-message');
 assert.equal([...sendBeat.text.matchAll(/"([^"]+)"/gu)].length, 1, 'Do it for me sends exactly one quoted prompt');
 assert.match(sendBeat.text, /"Please change the heading to say .+ and make the box green\."/u);
+// Starting the lesson needs the learner's AI (it prepares the practice
+// project), so no beat speaks to a learner who has none connected yet.
+assert.ok(Object.values(tourBeats).flat().every(beat => !/no AI connected/iu.test(beat.text || '')), 'no beat assumes no AI is connected');
 // The first change is reviewed by the learner's own AI against its check's
 // rubric (the single source; its check beat has no text), from the practice
 // project's changes only.

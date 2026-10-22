@@ -11,7 +11,7 @@ While a lesson is going, Colleague's header has a yellow **Step** button
 (like **Step 11/16**). It shows the step you're on in the Lesson pane.
 
 Colleague explains, answers questions and can open screens for you. It never
-marks your steps. Colleague needs an AI too: if none is connected yet, it
+marks your steps. Colleague uses your AI too: if it can't reach it, it
 says so, and you can still practise opening and closing it.
 
 On a phone Colleague fills the screen. Its **Step** button or **Minimize

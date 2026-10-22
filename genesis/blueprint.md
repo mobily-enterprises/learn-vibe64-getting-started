@@ -17,7 +17,8 @@ compared on the server, or the learner's own **Done**.
 Lesson 0 (Introduction to Vibe64) is a tour of the editor with a minimal
 static page: the project page, the Lesson pane, Preview, the coding chat,
 Dashboard, Save and Git log, Colleague, Courses and **L**. Its coding-chat
-steps are optional so it can be finished without a connected AI; it only says
+steps are optional so it can be finished if the AI stops answering (starting
+it needs the learner's AI, which prepares its practice project); it only says
 where AI setup lives and does not teach it. Every lesson prepares a disposable
 practice project from a bundled exercise: the tour page, the orientation app,
 the editable greeting app and the SQLite notes app.

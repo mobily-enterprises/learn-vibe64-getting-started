@@ -10,16 +10,16 @@ Now ask the coding agent for a tiny change.
    finished, it tells you what it changed. If you change your mind, **Stop**
    stops it.
 
-**No AI connected yet?** Then the send button says **Connect your AI account
-to send messages**. The step **Where AI setup lives** says where to connect
-one. You can also skip this step and the next one: the rest of the lesson
-still works.
+**Your AI not answering?** If the send button says **Connect your AI account
+to send messages**, your AI needs connecting again: the step **Where AI setup
+lives** says where. You can also skip this step and the next one: the rest of
+the lesson still works.
 
 When the agent says it has finished, the step bar marks this step done (or
 press **Done**).
 
 ```beats
-show chat: This is the coding chat. No AI connected yet? You can skip this step and the next.
+show chat: This is the coding chat. Here you ask the AI coding agent for changes, in your own words.
 do send-message: Ask it: "Please change the heading to say Hello from Vibe64 and make the box green."
 do agent-finished: The agent is working. This can take a few minutes; it tells you when it has finished.
 check done: The agent has finished? Press Done.
