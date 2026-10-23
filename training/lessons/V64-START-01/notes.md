@@ -12,8 +12,8 @@ step again and have another go: there's no penalty for trying.
 ## Teach me and Show me
 
 **Teach me** asks Colleague to explain the step you're on. **Show me** points
-at the place a step talks about. On a phone, come back to the lesson with the
-button at the top of the project (**Lesson**).
+at the place a step talks about. On a phone, come back to the lesson with
+**Lesson** on the yellow step bar.
 
 ## Pressing the button yourself
 

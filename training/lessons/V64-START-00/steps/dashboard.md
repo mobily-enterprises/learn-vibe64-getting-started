@@ -1,7 +1,7 @@
 **Dashboard** shows what's inside your project.
 
-1. Select **Dashboard**. Its tools come in two groups: **Project**, for the
-   whole project, and **Session**, for your coding chat.
+1. Select **Dash** (short for Dashboard). Its tools come in two groups:
+   **Project**, for the whole project, and **Session**, for your coding chat.
 2. Open **Files**, then the file `public/index.html`. **Do it for me** in the
    step bar takes you straight there.
 3. Find your heading in the text. It sits between `<h1>` and `</h1>`.
@@ -15,7 +15,7 @@ When you've found the heading, press **Done**.
 
 ```beats
 show dashboard: Dashboard shows what's inside your project.
-do files: Select Dashboard, then open Files.
+do files: Select Dash, then open Files.
 do file-opened public/index.html: Open public/index.html. Your heading sits between <h1> and </h1>.
 check done: Found the heading? Press Done.
 ```

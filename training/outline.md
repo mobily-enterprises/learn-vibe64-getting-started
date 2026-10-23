@@ -1,6 +1,6 @@
 # Introduction to using Vibe64
 
-Topic 0.4.2 is a Learning v2 release of the introduction, for someone
+Topic 0.4.3 is a Learning v2 release of the introduction, for someone
 with no coding experience. Each lesson is a list of short steps the learner can
 read on their own in the Learning environment (**L**). In Lesson 0 the yellow
 step bar plays each step as short guided beats that point at the real screen
