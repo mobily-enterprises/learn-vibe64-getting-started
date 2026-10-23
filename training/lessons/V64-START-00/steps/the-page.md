@@ -2,7 +2,7 @@ Your project page has four parts. Find each one:
 
 1. **The header** along the top. It is yellow because you're in Learn mode.
    Next to the **L** button it shows your project's name,
-   **Practice: Introduction to Vibe64**.
+   **Practice: Introduction to the editor**.
 2. **The coding chat**, the column on the left. Here you talk to the AI coding
    agent that changes your app. The agent has its own little character.
 3. **The project**, the big area beside the chat. The switches at the top of

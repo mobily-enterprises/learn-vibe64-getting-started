@@ -1,5 +1,5 @@
-Welcome to Vibe64! In about 15 minutes you'll take a short tour and make your
-first change to a real app.
+Welcome to the editor! In about 15 minutes you'll take a short tour of it and
+make your first change to a real app.
 
 Vibe64 works like this: **you describe what you want, an AI coding agent
 builds it, and you try the result.**

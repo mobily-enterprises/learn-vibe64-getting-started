@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 3,
+  "code": "V64-WELCOME",
+  "title": "Welcome to Vibe64",
+  "stage": "studio",
+  "notes": "notes.md",
+  "prerequisites": [],
+  "estimatedMinutes": 5,
+  "visuals": [],
+  "steps": [
+    { "id": "welcome", "title": "Welcome", "body": "steps/welcome.md", "check": { "kind": "none" }, "required": false },
+    { "id": "projects", "title": "Your projects", "body": "steps/projects.md", "check": { "kind": "none" }, "required": false },
+    { "id": "your-ai", "title": "Your AI", "body": "steps/your-ai.md", "check": { "kind": "fact", "fact": "ai-ready" }, "required": true },
+    { "id": "ai-accounts", "title": "AI Accounts", "body": "steps/ai-accounts.md", "check": { "kind": "none" }, "required": false },
+    { "id": "colleague", "title": "Colleague, your helper", "body": "steps/colleague.md", "check": { "kind": "self" }, "required": true },
+    { "id": "speech", "title": "Speech and Colleague", "body": "steps/speech.md", "check": { "kind": "none" }, "required": false },
+    { "id": "people", "title": "People", "body": "steps/people.md", "check": { "kind": "none" }, "required": false },
+    { "id": "studio-health", "title": "When something breaks", "body": "steps/studio-health.md", "check": { "kind": "none" }, "required": false },
+    { "id": "launcher", "title": "Deployed apps", "body": "steps/launcher.md", "check": { "kind": "none" }, "required": false },
+    { "id": "learn-and-develop", "title": "Learn and Develop", "body": "steps/learn-and-develop.md", "check": { "kind": "self" }, "required": true }
+  ]
+}

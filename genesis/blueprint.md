@@ -14,7 +14,14 @@ client-server SVG. Colleague never judges. A step passes only through a
 declared automatic check with learner-origin evidence, a choice question
 compared on the server, or the learner's own **Done**.
 
-Lesson 0 (Introduction to Vibe64) is a tour of the editor with a minimal
+Welcome to Vibe64 (V64-WELCOME) is the course's orientation, the lesson Take
+the tour starts: a studio lesson (no practice project) on the screens outside
+projects. Its shared steps are the step bar, the account menu's AI setup with
+an `ai-ready` fact check, Colleague and **L**; its hosted steps open the
+Management pages an installation registers (`places` in `package.json`) and
+are absent elsewhere.
+
+Lesson 0 (Introduction to the editor) is a tour of the editor with a minimal
 static page: the project page, the Lesson pane, Preview, the coding chat,
 Dashboard, Save and Git log, Colleague, Courses and **L**. Its coding-chat
 steps are optional so it can be finished if the AI stops answering (starting

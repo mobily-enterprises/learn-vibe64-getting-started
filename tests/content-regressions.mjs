@@ -162,7 +162,10 @@ console.log('Not proved: real browser gesture/display, frame visibility, sandbox
 // only catches accidental changes to what a learner must do in this topic.
 const lesson = async code => JSON.parse(await readFile(new URL(`../training/lessons/${code}/lesson.json`, import.meta.url), 'utf8'));
 const inventory = descriptor => descriptor.steps.map(({ id, check, required }) => `${id}:${check.kind}${check.check ? `=${check.check}` : ''}${required ? '!' : ''}`);
-const lessons = Object.fromEntries(await Promise.all(['V64-START-00', 'V64-START-01', 'V64-START-02', 'V64-START-03'].map(async code => [code, await lesson(code)])));
+const lessons = Object.fromEntries(await Promise.all(['V64-WELCOME', 'V64-START-00', 'V64-START-01', 'V64-START-02', 'V64-START-03'].map(async code => [code, await lesson(code)])));
+assert.deepEqual(inventory(lessons['V64-WELCOME']), ['welcome:none', 'projects:none', 'your-ai:fact!', 'ai-accounts:none', 'colleague:self!', 'speech:none', 'people:none', 'studio-health:none', 'launcher:none', 'learn-and-develop:self!']);
+assert.equal(lessons['V64-WELCOME'].exercise, undefined, 'The orientation runs on the studio screens, with no practice project.');
+assert.deepEqual(lessons['V64-WELCOME'].steps.find(step => step.id === 'your-ai').check, { kind: 'fact', fact: 'ai-ready' });
 assert.deepEqual(inventory(lessons['V64-START-00']), ['welcome:none', 'the-page:self!', 'lesson-pane:none', 'see-preview:self!', 'ask-the-chat:self', 'see-the-change:review', 'dashboard:self!', 'current-changes:none', 'save:self', 'where-work-lives:choice!', 'meet-colleague:self!', 'who-does-what:choice!', 'courses-and-l:self!', 'l-pauses:choice!', 'ai-setup:none', 'recap:self!']);
 assert.deepEqual(inventory(lessons['V64-START-01']), ['welcome:none', 'help-or-change:choice!', 'try-the-app:auto=orientation-response!', 'what-happened:none', 'preview-purpose:choice!', 'useful-request:choice!', 'recap:none']);
 assert.deepEqual(inventory(lessons['V64-START-02']), ['welcome:none', 'try-it-first:self', 'meet-the-file:none', 'change-the-greeting:auto=greeting-count!', 'what-preview-showed:self!', 'why-check-behaviour:choice!', 'replay-the-journey:none', 'recap:none']);
@@ -179,7 +182,7 @@ const declared = new Map(visual.commands.map(entry => [entry.name, entry.paramet
 const retiredBarControls = /step bar's\s+\*\*Open\*\*|\*\*Open\*\* brings|folds it to\s+one line|\*\*Step\*\* opens|Step opens the whole step|Answer in Step|Lesson\*{0,2}\s+tab|Select \*{0,2}Dashboard\b|Dashboard\*{0,2} or \*{0,2}Lesson/u;
 for (const [code, descriptor] of Object.entries(lessons)) {
   assert.equal(descriptor.schemaVersion, 3, `${code} uses lesson format v3`);
-  assert.equal(descriptor.stage, "project", `${code} is taught in its practice project`);
+  assert.equal(descriptor.stage, code === 'V64-WELCOME' ? 'studio' : 'project', `${code} runs where its stage says`);
   const notes = await readFile(new URL(`../training/lessons/${code}/notes.md`, import.meta.url), 'utf8').catch(() => '');
   assert.doesNotMatch(notes, retiredBarControls, `${code} notes name no retired step bar control`);
   for (const step of descriptor.steps) {
@@ -262,6 +265,38 @@ assert.match(rubric, /heading/u); assert.match(rubric, /green/u); assert.match(r
 const tourPage = await readFile(new URL('../training/exercises/tour-app/public/index.html', import.meta.url), 'utf8');
 assert.ok(tourPage.includes('<h1>My first Vibe64 app</h1>') && rubric.includes('My first Vibe64 app'), 'rubric names the starting heading');
 console.log('PASS: Lesson 0 beats pin the guided tour, its Do it for me prompt and the reviewed first change.');
+
+// Welcome to Vibe64, the course's orientation: the shared steps use public
+// places; each hosted step opens one Management page the topic declares, so
+// it is shown only where an installation registers that page.
+const topic = JSON.parse(await readFile(new URL('../package.json', import.meta.url), 'utf8')).vibe64Training;
+const welcomeBeats = {};
+for (const step of lessons['V64-WELCOME'].steps) {
+  assert.equal(step.guide, undefined, `V64-WELCOME/${step.id} uses beats instead of a guide`);
+  welcomeBeats[step.id] = beatsOf(await readFile(new URL(`../training/lessons/V64-WELCOME/${step.body}`, import.meta.url), 'utf8'));
+  assert.ok(welcomeBeats[step.id], `V64-WELCOME/${step.id} ends with a beats block`);
+}
+assert.deepEqual(Object.fromEntries(Object.entries(welcomeBeats).map(([id, beats]) => [id, beats.map(({ kind, target }) => `${kind} ${target}`)])), {
+  welcome: ['show lesson-bar', 'show lesson'],
+  projects: ['do manage-projects', 'show manage-projects'],
+  'your-ai': ['show account-menu', 'show ai-setup', 'check fact'],
+  'ai-accounts': ['do manage-accounts', 'show manage-accounts'],
+  colleague: ['show colleague', 'do colleague', 'check done'],
+  speech: ['do manage-assistant', 'show manage-assistant'],
+  people: ['do manage-users', 'show manage-users'],
+  'studio-health': ['do manage-studio-health', 'show manage-studio-health'],
+  launcher: ['do manage-launcher', 'show manage-launcher'],
+  'learn-and-develop': ['show learning', 'do learning', 'check done']
+});
+const hosted = new Set(topic.places);
+for (const step of lessons['V64-WELCOME'].steps) {
+  const declared = welcomeBeats[step.id].filter(beat => hosted.has(beat.target));
+  if (declared.length) assert.equal(step.required, false, `V64-WELCOME/${step.id} is a hosted step, so it is optional`);
+}
+assert.deepEqual([...hosted].sort(), [...new Set(Object.values(welcomeBeats).flat().map(beat => beat.target).filter(target => target.startsWith('manage-')))].sort(),
+  'the topic declares exactly the hosted places its lessons use');
+assert.match(await readFile(new URL('../training/lessons/V64-WELCOME/steps/launcher.md', import.meta.url), 'utf8'), /apps you have deployed/u);
+console.log('PASS: Welcome to Vibe64 pins its shared and hosted steps and the places the topic declares.');
 
 // notes.md is shown to the learner as Lesson notes: it must not carry grading
 // instructions or the text of a correct choice option.

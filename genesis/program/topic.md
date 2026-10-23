@@ -4,6 +4,8 @@
 
 - `package.json`
 - Main: `training/outline.md`
+- `training/lessons/V64-WELCOME/lesson.json`
+- `training/lessons/V64-WELCOME/notes.md`
 - `training/lessons/V64-START-00/lesson.json`
 - `training/lessons/V64-START-00/notes.md`
 - `training/lessons/V64-START-01/lesson.json`
@@ -16,11 +18,18 @@
 
 ## Public contract
 
-Topic 0.3.1 lists four published, required lessons in order: V64-START-00
-Introduction to Vibe64, V64-START-01 Your first steps in Vibe64, V64-START-02 Make
-your first change (requires 01) and V64-START-03 Build with a database
-(requires 01). Each descriptor uses lesson format v3 (format v2 plus `stage: "project"`, since
-each is taught in its practice project): learner-facing `notes` (shown as Lesson
+Topic 0.5.0 lists five published, required lessons in order: V64-WELCOME
+Welcome to Vibe64, V64-START-00 Introduction to the editor, V64-START-01 Your
+first steps in Vibe64, V64-START-02 Make your first change (requires 01) and
+V64-START-03 Build with a database (requires 01). Each descriptor uses lesson
+format v3 (format v2 plus its `stage`). V64-WELCOME is `stage: "studio"`, has no
+exercise and is the course's orientation (the lesson Take the tour starts);
+its `your-ai` step is a `fact` check of `ai-ready`, and its hosted steps use
+the Online places the topic declares in `places` (`manage-projects`,
+`manage-accounts`, `manage-assistant`, `manage-users`, `manage-studio-health`,
+`manage-launcher`), so they are left out where those places are not
+registered or not open to the learner. The other lessons are `stage:
+"project"`, taught in their practice project. Each has learner-facing `notes` (shown as Lesson
 notes; never answers or judging instructions) and ordered `steps` whose `body`
 files under `steps/` are learner-facing Markdown.
 

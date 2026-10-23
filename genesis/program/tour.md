@@ -7,7 +7,7 @@
 
 ## Public contract
 
-The practice project of V64-START-00 Introduction to Vibe64: one static page
+The practice project of V64-START-00 Introduction to the editor: one static page
 (heading **My first Vibe64 app**, a sentence and a blue box) that the learner
 asks the coding chat to change. `GET /` reads `public/index.html` from disk on
 every request with `cache-control: no-store`, so an edit shows after Reload
