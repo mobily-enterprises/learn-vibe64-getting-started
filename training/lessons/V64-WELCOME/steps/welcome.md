@@ -13,5 +13,5 @@ builds it, and you try the result.**
 
 ```beats
 show lesson-bar: Hello! This yellow bar walks you through the tour, one short line at a time.
-show lesson: Lesson, on this bar, shows the whole tour whenever you want to read it.
+show lesson: The Lesson shows the whole tour, at the step you're on, whenever you want to read it.
 ```
