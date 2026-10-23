@@ -1,7 +1,7 @@
 In this lesson you'll try a small, real application. You'll press a button,
 read what comes back, and learn who to ask when you want help or a change.
 
-If you took **Introduction to Vibe64**, you already know your way around: the
+If you took **Introduction to the editor**, you already know your way around: the
 coding chat, Preview, Dashboard and Colleague. This time the app has a real
 server behind its page.
 

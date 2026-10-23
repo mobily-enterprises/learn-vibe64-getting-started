@@ -1,4 +1,4 @@
-# Good to know: Introduction to Vibe64
+# Good to know: Introduction to the editor
 
 These notes add background to the steps. You can read them at any time.
 

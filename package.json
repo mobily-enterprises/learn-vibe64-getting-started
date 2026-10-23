@@ -1,7 +1,7 @@
 {
   "name": "learn-vibe64-getting-started",
   "private": true,
-  "version": "0.4.4",
+  "version": "0.5.0",
   "type": "module",
   "repository": {
     "type": "git",
@@ -16,6 +16,12 @@
     "outline": "training/outline.md",
     "prerequisites": [],
     "lessons": [
+      {
+        "code": "V64-WELCOME",
+        "descriptor": "training/lessons/V64-WELCOME/lesson.json",
+        "status": "published",
+        "required": true
+      },
       {
         "code": "V64-START-00",
         "descriptor": "training/lessons/V64-START-00/lesson.json",
@@ -40,6 +46,14 @@
         "status": "published",
         "required": true
       }
+    ],
+    "places": [
+      "manage-projects",
+      "manage-accounts",
+      "manage-assistant",
+      "manage-users",
+      "manage-studio-health",
+      "manage-launcher"
     ]
   }
 }
