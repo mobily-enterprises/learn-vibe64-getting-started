@@ -19,7 +19,8 @@
 Topic 0.3.1 lists four published, required lessons in order: V64-START-00
 Introduction to Vibe64, V64-START-01 Your first steps in Vibe64, V64-START-02 Make
 your first change (requires 01) and V64-START-03 Build with a database
-(requires 01). Each descriptor uses lesson format v2: learner-facing `notes` (shown as Lesson
+(requires 01). Each descriptor uses lesson format v3 (format v2 plus `stage: "project"`, since
+each is taught in its practice project): learner-facing `notes` (shown as Lesson
 notes; never answers or judging instructions) and ordered `steps` whose `body`
 files under `steps/` are learner-facing Markdown.
 

@@ -1,7 +1,8 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "code": "V64-START-03",
   "title": "Build with a database",
+  "stage": "project",
   "notes": "notes.md",
   "prerequisites": [
     {
