@@ -1,7 +1,8 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "code": "V64-START-01",
   "title": "Your first steps in Vibe64",
+  "stage": "project",
   "notes": "notes.md",
   "prerequisites": [],
   "estimatedMinutes": 10,

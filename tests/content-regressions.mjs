@@ -179,7 +179,8 @@ const declared = new Map(visual.commands.map(entry => [entry.name, entry.paramet
 // arrows: no text sends the learner to a retired control.
 const retiredBarControls = /step bar's\s+\*\*Open\*\*|\*\*Open\*\* brings|folds it to\s+one line|\*\*Step\*\* opens|Step opens the whole step|Answer in Step|Lesson\*{0,2}\s+tab|Select \*{0,2}Dashboard\b|Dashboard\*{0,2} or \*{0,2}Lesson|\*\*Lesson\*\*,? on (the yellow step|this) bar|the right arrow|the arrows go|Its arrows move/u;
 for (const [code, descriptor] of Object.entries(lessons)) {
-  assert.equal(descriptor.schemaVersion, 2, `${code} uses lesson format v2`);
+  assert.equal(descriptor.schemaVersion, 3, `${code} uses lesson format v3`);
+  assert.equal(descriptor.stage, "project", `${code} is taught in its practice project`);
   const notes = await readFile(new URL(`../training/lessons/${code}/notes.md`, import.meta.url), 'utf8').catch(() => '');
   assert.doesNotMatch(notes, retiredBarControls, `${code} notes name no retired step bar control`);
   for (const step of descriptor.steps) {

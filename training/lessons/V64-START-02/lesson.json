@@ -1,7 +1,8 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "code": "V64-START-02",
   "title": "Make your first change",
+  "stage": "project",
   "notes": "notes.md",
   "prerequisites": [
     {
