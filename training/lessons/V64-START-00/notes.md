@@ -6,14 +6,15 @@ These notes add background to the steps. You can read them at any time.
 
 - **The yellow step bar** plays each step as a few short lines. Some point at
   a place on the screen and move on by themselves; others ask you to do
-  something and notice when you have. **Pause** holds a line, the arrows go
-  back and forward, and **Lesson** shows the whole lesson at the step you're
-  on.
+  something and notice when you have. **Pause** holds a line, **Back** and
+  **Next** go back and forward (**Next step** on a step's last part), and the
+  **Lesson** toggle at the top shows the whole lesson at the step you're on;
+  press it again to hide it.
 - **Teach me** opens Colleague next to the lesson. It explains the step you're
   on, one small idea at a time, and can point at things on the real screen.
 - **Show me** plays the step's lines in the bar again from the start.
 - On a phone, the lesson moves out of the way while you look. Come back with
-  **Lesson** on the yellow step bar. Don't use **L** for this: **L** switches
+  the **Lesson** toggle at the top. Don't use **L** for this: **L** switches
   between Learn and your own projects.
 
 ## How steps are marked

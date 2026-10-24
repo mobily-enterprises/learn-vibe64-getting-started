@@ -10,13 +10,14 @@ don't need to know how to code.
 
 - **The yellow step bar** at the top walks you through each step, one short
   line at a time, pointing at the real screen. When a line asks you to do
-  something, it notices when you've done it. **Next** (the right arrow)
-  moves on; **Lesson** shows the whole lesson, at the step you're on.
+  something, it notices when you've done it. **Next** moves on and **Back**
+  goes back. The **Lesson** toggle at the top shows the whole lesson, at the
+  step you're on; press it again to hide it.
 - **Teach me** asks Colleague, your teacher, to explain the step you're on.
 - **Show me** plays a step's lines in the bar again from the start.
 
 ```beats
 show lesson-bar: Hello! This yellow bar walks you through each step, one short line at a time.
-show lesson: Lesson, on this bar, shows the whole lesson whenever you want to read it.
+show lesson: The Lesson toggle shows the whole lesson whenever you want to read it, and hides it again.
 show colleague: Colleague, your teacher, is behind this picture. Teach me asks it about any step.
 ```

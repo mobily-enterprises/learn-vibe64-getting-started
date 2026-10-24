@@ -7,8 +7,8 @@ Your project page has four parts. Find each one:
    agent that changes your app. The agent has its own little character.
 3. **The project**, the big area beside the chat. The switches at the top of
    the page choose what it shows: **Preview** or **Dash** (short for
-   Dashboard). **Lesson**, on the yellow step bar, shows this lesson there
-   instead.
+   Dashboard). The **Lesson** toggle beside them lays this lesson over the
+   project; press it again to hide the lesson.
 4. **Colleague**, your teacher, behind the round picture at the far top right.
 
 The step bar points at each part in turn.
@@ -16,8 +16,8 @@ The step bar points at each part in turn.
 On a phone you see one side at a time. The arrow button at the top (**Show
 chat** or **Show project**) switches between the coding chat and the project.
 The button beside it moves the project on to the next pane, from **Preview**
-to **Dash** and back; on a narrow screen it shows only an icon. **Lesson** on
-the step bar brings the lesson back.
+to **Dash** and back; on a narrow screen it shows only an icon. The **Lesson**
+toggle beside it shows or hides the lesson.
 
 When you've found all four, press **Done**.
 

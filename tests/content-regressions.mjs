@@ -174,9 +174,10 @@ assert.deepEqual(lessons['V64-START-02'].steps.find(step => step.id === 'change-
 const visual = JSON.parse(await readFile(new URL('../training/visuals/client-server/visual.json', import.meta.url), 'utf8'));
 const declared = new Map(visual.commands.map(entry => [entry.name, entry.parameters]));
 // The step bar has no Open button, Step panel or collapse, the header switch
-// reads Preview | Dash and the Lesson pane opens from the step bar's Lesson
-// button, not a tab: no text sends the learner to a retired control.
-const retiredBarControls = /step bar's\s+\*\*Open\*\*|\*\*Open\*\* brings|folds it to\s+one line|\*\*Step\*\* opens|Step opens the whole step|Answer in Step|Lesson\*{0,2}\s+tab|Select \*{0,2}Dashboard\b|Dashboard\*{0,2} or \*{0,2}Lesson/u;
+// reads Preview | Dash, the lesson is the Lesson toggle beside it (not a tab or
+// a step bar button), and the bar moves with labelled Back and Next, not
+// arrows: no text sends the learner to a retired control.
+const retiredBarControls = /step bar's\s+\*\*Open\*\*|\*\*Open\*\* brings|folds it to\s+one line|\*\*Step\*\* opens|Step opens the whole step|Answer in Step|Lesson\*{0,2}\s+tab|Select \*{0,2}Dashboard\b|Dashboard\*{0,2} or \*{0,2}Lesson|\*\*Lesson\*\*,? on (the yellow step|this) bar|the right arrow|the arrows go|Its arrows move/u;
 for (const [code, descriptor] of Object.entries(lessons)) {
   assert.equal(descriptor.schemaVersion, 2, `${code} uses lesson format v2`);
   const notes = await readFile(new URL(`../training/lessons/${code}/notes.md`, import.meta.url), 'utf8').catch(() => '');

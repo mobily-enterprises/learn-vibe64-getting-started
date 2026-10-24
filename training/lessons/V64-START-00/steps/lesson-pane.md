@@ -7,11 +7,15 @@ Three things help you find your way:
 - **Next step** and **Previous step** move through the lesson. **Lesson
   notes** has extra background whenever you want it.
 - **The yellow step bar** above the page always shows where you are
-  (**3/16**, with a dot for each of the step's lines). Its arrows move line by
-  line and into the next step. **Lesson** (a school-cap icon) brings this
-  Lesson pane back from anywhere, at the step you're on, and stays pressed
-  while it shows; **Preview** or **Dash** at the top go back to your app.
-  **Courses** at its right end lists all the lessons.
+  (**Step 3 of 16**, with a dot for each part of the step). **Back** goes back
+  one part; the button beside it says what it does: **Next** to the step's
+  next part, **Next step** on its last part. **Courses** at its right end
+  lists all the lessons.
+- **The Lesson toggle** at the top, beside **Preview** and **Dash**, turns this
+  lesson on and off. On, it is yellow with its little switch to the right and
+  the lesson covers your app. Press it again (or **Hide lesson** at the top of
+  the lesson) to hide it: your app is right there, exactly as you left it.
+  Choosing **Preview** or **Dash** also hides the lesson.
 
 A step is marked by an automatic check, your answer to a question, a review
 of your work by your own AI, or your own **Done**. When a step only asks you
@@ -19,7 +23,7 @@ to do things, the bar marks it done as soon as it has seen you do them all.
 Colleague never marks steps for you.
 
 ```beats
-show lesson: Lesson opens the Lesson pane: the step list, and the text of the step you're on.
-show lesson-bar: The bar shows where you are. Its arrows move one line at a time.
+show lesson: The Lesson toggle shows or hides the lesson. Press it again to hide it.
+show lesson-bar: The bar shows where you are. Back and Next move one part at a time.
 show courses: Courses lists all the lessons.
 ```
