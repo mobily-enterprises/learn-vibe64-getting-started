@@ -1,15 +1,17 @@
-# Introduction to using Vibe64 — topic 0.4.4 (Learning v2 draft)
+# Introduction to using Vibe64 — topic 0.5.1 (Learning v2 preview)
 
 Canonical topic source for `mobily-enterprises/learn-vibe64-getting-started`.
 Publishing this source does not install or enable a learner release; course
 pins are prepared separately in the official catalogue.
 
-This release uses lesson format v2 (`lesson.json` `schemaVersion: 2`). See
+This release uses lesson format v3 (`lesson.json` `schemaVersion: 3`: format
+v2 plus its `stage`, `studio` for V64-WELCOME and `project` for the lessons
+taught in a practice project). See
 public Vibe64's `docs/training-content.md` for the format and the
 `vibe64 training` CLI, and its `docs/templates/learn-topic/` template for new
-topics. [The outline](training/outline.md) lists the four lessons.
+topics. [The outline](training/outline.md) lists the five lessons.
 
-## How a v2 lesson is laid out
+## How a lesson is laid out
 
 ```
 training/lessons/V64-START-01/
@@ -65,12 +67,13 @@ is never evidence that the application ran.
 
 ## Validate and check
 
-From public Vibe64 (with v2 support), run
+From public Vibe64 (with format v3 support), run
 `node bin/run.js training validate <this topic>`. Then run
 `node tests/content-regressions.mjs` from this topic root: it exercises the
-tour page server, the orientation client, the visual controller and the v2 step inventory in a
+tour page server, the orientation client, the visual controller and the v3 step inventory in a
 controlled harness. It does not prove native Preview, browser gestures or
 learner acceptance; trial the lessons on desktop and phone before release.
 
-Earlier releases (0.1.x, schema version 1) keep their installed pins and
-learner history; this source does not rewrite them.
+Earlier releases (formats 1 and 2) are retired: Vibe64 starts only format 3
+lessons. Installed pins and learner history stay; this source does not rewrite
+them.

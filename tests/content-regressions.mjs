@@ -179,8 +179,9 @@ const declared = new Map(visual.commands.map(entry => [entry.name, entry.paramet
 // The step bar has no Open button, Step panel or collapse, the header switch
 // reads Preview | Dash, the lesson is the Lesson toggle beside it (not a tab or
 // a step bar button), and the bar moves with labelled Back and Next, not
-// arrows: no text sends the learner to a retired control.
-const retiredBarControls = /step bar's\s+\*\*Open\*\*|\*\*Open\*\* brings|folds it to\s+one line|\*\*Step\*\* opens|Step opens the whole step|Answer in Step|Lesson\*{0,2}\s+tab|Select \*{0,2}Dashboard\b|Dashboard\*{0,2} or \*{0,2}Lesson|\*\*Lesson\*\*,? on (the yellow step|this) bar|the right arrow|the arrows go|Its arrows move/u;
+// arrows; the lesson pane has no Previous/Next step links: no text sends the
+// learner to a retired control.
+const retiredBarControls = /step bar's\s+\*\*Open\*\*|\*\*Open\*\* brings|folds it to\s+one line|\*\*Step\*\* opens|Step opens the whole step|Answer in Step|Lesson\*{0,2}\s+tab|Select \*{0,2}Dashboard\b|Dashboard\*{0,2} or \*{0,2}Lesson|\*\*Lesson\*\*,? on (the yellow step|this) bar|the right arrow|the arrows go|Its arrows move|\*\*Previous step\*\*/u;
 for (const [code, descriptor] of Object.entries(lessons)) {
   assert.equal(descriptor.schemaVersion, 3, `${code} uses lesson format v3`);
   assert.equal(descriptor.stage, code === 'V64-WELCOME' ? 'studio' : 'project', `${code} runs where its stage says`);

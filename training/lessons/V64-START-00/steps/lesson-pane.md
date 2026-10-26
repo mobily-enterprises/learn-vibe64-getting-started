@@ -4,7 +4,7 @@ Three things help you find your way:
 - **The step list** shows every step. A green tick means the step is done;
   **Optional** steps can be skipped. When there's little room, the list
   becomes a row of numbered circles. Select a step to read it.
-- **Next step** and **Previous step** move through the lesson. **Lesson
+- **The step bar and the step list** move you between steps. **Lesson
   notes** has extra background whenever you want it.
 - **The yellow step bar** above the page always shows where you are
   (**Step 3 of 16**, with a dot for each part of the step). **Back** goes back

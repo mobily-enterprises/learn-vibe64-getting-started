@@ -18,7 +18,7 @@
 
 ## Public contract
 
-Topic 0.5.0 lists five published, required lessons in order: V64-WELCOME
+Topic 0.5.1 lists five published, required lessons in order: V64-WELCOME
 Welcome to Vibe64, V64-START-00 Introduction to the editor, V64-START-01 Your
 first steps in Vibe64, V64-START-02 Make your first change (requires 01) and
 V64-START-03 Build with a database (requires 01). Each descriptor uses lesson
