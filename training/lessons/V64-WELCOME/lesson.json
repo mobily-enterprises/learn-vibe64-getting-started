@@ -16,7 +16,7 @@
     { "id": "speech", "title": "Speech and Colleague", "body": "steps/speech.md", "check": { "kind": "none" }, "required": false },
     { "id": "people", "title": "People", "body": "steps/people.md", "check": { "kind": "none" }, "required": false },
     { "id": "studio-health", "title": "When something breaks", "body": "steps/studio-health.md", "check": { "kind": "none" }, "required": false },
-    { "id": "launcher", "title": "Deployed apps", "body": "steps/launcher.md", "check": { "kind": "none" }, "required": false },
+    { "id": "launcher", "title": "Published apps", "body": "steps/launcher.md", "check": { "kind": "none" }, "required": false },
     { "id": "learn-and-develop", "title": "Learn and Develop", "body": "steps/learn-and-develop.md", "check": { "kind": "self" }, "required": true }
   ]
 }

@@ -297,7 +297,15 @@ for (const step of lessons['V64-WELCOME'].steps) {
 }
 assert.deepEqual([...hosted].sort(), [...new Set(Object.values(welcomeBeats).flat().map(beat => beat.target).filter(target => target.startsWith('manage-')))].sort(),
   'the topic declares exactly the hosted places its lessons use');
-assert.match(await readFile(new URL('../training/lessons/V64-WELCOME/steps/launcher.md', import.meta.url), 'utf8'), /apps you have deployed/u);
+// Hosted Vibe64 says Publish and Production: Launcher lists published apps.
+const launcherStep = await readFile(new URL('../training/lessons/V64-WELCOME/steps/launcher.md', import.meta.url), 'utf8');
+assert.match(launcherStep, /^Launcher lists the apps you have published/u);
+assert.match(launcherStep, /^show manage-launcher: Launcher lists the apps you have published/mu);
+assert.equal(lessons['V64-WELCOME'].steps.find(step => step.id === 'launcher').title, 'Published apps');
+for (const step of lessons['V64-WELCOME'].steps) {
+  const body = await readFile(new URL(`../training/lessons/V64-WELCOME/${step.body}`, import.meta.url), 'utf8');
+  assert.doesNotMatch(`${step.title}\n${body}`, /deploy/iu, `V64-WELCOME/${step.id} says publish, not deploy`);
+}
 console.log('PASS: Welcome to Vibe64 pins its shared and hosted steps and the places the topic declares.');
 
 // notes.md is shown to the learner as Lesson notes: it must not carry grading
